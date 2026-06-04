@@ -36,12 +36,12 @@ const navLinks = [
 ];
 ---
 
-<Layout title="E5etools — 5th Edition D&D Tools">
+<Layout title="5eForge — Enhanced D&D 5e Tools">
   <!-- NAV -->
   <header style="background:#0f0d0b; border-bottom:1px solid #2e2820; position:sticky; top:0; z-index:50;">
     <div style="max-width:1200px; margin:0 auto; padding:0 1.5rem; display:flex; align-items:center; justify-content:space-between; height:3.5rem;">
       <a href="/" style="font-family:'Cinzel',serif; font-size:1.25rem; font-weight:700; color:#c9a84c; text-decoration:none; letter-spacing:0.05em;">
-        E5etools
+        5e<span style="color:#e8dcc8;">Forge</span>
       </a>
       <nav style="display:flex; gap:1.5rem; align-items:center;">
         {navLinks.map(link => (
@@ -55,24 +55,23 @@ const navLinks = [
 
   <!-- HERO -->
   <section style="position:relative; overflow:hidden; padding:6rem 1.5rem 5rem; text-align:center; background:linear-gradient(180deg, #1a1208 0%, #0f0d0b 100%);">
-    <!-- decorative radial glow -->
     <div style="position:absolute; top:0; left:50%; transform:translateX(-50%); width:600px; height:400px; background:radial-gradient(ellipse at center, rgba(201,168,76,0.12) 0%, transparent 70%); pointer-events:none;"></div>
-    <!-- decorative top border line -->
     <div style="position:absolute; top:0; left:0; right:0; height:2px; background:linear-gradient(90deg, transparent, #c9a84c, transparent);"></div>
 
-    <div style="position:relative; max-width:800px; margin:0 auto;">
-      <div style="display:inline-block; border:1px solid rgba(201,168,76,0.3); border-radius:2rem; padding:0.25rem 1rem; margin-bottom:1.5rem; font-size:0.75rem; color:#8a7a6a; letter-spacing:0.1em; text-transform:uppercase;">
-        Community Fork
-      </div>
-      <h1 style="font-family:'Cinzel',serif; font-size:clamp(2.5rem,7vw,5rem); font-weight:900; color:#e8dcc8; line-height:1.1; margin:0 0 1.25rem; letter-spacing:0.03em;">
-        E5e<span style="color:#c9a84c;">tools</span>
+    <div style="position:relative; max-width:860px; margin:0 auto;">
+      <h1 style="font-family:'Cinzel',serif; font-size:clamp(2.5rem,7vw,5rem); font-weight:900; color:#e8dcc8; line-height:1.1; margin:0 0 1.5rem; letter-spacing:0.03em;">
+        5e<span style="color:#c9a84c;">Forge</span>
       </h1>
-      <p style="font-size:clamp(1rem,2vw,1.25rem); color:#8a7a6a; max-width:600px; margin:0 auto 2.5rem; line-height:1.7;">
-        A suite of tools for 5th Edition Dungeons &amp; Dragons players and Dungeon Masters.
+      <p style="font-size:clamp(1rem,2vw,1.2rem); color:#c4b49a; max-width:700px; margin:0 auto 1rem; line-height:1.75; font-weight:400;">
+        The enhanced edition of D&amp;D 5e — built on official material, redesigned to be <strong style="color:#e8dcc8;">modular</strong>.
+      </p>
+      <p style="font-size:clamp(0.9rem,1.5vw,1.05rem); color:#8a7a6a; max-width:660px; margin:0 auto 2.75rem; line-height:1.8;">
+        Break free from cookie-cutter builds. Mix, match, and master the rules to craft characters with real depth —
+        powerful, intentional, and true to epic concepts. No meta-chasing required.
       </p>
       <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
-        <a href="/spells.html" style="background:#c9a84c; color:#0f0d0b; font-weight:600; padding:0.75rem 2rem; border-radius:0.375rem; text-decoration:none; font-size:0.9375rem; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
-          Browse Spells
+        <a href="/classes.html" style="background:#c9a84c; color:#0f0d0b; font-weight:700; padding:0.75rem 2rem; border-radius:0.375rem; text-decoration:none; font-size:0.9375rem; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+          Start Building
         </a>
         <a href="/bestiary.html" style="background:transparent; color:#c9a84c; font-weight:600; padding:0.75rem 2rem; border-radius:0.375rem; text-decoration:none; font-size:0.9375rem; border:1px solid #c9a84c; transition:background 0.2s;" onmouseover="this.style.background='rgba(201,168,76,0.1)'" onmouseout="this.style.background='transparent'">
           Open Bestiary
@@ -138,48 +137,44 @@ const navLinks = [
       </div>
     </section>
 
-    <!-- INFO CARDS -->
+    <!-- ABOUT -->
     <section>
       <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1.75rem;">
         <span style="width:3px; height:1.5rem; background:#c9a84c; border-radius:2px; display:inline-block;"></span>
-        <h2 style="font-family:'Cinzel',serif; font-size:1.5rem; font-weight:700; color:#e8dcc8; margin:0;">Resources</h2>
+        <h2 style="font-family:'Cinzel',serif; font-size:1.5rem; font-weight:700; color:#e8dcc8; margin:0;">About</h2>
         <span style="height:1px; flex:1; background:linear-gradient(90deg, #2e2820, transparent);"></span>
       </div>
       <div class="info-grid">
         <div class="info-card">
-          <div class="info-icon">💬</div>
-          <h3 class="info-title">Discord</h3>
-          <p class="info-body">Join the community on Discord for help, homebrew discussion, and announcements.</p>
-          <a href="https://discord.gg/5etools" class="info-link">Join Discord →</a>
+          <div class="info-icon">⚗️</div>
+          <h3 class="info-title">What is 5eForge?</h3>
+          <p class="info-body">A modular reference tool for D&amp;D 5e built by Rodrigo Barroco. All content is sourced from official published material — reorganized and enhanced for maximum flexibility.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">🔧</div>
+          <h3 class="info-title">Modular Rules</h3>
+          <p class="info-body">Mix and match rules freely. 5eForge treats the rulebook as a toolkit, not a straitjacket — enabling builds that are powerful, intentional, and narratively rich.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">⚔️</div>
+          <h3 class="info-title">Epic Characters</h3>
+          <p class="info-body">Build characters tied to big, bold concepts — not whatever the current meta dictates. Optimization and story aren't opposites here.</p>
         </div>
         <div class="info-card">
           <div class="info-icon">🎲</div>
           <h3 class="info-title">Foundry VTT</h3>
-          <p class="info-body">Use the Plutonium module to integrate E5etools content directly into Foundry VTT.</p>
-          <a href="https://foundryvtt.com/" class="info-link">Learn more →</a>
-        </div>
-        <div class="info-card">
-          <div class="info-icon">🌐</div>
-          <h3 class="info-title">Roll20</h3>
-          <p class="info-body">The Rivet browser extension brings E5etools content into your Roll20 campaigns.</p>
-          <a href="https://roll20.net/" class="info-link">Learn more →</a>
-        </div>
-        <div class="info-card">
-          <div class="info-icon">❓</div>
-          <h3 class="info-title">FAQ</h3>
-          <p class="info-body">Questions about sources, content, or how the tools work? Check the FAQ first.</p>
-          <a href="/faq.html" class="info-link">Read FAQ →</a>
+          <p class="info-body">Running your game on Foundry? 5eForge is designed with VTT play in mind, making it easy to reference and import content mid-session.</p>
         </div>
         <div class="info-card">
           <div class="info-icon">🖥️</div>
           <h3 class="info-title">Self-Hosting</h3>
-          <p class="info-body">Run E5etools locally or on your own server. Full instructions on the wiki.</p>
-          <a href="https://github.com/5etools-mirror-3/5etools-src/wiki/Self-Hosting" class="info-link">See guide →</a>
+          <p class="info-body">Run 5eForge on your own machine or server. Everything you need is in the repository — no account, no tracking, no lock-in.</p>
+          <a href="https://github.com/rsbarroco/E5etools" class="info-link">View on GitHub →</a>
         </div>
         <div class="info-card">
           <div class="info-icon">⚠️</div>
           <h3 class="info-title">Disclaimer</h3>
-          <p class="info-body">E5etools is an unofficial fan project. Content is sourced from published materials for reference.</p>
+          <p class="info-body">5eForge is an independent fan project by Rodrigo Barroco. Not affiliated with or endorsed by Wizards of the Coast. Content used for personal reference only.</p>
           <a href="/privacy-policy.html" class="info-link">Privacy Policy →</a>
         </div>
       </div>
@@ -189,17 +184,18 @@ const navLinks = [
   <!-- FOOTER -->
   <footer style="border-top:1px solid #2e2820; background:#0a0906; padding:2rem 1.5rem; text-align:center;">
     <div style="max-width:1200px; margin:0 auto;">
-      <p style="font-family:'Cinzel',serif; font-size:1rem; color:#c9a84c; margin:0 0 0.5rem; font-weight:600;">E5etools</p>
+      <p style="font-family:'Cinzel',serif; font-size:1rem; color:#c9a84c; margin:0 0 0.375rem; font-weight:700;">
+        5e<span style="color:#e8dcc8;">Forge</span>
+      </p>
       <p style="color:#8a7a6a; font-size:0.8125rem; margin:0 0 1rem;">
-        Version <span id="version-placeholder">2.x</span> &mdash; An unofficial community fork of 5etools
+        Built by <a href="https://github.com/rsbarroco" style="color:#c9a84c; text-decoration:none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Rodrigo Barroco</a>
       </p>
       <div style="display:flex; gap:1.5rem; justify-content:center; flex-wrap:wrap;">
         <a href="/privacy-policy.html" style="color:#8a7a6a; font-size:0.8125rem; text-decoration:none;" onmouseover="this.style.color='#c9a84c'" onmouseout="this.style.color='#8a7a6a'">Privacy Policy</a>
-        <a href="/faq.html" style="color:#8a7a6a; font-size:0.8125rem; text-decoration:none;" onmouseover="this.style.color='#c9a84c'" onmouseout="this.style.color='#8a7a6a'">FAQ</a>
-        <a href="https://discord.gg/5etools" style="color:#8a7a6a; font-size:0.8125rem; text-decoration:none;" onmouseover="this.style.color='#c9a84c'" onmouseout="this.style.color='#8a7a6a'">Discord</a>
+        <a href="https://github.com/rsbarroco/E5etools" style="color:#8a7a6a; font-size:0.8125rem; text-decoration:none;" onmouseover="this.style.color='#c9a84c'" onmouseout="this.style.color='#8a7a6a'">GitHub</a>
       </div>
       <p style="color:#3a342c; font-size:0.75rem; margin:1.25rem 0 0;">
-        D&amp;D content is the property of Wizards of the Coast. Not affiliated with or endorsed by WotC.
+        D&amp;D content is property of Wizards of the Coast. Not affiliated with or endorsed by WotC.
       </p>
     </div>
   </footer>
