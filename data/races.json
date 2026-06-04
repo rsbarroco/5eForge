@@ -45,7 +45,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Talons",
+					"name": "Natural Weapon",
 					"entries": [
 						"You are proficient with your unarmed strikes, which deal {@damage 1d4} slashing damage on a hit."
 					],
@@ -134,7 +134,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Talons",
+					"name": "Natural Weapon",
 					"entries": [
 						"Your talons are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to {@damage 1d4} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
 					],
@@ -196,7 +196,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Talons",
+					"name": "Natural Weapon",
 					"entries": [
 						"You have talons that you can use to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
 					]
@@ -305,7 +305,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Celestial Legacy",
+					"name": "Innate Spellcasting",
 					"entries": [
 						"You know the {@spell light} cantrip. Once you reach 3rd level, you can cast the {@spell lesser restoration} spell once with this trait, and you regain the ability to do so when you finish a long rest. Once you reach 5th level, you can cast the {@spell daylight} spell once with this trait, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
 					],
@@ -399,7 +399,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Celestial Revelation",
+					"name": "Transformation",
 					"entries": [
 						"When you reach 3rd level, choose one of the revelation options below. Thereafter, you can use a bonus action to unleash the celestial energy within yourself, gaining the benefits of that revelation. Your transformation lasts for 1 minute or until you end it as a bonus action. Once you transform using your revelation below, you can't use it again until you finish a long rest.",
 						{
@@ -667,7 +667,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Celestial Revelation",
+					"name": "Transformation",
 					"entries": [
 						"When you reach character level 3, you can transform as a {@variantrule Bonus Action|XPHB} using one of the options below (choose the option each time you transform). The transformation lasts for 1 minute or until you end it (no action required). Once you transform, you can't do so again until you finish a {@variantrule Long Rest|XPHB}.",
 						"Once on each of your turns before the transformation ends, you can deal extra damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and the extra damage's type is either Necrotic for Necrotic Shroud or Radiant for Heavenly Wings and Inner Radiance.",
@@ -766,7 +766,7 @@
 					"type": "entries",
 					"name": "Size",
 					"entries": [
-						"Aetherborn are about the same size as humans, ranging from 5 to 6 feet tall. They are quite light\u2014only about 100 pounds\u2014and their weight diminishes as they age and more and more of their substance returns to the aethersphere. Your size is Medium."
+						"Aetherborn are about the same size as humans, ranging from 5 to 6 feet tall. They are quite light—only about 100 pounds—and their weight diminishes as they age and more and more of their substance returns to the aethersphere. Your size is Medium."
 					]
 				},
 				{
@@ -801,7 +801,7 @@
 					"type": "inset",
 					"name": "Gift of the Aetherborn",
 					"entries": [
-						"An unknown aetherborn, desperately seeking a means to extend their short life, discovered a process of transformation that prolonged their existence\u2014by giving them the ability to feed on the life essence of other beings. Since then, other aetherborn have learned and carried out this monstrous transformation, and aetherborn with this \"gift\" have become a small minority among an already small population.",
+						"An unknown aetherborn, desperately seeking a means to extend their short life, discovered a process of transformation that prolonged their existence—by giving them the ability to feed on the life essence of other beings. Since then, other aetherborn have learned and carried out this monstrous transformation, and aetherborn with this \"gift\" have become a small minority among an already small population.",
 						"A gifted aetherborn has the ability to drain the life essence of other beings. Similar to the way heat is transferred from a warm object to a cold one, a gifted aetherborn need only touch another living being with a clawed hand to draw life essence out, fueling their own continued existence while draining strength and vitality from their victim.",
 						"For many aetherborn, living as they do for indulgence and instant gratification, the concepts of \"want\" and \"need\" are virtually synonymous. But Aetherborn with this gift understand what it is to truly need, for they develop a hunger for life essence that far exceeds any desires they might have felt before their transformation. A gifted aetherborn who abstains from this feeding deteriorates even more rapidly than other aetherborn, while enduring unspeakable agony caused by the deprivation of life energy.",
 						"At the DM's option, an aetherborn character can research methods of achieving this dark \"gift.\" The process is similar to inventing and manufacturing a rare magic item (see \"{@book Inventing and Manufacturing Devices|PS-K|1|Inventing and Manufacturing Devices}\" earlier in this document). But rather than aether, the process requires a variety of rare unguents and unusual ingredients that make up the cost of researching and undergoing the transformation.",
@@ -937,7 +937,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Keen Senses",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You have proficiency in the {@skill Perception} skill."
 					]
@@ -1671,7 +1671,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Hooves",
+					"name": "Natural Weapon",
 					"entries": [
 						"Your hooves are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal bludgeoning damage equal to {@damage 1d4} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
 					]
@@ -1814,7 +1814,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Hooves",
+					"name": "Natural Weapon",
 					"entries": [
 						"You have hooves that you can use to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier bludgeoning damage, instead of the bludgeoning damage normal for an unarmed strike."
 					]
@@ -1873,7 +1873,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Shape-Shifter",
+					"name": "Transformation",
 					"entries": [
 						"As an action, you can shape-shift to change your appearance and your voice. You determine the specifics of the changes, including your coloration, hair length, and sex. You can also adjust your height and weight and can change your size between Medium and Small. You can make yourself appear as a member of another playable species, though none of your game statistics change. You can't duplicate the appearance of an individual you've never seen, and you must adopt a form that has the same basic arrangement of limbs that you have. This trait doesn't change your clothing and equipment.",
 						"While shape-shifted with this trait, you have {@variantrule Advantage|XPHB} on Charisma checks.",
@@ -1944,7 +1944,7 @@
 				{
 					"name": "Age",
 					"entries": [
-						"Changelings mature slightly faster than humans but share a similar lifespan\u2014typically a century or less. While a changeling can transform to conceal their age, the effects of aging affect them similarly to humans."
+						"Changelings mature slightly faster than humans but share a similar lifespan—typically a century or less. While a changeling can transform to conceal their age, the effects of aging affect them similarly to humans."
 					],
 					"type": "entries"
 				},
@@ -1964,7 +1964,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Shapechanger",
+					"name": "Transformation",
 					"entries": [
 						"As an action, you can change your appearance and your voice. You determine the specifics of the changes, including your coloration, hair length, and sex. You can also adjust your height and weight, but not so much that your size changes. You can make yourself appear as a member of another race, though none of your game statistics change. You can't duplicate the appearance of a creature you've never seen, and you must adopt a form that has the same basic arrangement of limbs that you have. Your clothing and equipment aren't changed by this trait.",
 						"You stay in the new form until you use an action to revert to your true form or until you die."
@@ -2042,7 +2042,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Shapechanger",
+					"name": "Transformation",
 					"entries": [
 						"As an action, you change your appearance and your voice. You determine the specifics of the changes, including your coloration, hair length, and sex. You can also adjust your height between Medium and Small. You can make yourself appear as a member of another race, though none of your game statistics change. You can't duplicate the appearance of an individual you've never seen, and you must adopt a form that has the same basic arrangement of limbs that you have. Your clothing and equipment aren't changed by this trait.",
 						"You stay in the new form until you use an action to revert to your true form or until you die."
@@ -2231,7 +2231,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Darkvision",
+					"name": "Superior Darkvision",
 					"entries": [
 						"You can see in dim light within 120 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
 					]
@@ -3487,14 +3487,14 @@
 				},
 				{
 					"type": "entries",
-					"name": "Darkvision",
+					"name": "Superior Darkvision",
 					"entries": [
 						"You can see in dim light within 120 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Duergar Magic",
+					"name": "Innate Spellcasting",
 					"entries": [
 						"Starting at 3rd level, you can cast the {@spell enlarge/reduce} spell on yourself with this trait, without requiring a material component. Starting at 5th level, you can also cast the {@spell invisibility} spell on yourself with this trait, without requiring a material component. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
@@ -3673,7 +3673,7 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Darkvision",
+					"name": "Superior Darkvision",
 					"entries": [
 						"You have {@sense Darkvision|XPHB} with a range of 120 feet."
 					]
@@ -3897,7 +3897,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Keen Senses",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You have proficiency in the {@skill Perception} skill."
 					]
@@ -4210,7 +4210,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Keen Senses",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You have proficiency in the {@skill Perception} skill."
 					],
@@ -4443,7 +4443,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Keen Senses",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You have proficiency in the {@skill Insight|XPHB}, {@skill Perception|XPHB}, or {@skill Survival|XPHB} skill."
 					]
@@ -4708,7 +4708,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Keen Senses",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You have proficiency in the {@skill Perception} skill."
 					],
@@ -4746,7 +4746,7 @@
 				{
 					"name": "Elf Culture",
 					"entries": [
-						"The elves of Kaladesh don't organize themselves into nations or tribes. Still, they recognize three distinct cultural groups among their kind\u2014though in truth these groupings are more like attitudes or alignments with regard to the rest of society and the use of technology. Choose one of these cultures."
+						"The elves of Kaladesh don't organize themselves into nations or tribes. Still, they recognize three distinct cultural groups among their kind—though in truth these groupings are more like attitudes or alignments with regard to the rest of society and the use of technology. Choose one of these cultures."
 					],
 					"type": "entries"
 				}
@@ -4817,7 +4817,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Keen Senses",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You have proficiency in the {@skill Perception} skill."
 					],
@@ -4978,7 +4978,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Fairy Magic",
+					"name": "Innate Spellcasting",
 					"entries": [
 						"You know the {@spell druidcraft} cantrip. Starting at 3rd level, you can cast the {@spell faerie fire} spell with this trait. Starting at 5th level, you can also cast the {@spell enlarge/reduce} spell with this trait. Once you cast {@spell faerie fire} or {@spell enlarge/reduce} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
@@ -5062,7 +5062,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Fairy Magic",
+					"name": "Innate Spellcasting",
 					"entries": [
 						"You know the {@spell druidcraft} cantrip.",
 						"Starting at 3rd level, you can cast the {@spell faerie fire} spell with this trait. Starting at 5th level, you can also cast the {@spell enlarge/reduce} spell with this trait. Once you cast {@spell faerie fire} or {@spell enlarge/reduce} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
@@ -5112,7 +5112,7 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Firbolg Magic",
+					"name": "Innate Spellcasting",
 					"entries": [
 						"You can cast {@spell detect magic} and {@spell disguise self} spells with this trait. When you use this version of {@spell disguise self}, you can seem up to 3 feet shorter or taller. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
@@ -5221,7 +5221,7 @@
 					]
 				},
 				{
-					"name": "Firbolg Magic",
+					"name": "Innate Spellcasting",
 					"entries": [
 						"You can cast {@spell detect magic} and {@spell disguise self} with this trait, using Wisdom as your spellcasting ability for them. Once you cast either spell, you can't cast it again with this trait until you finish a short or long rest. When you use this version of {@spell disguise self}, you can seem up to 3 feet shorter than normal, allowing you to more easily blend in with humans and elves."
 					],
@@ -5615,7 +5615,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Githyanki Psionics",
+					"name": "Innate Spellcasting",
 					"entries": [
 						"You know the {@spell mage hand} cantrip, and the hand is {@condition invisible} when you cast the cantrip with this trait.",
 						"Starting at 3rd level, you can cast the {@spell jump} spell with this trait. Starting at 5th level, you can also cast {@spell misty step} with it. Once you cast {@spell jump} or {@spell misty step} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
@@ -5680,7 +5680,7 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Githzerai Psionics",
+					"name": "Innate Spellcasting",
 					"entries": [
 						"You know the {@spell mage hand} cantrip, and the hand is {@condition invisible} when you cast the cantrip with this trait.",
 						"Starting at 3rd level, you can cast the {@spell shield} spell with this trait. Starting at 5th level, you can also cast the {@spell detect thoughts} spell with it. Once you cast {@spell shield} or {@spell detect thoughts} spell with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
@@ -5730,7 +5730,7 @@
 			},
 			"entries": [
 				{
-					"name": "Bite",
+					"name": "Natural Weapon",
 					"entries": [
 						"Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to {@damage 1d4} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
 					],
@@ -6729,7 +6729,7 @@
 					"type": "entries",
 					"name": "Giant Ancestry",
 					"entries": [
-						"You are descended from Giants. Choose one of the following benefits\u2014a supernatural boon from your ancestry; you can use the chosen benefit a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}:",
+						"You are descended from Giants. Choose one of the following benefits—a supernatural boon from your ancestry; you can use the chosen benefit a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}:",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -6782,7 +6782,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Large Form",
+					"name": "Transformation",
 					"entries": [
 						"Starting at character level 5, you can change your size to Large as a {@variantrule Bonus Action|XPHB} if you're in a big enough space. This transformation lasts for 10 minutes or until you end it (no action required). For that duration, you have {@variantrule Advantage|XPHB} on Strength checks, and your {@variantrule Speed|XPHB} increases by 10 feet. Once you use this trait, you can't use it again until you finish a {@variantrule Long Rest|XPHB}."
 					]
@@ -7761,7 +7761,7 @@
 							"type": "inset",
 							"name": "Becoming a Hag",
 							"entries": [
-								"Hags can undertake a ritual to irreversibly transform a hexblood they created into a new hag, either one of their own kind or that embodies the hexblood's nature. This requires that both the hag and hexblood be in the same place and consent to the lengthy ritual\u2014circumstances most hexbloods shun but might come to accept over the course of centuries. Once a hexblood undergoes this irreversible ritual, they emerge as a hag NPC no longer under the control of the hexblood's player, unless the DM rules otherwise."
+								"Hags can undertake a ritual to irreversibly transform a hexblood they created into a new hag, either one of their own kind or that embodies the hexblood's nature. This requires that both the hag and hexblood be in the same place and consent to the lengthy ritual—circumstances most hexbloods shun but might come to accept over the course of centuries. Once a hexblood undergoes this irreversible ritual, they emerge as a hag NPC no longer under the control of the hexblood's player, unless the DM rules otherwise."
 							]
 						}
 					]
@@ -8419,7 +8419,7 @@
 				"type": "item",
 				"name": "Size:",
 				"entries": [
-					"Medium (about 6\u20137 feet tall)"
+					"Medium (about 6–7 feet tall)"
 				]
 			},
 			"entries": [
@@ -9601,7 +9601,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Claws",
+					"name": "Natural Weapon",
 					"entries": [
 						"Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you can deal slashing damage equal to {@damage 1d4} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
 					],
@@ -9731,7 +9731,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Bite",
+					"name": "Natural Weapon",
 					"entries": [
 						"You have a fanged maw that you can use to make unarmed strikes. When you hit with it, the strike deals {@damage 1d6} + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
 					]
@@ -9849,7 +9849,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Bite",
+					"name": "Natural Weapon",
 					"entries": [
 						"Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to {@damage 1d6} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
 					],
@@ -10031,14 +10031,14 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Shape Self",
+					"name": "Transformation",
 					"entries": [
 						"As an action, you can reshape your body to a two-legged Humanoid shape or to a four-legged Beast shape. While you have a Humanoid shape, you can wear clothing and armor made for a Humanoid of your size."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Darkvision",
+					"name": "Superior Darkvision",
 					"entries": [
 						"You have {@sense Darkvision|XPHB} with a range of 120 feet."
 					]
@@ -10379,7 +10379,7 @@
 					]
 				},
 				{
-					"name": "Horns",
+					"name": "Natural Weapon",
 					"entries": [
 						"Your horns are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to {@damage 1d6} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
 					],
@@ -10480,7 +10480,7 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Horns",
+					"name": "Natural Weapon",
 					"entries": [
 						"You have horns that you can use to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike."
 					]
@@ -11168,7 +11168,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Darkvision",
+					"name": "Superior Darkvision",
 					"entries": [
 						"You have {@sense Darkvision|XPHB} with a range of 120 feet."
 					]
@@ -11308,7 +11308,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Darkvision",
+					"name": "Superior Darkvision",
 					"entries": [
 						"You can see in dim light within 120 feet of yourself as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
 					]
@@ -11394,7 +11394,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Shape Self",
+					"name": "Transformation",
 					"entries": [
 						"As an action, you can reshape your body to give yourself a head, one or two arms, one or two legs, and makeshift hands and feet, or you can revert to a limbless blob. While you have a humanlike shape, you can wear clothing and armor made for a Humanoid of your size.",
 						"As a bonus action, you can extrude a pseudopod that is up to 6 inches wide and 10 feet long or reabsorb it into your body. As part of the same bonus action, you can use this pseudopod to manipulate an object, open or close a door or container, or pick up or set down a Tiny object. The pseudopod contains no sensory organs and can't attack, activate magic items, or lift more than 10 pounds."
@@ -11819,7 +11819,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Keen Senses",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You have proficiency in the {@skill Perception} skill."
 					]
@@ -11900,7 +11900,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Keen Senses",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You have proficiency in the {@skill Perception} skill."
 					]
@@ -11974,7 +11974,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Shifting",
+					"name": "Transformation",
 					"entries": [
 						"As a {@variantrule Bonus Action|XPHB}, you can shape-shift to assume a more bestial appearance. This transformation lasts for 1 minute or until you revert to your normal appearance as a {@variantrule Bonus Action|XPHB}. When you shift, you gain {@variantrule Temporary Hit Points|XPHB} equal to 2 times your {@variantrule Proficiency|XPHB|Proficiency Bonus}. You can shift a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}.",
 						"Whenever you shift, you gain the benefit of one of the following options (choose when you select this species)",
@@ -12166,7 +12166,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Shifting",
+					"name": "Transformation",
 					"entries": [
 						"As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to your level + your Constitution modifier (minimum of 1 temporary hit point). You also gain additional benefits that depend on your shifter subrace, described below.",
 						"Once you shift, you can't do so again until you finish a short or long rest."
@@ -12225,7 +12225,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Shifting",
+					"name": "Transformation",
 					"entries": [
 						"As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to 2 × your proficiency bonus. You can shift a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
 						"Whenever you shift, you gain an additional benefit based on one of the following options (choose when you select this race):",
@@ -12977,7 +12977,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Infernal Legacy",
+					"name": "Innate Spellcasting",
 					"entries": [
 						"You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell hellish rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the {@spell darkness} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
 					],
@@ -13140,7 +13140,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Fiendish Legacy",
+					"name": "Innate Spellcasting",
 					"entries": [
 						"You are the recipient of a legacy that grants you supernatural abilities. Choose a legacy from the Fiendish Legacies table. You gain the level 1 benefit of the chosen legacy.",
 						"When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy).",
@@ -13403,7 +13403,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Claws",
+					"name": "Natural Weapon",
 					"entries": [
 						"You have claws that you can use to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
 					]
@@ -13431,7 +13431,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Shell Defense",
+					"name": "Transformation",
 					"entries": [
 						"You can withdraw into your shell as an action. Until you emerge, you gain a +4 bonus to your AC, and you have advantage on Strength and Constitution saving throws. While in your shell, you are {@condition prone}, your speed is 0 and can't increase, you have disadvantage on Dexterity saving throws, you can't take reactions, and the only action you can take is a bonus action to emerge from your shell."
 					]
@@ -13515,7 +13515,7 @@
 					]
 				},
 				{
-					"name": "Claws",
+					"name": "Natural Weapon",
 					"entries": [
 						"Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to {@damage 1d4} + your Strength modifier, instead of bludgeoning damage normal for an unarmed strike."
 					],
@@ -13536,7 +13536,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Shell Defense",
+					"name": "Transformation",
 					"entries": [
 						"You can withdraw into your shell as an action. Until you emerge, you gain a +4 bonus to AC, and you have advantage on Strength and Constitution saving throws. While in your shell, you are {@condition prone}, your speed is 0 and can't increase, you have disadvantage on Dexterity saving throws, you can't take reactions, and the only action you can take is a bonus action to emerge from your shell."
 					],
@@ -14438,7 +14438,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Constructed Resilience",
+					"name": "Construct Resilience",
 					"entries": [
 						"You were created to have remarkable fortitude, represented by the following benefits:",
 						{
@@ -14568,7 +14568,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Serpentine Spellcasting",
+					"name": "Innate Spellcasting",
 					"entries": [
 						"You know the {@spell poison spray} cantrip. You can cast {@spell animal friendship} an unlimited number of times with this trait, but you can target only snakes with it. Starting at 3rd level, you can also cast {@spell suggestion} with this trait. Once you cast it, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 2nd level or higher.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
@@ -15667,7 +15667,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Duergar Magic",
+					"name": "Innate Spellcasting",
 					"entries": [
 						"When you reach 3rd level, you can cast the {@spell Enlarge/Reduce} spell on yourself once with this trait, using only the spell's enlarge option. When you reach 5th level, you can cast the {@spell Invisibility} spell on yourself once with this trait. You don't need material components for either spell, and you can't cast them while you're in direct sunlight, although sunlight has no effect on them once cast. You regain the ability to cast these spells with this trait when you finish a long rest. Intelligence is your spellcasting ability for these spells."
 					],
@@ -17342,7 +17342,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Githyanki Psionics",
+					"name": "Innate Spellcasting",
 					"entries": [
 						"You know the {@spell mage hand} cantrip, and the hand is {@condition invisible} when you cast the cantrip with this trait.",
 						"When you reach 3rd level, you can cast {@spell jump} once with this trait, and you regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell misty step} spell once with this trait, and you regain the ability to do so when you finish a long rest.",
@@ -17416,7 +17416,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Githzerai Psionics",
+					"name": "Innate Spellcasting",
 					"entries": [
 						"You know the {@spell mage hand} cantrip, and the hand is {@condition invisible} when you cast the cantrip with this trait.",
 						"When you reach 3rd level, you can cast {@spell shield} once with this trait, and you regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell detect thoughts} spell once with this trait, and you regain the ability to do so when you finish a long rest.",
