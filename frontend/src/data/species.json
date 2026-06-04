@@ -1,0 +1,2317 @@
+[
+  {
+    "name": "Aarakocra",
+    "source": "MPMM",
+    "size": "Medium",
+    "speed": "30ft walk, Trueft fly",
+    "traits": [
+      {
+        "name": "Flight",
+        "desc": "Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor."
+      },
+      {
+        "name": "Natural Weapon",
+        "desc": "You have talons that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
+      },
+      {
+        "name": "Wind Caller",
+        "desc": "Starting at 3rd level, you can cast the gust of wind spell with this trait, without requiring a material component. Once you cast the spell with this trait, you can't do so again until you finish a long rest. You can also cast the spell using any spell slots you have of 2nd level or higher. Intellig"
+      }
+    ],
+    "traitNames": [
+      "Flight",
+      "Natural Weapon",
+      "Wind Caller"
+    ]
+  },
+  {
+    "name": "Aasimar",
+    "source": "XPHB",
+    "size": "Small/Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Damage Resistance",
+        "desc": "You have Resistance to Necrotic damage and Radiant damage."
+      },
+      {
+        "name": "Darkvision",
+        "desc": "You have Darkvision with a range of 60 feet."
+      },
+      {
+        "name": "Healing Hands",
+        "desc": "As a Magic action, you touch a creature and roll a number of d4s equal to your Proficiency. The creature regains a number of Hit Points equal to the total rolled. Once you use this trait, you can't use it again until you finish a Long Rest."
+      },
+      {
+        "name": "Cantrip",
+        "desc": "You know the Light cantrip. Charisma is your spellcasting ability for it."
+      },
+      {
+        "name": "Transformation",
+        "desc": "When you reach character level 3, you can transform as a Bonus Action using one of the options below (choose the option each time you transform). The transformation lasts for 1 minute or until you end it (no action required). Once you transform, you can't do so again until you finish a Long Rest. On"
+      }
+    ],
+    "traitNames": [
+      "Damage Resistance",
+      "Darkvision",
+      "Healing Hands",
+      "Cantrip",
+      "Transformation"
+    ]
+  },
+  {
+    "name": "Aetherborn",
+    "source": "PSK",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Darkvision",
+        "desc": "Thanks to your heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "name": "Damage Resistance",
+        "desc": "You have resistance to necrotic damage."
+      },
+      {
+        "name": "Skill Proficiency",
+        "desc": "You have proficiency in the Intimidation skill."
+      },
+      {
+        "name": "Gift of the Aetherborn",
+        "desc": "An unknown aetherborn, desperately seeking a means to extend their short life, discovered a process of transformation that prolonged their existence—by giving them the ability to feed on the life essence of other beings. Since then, other aetherborn have learned and carried out this monstrous transf"
+      }
+    ],
+    "traitNames": [
+      "Darkvision",
+      "Damage Resistance",
+      "Skill Proficiency",
+      "Gift of the Aetherborn"
+    ]
+  },
+  {
+    "name": "Astral Elf",
+    "source": "AAG",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Astral Fire",
+        "desc": "You know one of the following cantrips of your choice: dancing lights, light, or sacred flame. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race)."
+      },
+      {
+        "name": "Darkvision",
+        "desc": "You can see in dim light within 60 feet of yourself as if it were bright light, and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+      },
+      {
+        "name": "Fey Ancestry",
+        "desc": "You have advantage on saving throws you make to avoid or end the charmed condition on yourself."
+      },
+      {
+        "name": "Skill Proficiency",
+        "desc": "You have proficiency in the Perception skill."
+      },
+      {
+        "name": "Starlight Step",
+        "desc": "As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+      },
+      {
+        "name": "Astral Trance",
+        "desc": "You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you remain conscious. Whenever you finish this trance, you gain proficiency in one skill of your choice and with one weapon or tool of yo"
+      }
+    ],
+    "traitNames": [
+      "Astral Fire",
+      "Darkvision",
+      "Fey Ancestry",
+      "Skill Proficiency",
+      "Starlight Step",
+      "Astral Trance"
+    ]
+  },
+  {
+    "name": "Autognome",
+    "source": "AAG",
+    "size": "Small",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Armored Casing",
+        "desc": "You are encased in thin metal or some other durable material. While you aren't wearing armor, your base Armor Class is 13 + your Dexterity modifier."
+      },
+      {
+        "name": "Built for Success",
+        "desc": "You can add a d4 to one attack roll, ability check, or saving throw you make, and you can do so after seeing the d20 roll but before the effects of the roll are resolved. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long"
+      },
+      {
+        "name": "Healing Machine",
+        "desc": "If the mending spell is cast on you, you can spend a Hit Die, roll it, and regain a number of hit points equal to the roll plus your Constitution modifier (minimum of 1 hit point). In addition, your creator designed you to benefit from several spells that preserve life but that normally don't affect"
+      },
+      {
+        "name": "Mechanical Nature",
+        "desc": "You have resistance to poison damage and immunity to disease, and you have advantage on saving throws against being paralyzed or poisoned. You don't need to eat, drink, or breathe."
+      },
+      {
+        "name": "Sentry's Rest",
+        "desc": "When you take a long rest, you spend at least 6 hours in an inactive, motionless state, instead of sleeping. In this state, you appear inert, but you remain conscious."
+      },
+      {
+        "name": "Specialized Design",
+        "desc": "You gain two tool proficiencies of your choice, selected from the Player's Handbook."
+      }
+    ],
+    "traitNames": [
+      "Armored Casing",
+      "Built for Success",
+      "Healing Machine",
+      "Mechanical Nature",
+      "Sentry's Rest",
+      "Specialized Design"
+    ]
+  },
+  {
+    "name": "Aven",
+    "source": "PSA",
+    "size": "Medium",
+    "speed": "25ft walk, 30ft fly",
+    "traits": [
+      {
+        "name": "Flight",
+        "desc": "You have a flying speed of 30 feet. You can't use your flying speed while you wear medium or heavy armor. (If your campaign uses the variant rule for encumbrance, you can't use your flying speed if you are encumbered.)"
+      }
+    ],
+    "traitNames": [
+      "Flight"
+    ]
+  },
+  {
+    "name": "Boggart",
+    "source": "LFL",
+    "size": "Medium",
+    "speed": "30ft walk",
+    "traits": [],
+    "traitNames": []
+  },
+  {
+    "name": "Bugbear",
+    "source": "MPMM",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Darkvision",
+        "desc": "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+      },
+      {
+        "name": "Fey Ancestry",
+        "desc": "You have advantage on saving throws you make to avoid or end the charmed condition on yourself."
+      },
+      {
+        "name": "Long-Limbed",
+        "desc": "When you make a melee attack on your turn, your reach for it is 5 feet greater than normal."
+      },
+      {
+        "name": "Powerful Build",
+        "desc": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+      },
+      {
+        "name": "Skill Proficiency",
+        "desc": "You are proficient in the Stealth skill. In addition, without squeezing, you can move through and stop in a space large enough for a Small creature."
+      },
+      {
+        "name": "Surprise Attack",
+        "desc": "If you hit a creature with an attack roll, the creature takes an extra 2d6 damage if it hasn't taken a turn yet in the current combat."
+      }
+    ],
+    "traitNames": [
+      "Darkvision",
+      "Fey Ancestry",
+      "Long-Limbed",
+      "Powerful Build",
+      "Skill Proficiency",
+      "Surprise Attack"
+    ]
+  },
+  {
+    "name": "Bullywug",
+    "source": "DMG",
+    "size": "Medium",
+    "speed": "20ft walk, 40ft swim",
+    "traits": [
+      {
+        "name": "Amphibious",
+        "desc": "You can breathe air and water."
+      },
+      {
+        "name": "Speak with Frogs and Toads",
+        "desc": "You can communicate simple concepts to frogs and toads when you speak in Bullywug."
+      },
+      {
+        "name": "Swamp Camouflage",
+        "desc": "You have advantage on Dexterity (Stealth) checks made to hide in swampy terrain."
+      },
+      {
+        "name": "Standing Leap",
+        "desc": "Your long jump is up to 20 feet and your high jump is up to 10 feet, with or without a running start."
+      }
+    ],
+    "traitNames": [
+      "Amphibious",
+      "Speak with Frogs and Toads",
+      "Swamp Camouflage",
+      "Standing Leap"
+    ]
+  },
+  {
+    "name": "Centaur",
+    "source": "MPMM",
+    "size": "Medium",
+    "speed": "40ft",
+    "traits": [
+      {
+        "name": "Charge",
+        "desc": "If you move at least 30 feet straight toward a target and then hit it with a melee weapon attack on the same turn, you can immediately follow that attack with a bonus action, making one attack against the target with your hooves."
+      },
+      {
+        "name": "Equine Build",
+        "desc": "You count as one size larger when determining your carrying capacity and the weight you can push or drag. In addition, any climb that requires hands and feet is especially difficult for you because of your equine legs. When you make such a climb, each foot of movement costs you 4 extra feet instead "
+      },
+      {
+        "name": "Natural Weapon",
+        "desc": "You have hooves that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier bludgeoning damage, instead of the bludgeoning damage normal for an unarmed strike."
+      },
+      {
+        "name": "Natural Affinity",
+        "desc": "Your fey connection to nature gives you an intuitive connection to the natural world and the animals within it. You therefore have proficiency in one of the following skills of your choice: Animal Handling, Medicine, Nature, or Survival."
+      }
+    ],
+    "traitNames": [
+      "Charge",
+      "Equine Build",
+      "Natural Weapon",
+      "Natural Affinity"
+    ]
+  },
+  {
+    "name": "Changeling",
+    "source": "MPMM",
+    "size": "Small/Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Changeling Instincts",
+        "desc": "Thanks to your connection to the fey realm, you gain proficiency with two of the following skills of your choice: Deception, Insight, Intimidation, Performance, or Persuasion."
+      },
+      {
+        "name": "Transformation",
+        "desc": "As an action, you change your appearance and your voice. You determine the specifics of the changes, including your coloration, hair length, and sex. You can also adjust your height between Medium and Small. You can make yourself appear as a member of another race, though none of your game statistic"
+      }
+    ],
+    "traitNames": [
+      "Changeling Instincts",
+      "Transformation"
+    ]
+  },
+  {
+    "name": "Custom Lineage",
+    "source": "TCE",
+    "size": "Small/Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Feat",
+        "desc": "You gain one feat of your choice for which you qualify."
+      },
+      {
+        "name": "Variable Trait",
+        "desc": "You gain one of the following options of your choice: (a) darkvision with a range of 60 feet or (b) proficiency in one skill of your choice."
+      }
+    ],
+    "traitNames": [
+      "Feat",
+      "Variable Trait"
+    ]
+  },
+  {
+    "name": "Deep Gnome",
+    "source": "MPMM",
+    "size": "Small",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Superior Darkvision",
+        "desc": "You can see in dim light within 120 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+      },
+      {
+        "name": "Gift of the Svirfneblin",
+        "desc": "Starting at 3rd level, you can cast the disguise self spell with this trait. Starting at 5th level, you can also cast the nondetection spell with it, without requiring a material component. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish"
+      },
+      {
+        "name": "Magic Resistance",
+        "desc": "You have advantage on Intelligence, Wisdom, and Charisma saving throws against spells."
+      },
+      {
+        "name": "Svirfneblin Camouflage",
+        "desc": "When you make a Dexterity (Stealth) check, you can make the check with advantage. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+      }
+    ],
+    "traitNames": [
+      "Superior Darkvision",
+      "Gift of the Svirfneblin",
+      "Magic Resistance",
+      "Svirfneblin Camouflage"
+    ]
+  },
+  {
+    "name": "Dhampir",
+    "source": "VRGR",
+    "size": "Small/Medium",
+    "speed": "35ft walk, Trueft climb",
+    "traits": [
+      {
+        "name": "Ancestral Legacy",
+        "desc": "If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it. If you don't keep any of those elements or you choose this lineage at character creation, you gain pro"
+      },
+      {
+        "name": "Darkvision",
+        "desc": "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness as shades of gray."
+      },
+      {
+        "name": "Deathless Nature",
+        "desc": "You don't need to breathe."
+      },
+      {
+        "name": "Spider Climb",
+        "desc": "You have a climbing speed equal to your walking speed. In addition, at 3rd level, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free."
+      },
+      {
+        "name": "Vampiric Bite",
+        "desc": "Your fanged bite is a natural weapon, which counts as a simple melee weapon with which you are proficient. You add your Constitution modifier, instead of your Strength modifier, to the attack and damage rolls when you attack with this bite. It deals 1d4 piercing damage on a hit. While you are missin"
+      }
+    ],
+    "traitNames": [
+      "Ancestral Legacy",
+      "Darkvision",
+      "Deathless Nature",
+      "Spider Climb",
+      "Vampiric Bite"
+    ]
+  },
+  {
+    "name": "Dragonborn",
+    "source": "XPHB",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Draconic Ancestry",
+        "desc": "Your lineage stems from a dragon progenitor. Choose the kind of dragon from the Draconic Ancestors table. Your choice affects your Breath Weapon and Damage Resistance traits as well as your appearance."
+      },
+      {
+        "name": "Breath Weapon",
+        "desc": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone [Area of Effect] or a 30-foot Line [Area of Effect] that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity savin"
+      },
+      {
+        "name": "Damage Resistance",
+        "desc": "You have Resistance to the damage type determined by your Draconic Ancestry trait."
+      },
+      {
+        "name": "Darkvision",
+        "desc": "You have Darkvision with a range of 60 feet."
+      },
+      {
+        "name": "Draconic Flight",
+        "desc": "When you reach character level 5, you can channel draconic magic to give yourself temporary flight. As a Bonus Action, you sprout spectral wings on your back that last for 10 minutes or until you retract the wings (no action required) or have the Incapacitated condition. During that time, you have a"
+      }
+    ],
+    "traitNames": [
+      "Draconic Ancestry",
+      "Breath Weapon",
+      "Damage Resistance",
+      "Darkvision",
+      "Draconic Flight"
+    ]
+  },
+  {
+    "name": "Duergar",
+    "source": "MPMM",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Superior Darkvision",
+        "desc": "You can see in dim light within 120 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+      },
+      {
+        "name": "Innate Spellcasting",
+        "desc": "Starting at 3rd level, you can cast the enlarge/reduce spell on yourself with this trait, without requiring a material component. Starting at 5th level, you can also cast the invisibility spell on yourself with this trait, without requiring a material component. Once you cast either of these spells "
+      },
+      {
+        "name": "Damage Resistance",
+        "desc": "You have advantage on saving throws you make to avoid or end the poisoned condition on yourself. You also have resistance to poison damage."
+      },
+      {
+        "name": "Psionic Fortitude",
+        "desc": "You have advantage on saving throws you make to avoid or end the charmed or stunned condition on yourself."
+      }
+    ],
+    "traitNames": [
+      "Superior Darkvision",
+      "Innate Spellcasting",
+      "Damage Resistance",
+      "Psionic Fortitude"
+    ]
+  },
+  {
+    "name": "Dwarf",
+    "source": "XPHB",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Superior Darkvision",
+        "desc": "You have Darkvision with a range of 120 feet."
+      },
+      {
+        "name": "Damage Resistance",
+        "desc": "You have Resistance to Poison damage. You also have Advantage on saving throws you make to avoid or end the Poisoned condition."
+      },
+      {
+        "name": "Dwarven Toughness",
+        "desc": "Your Hit Points maximum increases by 1, and it increases by 1 again whenever you gain a level."
+      },
+      {
+        "name": "Stonecunning",
+        "desc": "As a Bonus Action, you gain Tremorsense with a range of 60 feet for 10 minutes. You must be on a stone surface or touching a stone surface to use this Tremorsense. The stone can be natural or worked. You can use this Bonus Action a number of times equal to your Proficiency, and you regain all expend"
+      }
+    ],
+    "traitNames": [
+      "Superior Darkvision",
+      "Damage Resistance",
+      "Dwarven Toughness",
+      "Stonecunning"
+    ]
+  },
+  {
+    "name": "Eladrin",
+    "source": "MPMM",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Darkvision",
+        "desc": "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+      },
+      {
+        "name": "Fey Ancestry",
+        "desc": "You have advantage on saving throws you make to avoid or end the charmed condition on yourself."
+      },
+      {
+        "name": "Fey Step",
+        "desc": "As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. When you reach 3rd level, your Fey Step gain an additional effect ba"
+      },
+      {
+        "name": "Skill Proficiency",
+        "desc": "You have proficiency in the Perception skill."
+      },
+      {
+        "name": "Trance",
+        "desc": "You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness. Whenever you finish this trance, you can change your season, and you can gain two proficiencies that you don't "
+      }
+    ],
+    "traitNames": [
+      "Darkvision",
+      "Fey Ancestry",
+      "Fey Step",
+      "Skill Proficiency",
+      "Trance"
+    ]
+  },
+  {
+    "name": "Elf",
+    "source": "XPHB",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Darkvision",
+        "desc": "You have Darkvision with a range of 60 feet."
+      },
+      {
+        "name": "Elven Lineage",
+        "desc": "You are part of a lineage that grants you supernatural abilities. Choose a lineage from the Elven Lineages table. You gain the level 1 benefit of that lineage. When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can"
+      },
+      {
+        "name": "Fey Ancestry",
+        "desc": "You have Advantage on saving throws you make to avoid or end the Charmed condition."
+      },
+      {
+        "name": "Skill Proficiency",
+        "desc": "You have proficiency in the Insight, Perception, or Survival skill."
+      },
+      {
+        "name": "Trance",
+        "desc": "You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness."
+      }
+    ],
+    "traitNames": [
+      "Darkvision",
+      "Elven Lineage",
+      "Fey Ancestry",
+      "Skill Proficiency",
+      "Trance"
+    ]
+  },
+  {
+    "name": "Faerie",
+    "source": "LFL",
+    "size": "Medium",
+    "speed": "30ft walk",
+    "traits": [],
+    "traitNames": []
+  },
+  {
+    "name": "Fairy",
+    "source": "MPMM",
+    "size": "Small",
+    "speed": "30ft walk, Trueft fly",
+    "traits": [
+      {
+        "name": "Innate Spellcasting",
+        "desc": "You know the druidcraft cantrip. Starting at 3rd level, you can cast the faerie fire spell with this trait. Starting at 5th level, you can also cast the enlarge/reduce spell with this trait. Once you cast faerie fire or enlarge/reduce with this trait, you can't cast that spell with it again until yo"
+      },
+      {
+        "name": "Flight",
+        "desc": "Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor."
+      }
+    ],
+    "traitNames": [
+      "Innate Spellcasting",
+      "Flight"
+    ]
+  },
+  {
+    "name": "Firbolg",
+    "source": "MPMM",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Innate Spellcasting",
+        "desc": "You can cast detect magic and disguise self spells with this trait. When you use this version of disguise self, you can seem up to 3 feet shorter or taller. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast t"
+      },
+      {
+        "name": "Hidden Step",
+        "desc": "As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long re"
+      },
+      {
+        "name": "Powerful Build",
+        "desc": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+      },
+      {
+        "name": "Speech of Beast and Leaf",
+        "desc": "You have the ability to communicate in a limited manner with Beasts, Plants, and vegetation. They can understand the meaning of your words, though you have no special ability to understand them in return. You have advantage on all Charisma checks you make to influence them."
+      }
+    ],
+    "traitNames": [
+      "Innate Spellcasting",
+      "Hidden Step",
+      "Powerful Build",
+      "Speech of Beast and Leaf"
+    ]
+  },
+  {
+    "name": "Flamekin",
+    "source": "LFL",
+    "size": "Medium",
+    "speed": "30ft walk",
+    "traits": [],
+    "traitNames": []
+  },
+  {
+    "name": "Genasi",
+    "source": "MPMM",
+    "size": "Small/Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Darkvision",
+        "desc": "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+      }
+    ],
+    "traitNames": [
+      "Darkvision"
+    ]
+  },
+  {
+    "name": "Giff",
+    "source": "AAG",
+    "size": "Medium",
+    "speed": "30ft walk, Trueft swim",
+    "traits": [
+      {
+        "name": "Astral Spark",
+        "desc": "Your psychic connection to the Astral Plane enables you to mystically access a spark of divine power, which you can channel through your weapons. When you hit a target with a simple or martial weapon, you can cause the target to take extra force damage equal to your proficiency bonus. You can use th"
+      },
+      {
+        "name": "Firearms Mastery",
+        "desc": "You have a mystical connection to firearms that traces back to the gods of the giff, who delighted in such weapons. You have proficiency with all firearms and ignore the LD property of any firearm. In addition, attacking at long range with a firearm doesn't impose disadvantage on your attack roll."
+      },
+      {
+        "name": "Hippo Build",
+        "desc": "You have advantage on Strength-based ability checks and Strength saving throws. In addition, you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+      }
+    ],
+    "traitNames": [
+      "Astral Spark",
+      "Firearms Mastery",
+      "Hippo Build"
+    ]
+  },
+  {
+    "name": "Gith",
+    "source": "MTF",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [],
+    "traitNames": []
+  },
+  {
+    "name": "Githyanki",
+    "source": "MPMM",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Astral Knowledge",
+        "desc": "You can mystically access a reservoir of experiences of entities connected to the Astral Plane. Whenever you finish a long rest, you gain proficiency in one skill of your choice and with one weapon or tool of your choice, selected from the Player's Handbook, as you momentarily project your conscious"
+      },
+      {
+        "name": "Innate Spellcasting",
+        "desc": "You know the mage hand cantrip, and the hand is invisible when you cast the cantrip with this trait. Starting at 3rd level, you can cast the jump spell with this trait. Starting at 5th level, you can also cast misty step with it. Once you cast jump or misty step with this trait, you can't cast that "
+      },
+      {
+        "name": "Damage Resistance",
+        "desc": "You have resistance to psychic damage."
+      }
+    ],
+    "traitNames": [
+      "Astral Knowledge",
+      "Innate Spellcasting",
+      "Damage Resistance"
+    ]
+  },
+  {
+    "name": "Githzerai",
+    "source": "MPMM",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Innate Spellcasting",
+        "desc": "You know the mage hand cantrip, and the hand is invisible when you cast the cantrip with this trait. Starting at 3rd level, you can cast the shield spell with this trait. Starting at 5th level, you can also cast the detect thoughts spell with it. Once you cast shield or detect thoughts spell with th"
+      },
+      {
+        "name": "Mental Discipline",
+        "desc": "Your innate psychic defenses grant you advantage on saving throws you make to avoid or end the charmed and frightened conditions on yourself."
+      },
+      {
+        "name": "Damage Resistance",
+        "desc": "You have resistance to psychic damage."
+      }
+    ],
+    "traitNames": [
+      "Innate Spellcasting",
+      "Mental Discipline",
+      "Damage Resistance"
+    ]
+  },
+  {
+    "name": "Gnoll",
+    "source": "DMG",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Natural Weapon",
+        "desc": "Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+      },
+      {
+        "name": "Darkvision",
+        "desc": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "name": "Rampage",
+        "desc": "When you reduce a creature to 0 hit points with a melee attack on your turn, you can take a bonus action to move up to half your speed and make a bite attack."
+      }
+    ],
+    "traitNames": [
+      "Natural Weapon",
+      "Darkvision",
+      "Rampage"
+    ]
+  },
+  {
+    "name": "Gnome",
+    "source": "XPHB",
+    "size": "Small",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Darkvision",
+        "desc": "You have Darkvision with a range of 60 feet."
+      },
+      {
+        "name": "Magic Resistance",
+        "desc": "You have Advantage on Intelligence, Wisdom, and Charisma saving throws."
+      },
+      {
+        "name": "Gnomish Lineage",
+        "desc": "You are part of a lineage that grants you supernatural abilities. Choose one of the following options; whichever one you choose, Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage):"
+      }
+    ],
+    "traitNames": [
+      "Darkvision",
+      "Magic Resistance",
+      "Gnomish Lineage"
+    ]
+  },
+  {
+    "name": "Goblin",
+    "source": "MPMM",
+    "size": "Small",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Darkvision",
+        "desc": "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were in dim light. You discern colors in that darkness only as shades of gray."
+      },
+      {
+        "name": "Fey Ancestry",
+        "desc": "You have advantage on saving throws you make to avoid or end the charmed condition on yourself."
+      },
+      {
+        "name": "Fury of the Small",
+        "desc": "When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your proficiency bonus. You can use this trait a number of times equal to your proficiency bonus, regaini"
+      },
+      {
+        "name": "Nimble Escape",
+        "desc": "You can take the Disengage or Hide action as a bonus action on each of your turns."
+      }
+    ],
+    "traitNames": [
+      "Darkvision",
+      "Fey Ancestry",
+      "Fury of the Small",
+      "Nimble Escape"
+    ]
+  },
+  {
+    "name": "Goliath",
+    "source": "XPHB",
+    "size": "Medium",
+    "speed": "35ft",
+    "traits": [
+      {
+        "name": "Giant Ancestry",
+        "desc": "You are descended from Giants. Choose one of the following benefits—a supernatural boon from your ancestry; you can use the chosen benefit a number of times equal to your Proficiency, and you regain all expended uses when you finish a Long Rest:"
+      },
+      {
+        "name": "Transformation",
+        "desc": "Starting at character level 5, you can change your size to Large as a Bonus Action if you're in a big enough space. This transformation lasts for 10 minutes or until you end it (no action required). For that duration, you have Advantage on Strength checks, and your Speed increases by 10 feet. Once y"
+      },
+      {
+        "name": "Powerful Build",
+        "desc": "You have Advantage on any ability check you make to end the Grappled condition. You also count as one size larger when determining your carrying capacity."
+      }
+    ],
+    "traitNames": [
+      "Giant Ancestry",
+      "Transformation",
+      "Powerful Build"
+    ]
+  },
+  {
+    "name": "Grimlock",
+    "source": "DMG",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Blindsight",
+        "desc": "You have no eyes, and cannot be blinded. You can perceive your surroundings within 30 ft., or 10 ft. while deafened. You are considered blind beyond this radius."
+      },
+      {
+        "name": "Keen Hearing and Smell",
+        "desc": "You have advantage on Wisdom (Perception) checks that rely on hearing or smell."
+      },
+      {
+        "name": "Stone Camouflage",
+        "desc": "You have advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
+      }
+    ],
+    "traitNames": [
+      "Blindsight",
+      "Keen Hearing and Smell",
+      "Stone Camouflage"
+    ]
+  },
+  {
+    "name": "Grung",
+    "source": "OGA",
+    "size": "Small",
+    "speed": "25ft walk, 25ft climb",
+    "traits": [
+      {
+        "name": "Skill Proficiency",
+        "desc": "You have proficiency in the Perception skill."
+      },
+      {
+        "name": "Amphibious",
+        "desc": "You can breathe air and water."
+      },
+      {
+        "name": "Damage Immunity",
+        "desc": "You're immune to poison damage and the poisoned condition."
+      },
+      {
+        "name": "Poisonous Skin",
+        "desc": "Any creature that grapples you or otherwise comes into direct contact with your skin must succeed on a 12 Constitution saving throw or become poisoned for 1 minute. A poisoned creature no longer in direct contact with you can repeat the saving throw at the end of each of its turns, ending the effect"
+      },
+      {
+        "name": "Standing Leap",
+        "desc": "Your long jump is up to 25 feet and your high jump is up to 15 feet, with or without a running start."
+      },
+      {
+        "name": "Water Dependency",
+        "desc": "If you fail to immerse yourself in water for at least 1 hour during a day, you suffer one level of exhaustion at the end of that day. You can only recover from this exhaustion through magic or by immersing yourself in water for at least 1 hour."
+      }
+    ],
+    "traitNames": [
+      "Skill Proficiency",
+      "Amphibious",
+      "Damage Immunity",
+      "Poisonous Skin",
+      "Standing Leap",
+      "Water Dependency"
+    ]
+  },
+  {
+    "name": "Hadozee",
+    "source": "AAG",
+    "size": "Small/Medium",
+    "speed": "30ft walk, Trueft climb",
+    "traits": [
+      {
+        "name": "Dexterous Feet",
+        "desc": "As a bonus action, you can use your feet to manipulate an object, open or close a door or container, or pick up or set down a Tiny object."
+      },
+      {
+        "name": "Glide",
+        "desc": "When you fall at least 10 feet above the ground, you can use your reaction to extend your skin membranes to glide horizontally a number of feet equal to your walking speed, and you take 0 damage from the fall. You determine the direction of the glide."
+      },
+      {
+        "name": "Hadozee Dodge",
+        "desc": "The magic that runs in your veins heightens your natural defenses. When you take damage, you can use your reaction to roll a d6. Add your proficiency bonus to the number rolled, and reduce the damage you take by an amount equal to that total (minimum of 0 damage). You can use this trait a number of "
+      }
+    ],
+    "traitNames": [
+      "Dexterous Feet",
+      "Glide",
+      "Hadozee Dodge"
+    ]
+  },
+  {
+    "name": "Half-Elf",
+    "source": "PHB",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Darkvision",
+        "desc": "Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "name": "Fey Ancestry",
+        "desc": "You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+      },
+      {
+        "name": "Skill Versatility",
+        "desc": "You gain proficiency in two skills of your choice."
+      }
+    ],
+    "traitNames": [
+      "Darkvision",
+      "Fey Ancestry",
+      "Skill Versatility"
+    ]
+  },
+  {
+    "name": "Half-Orc",
+    "source": "PHB",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Darkvision",
+        "desc": "Thanks to your orc blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "name": "Skill Proficiency",
+        "desc": "You gain proficiency in the Intimidation skill."
+      },
+      {
+        "name": "Relentless Endurance",
+        "desc": "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest."
+      },
+      {
+        "name": "Savage Attacks",
+        "desc": "When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
+      }
+    ],
+    "traitNames": [
+      "Darkvision",
+      "Skill Proficiency",
+      "Relentless Endurance",
+      "Savage Attacks"
+    ]
+  },
+  {
+    "name": "Halfling",
+    "source": "XPHB",
+    "size": "Small",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Brave",
+        "desc": "You have Advantage on saving throws you make to avoid or end the Frightened condition."
+      },
+      {
+        "name": "Halfling Nimbleness",
+        "desc": "You can move through the space of any creature that is a size larger than you, but you can't stop in the same space."
+      },
+      {
+        "name": "Luck",
+        "desc": "When you roll a 1 on the d20 of a D20 Test, you can reroll the die, and you must use the new roll."
+      },
+      {
+        "name": "Naturally Stealthy",
+        "desc": "You can take the Hide action even when you are obscured only by a creature that is at least one size larger than you."
+      }
+    ],
+    "traitNames": [
+      "Brave",
+      "Halfling Nimbleness",
+      "Luck",
+      "Naturally Stealthy"
+    ]
+  },
+  {
+    "name": "Harengon",
+    "source": "MPMM",
+    "size": "Small/Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Hare-Trigger",
+        "desc": "You can add your proficiency bonus to your initiative rolls."
+      },
+      {
+        "name": "Skill Proficiency",
+        "desc": "You have proficiency in the Perception skill."
+      },
+      {
+        "name": "Lucky Footwork",
+        "desc": "When you fail a Dexterity saving throw, you can use your reaction to roll a d4 and add it to the save, potentially turning the failure into a success. You can't use this reaction if you're prone or your speed is 0."
+      },
+      {
+        "name": "Rabbit Hop",
+        "desc": "As a bonus action, you can jump a number of feet equal to five times your proficiency bonus, without provoking opportunity attacks. You can use this trait only if your speed is greater than 0. You can use it a number of times equal to your proficiency bonus, and you regain all expended uses when you"
+      }
+    ],
+    "traitNames": [
+      "Hare-Trigger",
+      "Skill Proficiency",
+      "Lucky Footwork",
+      "Rabbit Hop"
+    ]
+  },
+  {
+    "name": "Hexblood",
+    "source": "VRGR",
+    "size": "Small/Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Ancestral Legacy",
+        "desc": "If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it. If you don't keep any of those elements or you choose this lineage at character creation, you gain pro"
+      },
+      {
+        "name": "Darkvision",
+        "desc": "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness as shades of gray."
+      },
+      {
+        "name": "Eerie Token",
+        "desc": "As a bonus action, you can harmlessly remove a lock of your hair, one of your nails, or one of your teeth. This token is imbued with magic until you finish a long rest. While the token is imbued in this way, you can take these actions:  Once you create a token using this feature, you can't do so aga"
+      },
+      {
+        "name": "Hex Magic",
+        "desc": "You can cast the disguise self and hex spells with this trait. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have. Intelligence, Wisdom, or Charisma is your spellcas"
+      }
+    ],
+    "traitNames": [
+      "Ancestral Legacy",
+      "Darkvision",
+      "Eerie Token",
+      "Hex Magic"
+    ]
+  },
+  {
+    "name": "Hobgoblin",
+    "source": "MPMM",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Darkvision",
+        "desc": "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+      },
+      {
+        "name": "Fey Ancestry",
+        "desc": "You have advantage on saving throws you make to avoid or end the charmed condition on yourself."
+      },
+      {
+        "name": "Fey Gift",
+        "desc": "You can use this trait to take the Help action as a bonus action, and you can do so a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest. Starting at 3rd level, choose one of the options below each time you take the Help action with this trait:"
+      },
+      {
+        "name": "Fortune from the Many",
+        "desc": "If you miss with an attack roll or fail an ability check or a saving throw, you can draw on your bonds of reciprocity to gain a bonus to the roll equal to the number of allies you can see within 30 feet of you (maximum bonus of +3). You can use this trait a number of times equal to your proficiency "
+      }
+    ],
+    "traitNames": [
+      "Darkvision",
+      "Fey Ancestry",
+      "Fey Gift",
+      "Fortune from the Many"
+    ]
+  },
+  {
+    "name": "Human",
+    "source": "XPHB",
+    "size": "Small/Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Resourceful",
+        "desc": "You gain Heroic Inspiration whenever you finish a Long Rest."
+      },
+      {
+        "name": "Skill Proficiency",
+        "desc": "You gain proficiency in one skill of your choice."
+      },
+      {
+        "name": "Versatile",
+        "desc": "You gain an Origin feat of your choice."
+      }
+    ],
+    "traitNames": [
+      "Resourceful",
+      "Skill Proficiency",
+      "Versatile"
+    ]
+  },
+  {
+    "name": "Kalashtar",
+    "source": "ERLW",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Dual Mind",
+        "desc": "You have advantage on all Wisdom saving throws."
+      },
+      {
+        "name": "Mental Discipline",
+        "desc": "You have resistance to psychic damage."
+      },
+      {
+        "name": "Mind Link",
+        "desc": "You can speak telepathically to any creature you can see, provided the creature is within a number of feet of you equal to 10 times your level. You don't need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least o"
+      },
+      {
+        "name": "Severed from Dreams",
+        "desc": "Kalashtar sleep, but they don't connect to the plane of dreams as other creatures do. Instead, their minds draw from the memories of their otherworldly spirit while they sleep. As such, you are immune to spells and other magical effects that require you to dream, like dream, but not to spells and ot"
+      }
+    ],
+    "traitNames": [
+      "Dual Mind",
+      "Mental Discipline",
+      "Mind Link",
+      "Severed from Dreams"
+    ]
+  },
+  {
+    "name": "Kender",
+    "source": "DSotDQ",
+    "size": "Small",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Fearless",
+        "desc": "You have advantage on saving throws you make to avoid or end the frightened condition on yourself. When you fail a saving throw to avoid or end the frightened condition on yourself, you can choose to succeed instead. Once you succeed on a saving throw in this way, you can't do so again until you fin"
+      },
+      {
+        "name": "Kender Curiosity",
+        "desc": "Thanks to the mystical origin of your people, you gain proficiency with one of the following skills of your choice: Insight, Investigation, Sleight of Hand, Stealth, or Survival."
+      },
+      {
+        "name": "Taunt",
+        "desc": "You have an extraordinary ability to fluster creatures. As a bonus action, you can unleash a string of provoking words at a creature within 60 feet of yourself that can hear and understand you. The target must succeed on a Wisdom saving throw, or it has disadvantage on attack rolls against targets o"
+      }
+    ],
+    "traitNames": [
+      "Fearless",
+      "Kender Curiosity",
+      "Taunt"
+    ]
+  },
+  {
+    "name": "Kenku",
+    "source": "MPMM",
+    "size": "Small/Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Expert Duplication",
+        "desc": "When you copy writing or craftwork produced by yourself or someone else, you have advantage on any ability checks you make to produce an exact duplicate."
+      },
+      {
+        "name": "Kenku Recall",
+        "desc": "Thanks to your supernaturally good memory, you have proficiency in two skills of your choice. Moreover, when you make an ability check using any skill in which you have proficiency, you can give yourself advantage on the check before rolling the d20. You can give yourself advantage in this way a num"
+      },
+      {
+        "name": "Mimicry",
+        "desc": "You can accurately mimic sounds you have heard, including voices. A creature that hears the sounds you make can tell they are imitations only with a successful Wisdom (Insight) check against a DC of 8 + your proficiency bonus + your Charisma modifier."
+      }
+    ],
+    "traitNames": [
+      "Expert Duplication",
+      "Kenku Recall",
+      "Mimicry"
+    ]
+  },
+  {
+    "name": "Khenra",
+    "source": "PSA",
+    "size": "Medium",
+    "speed": "35ft",
+    "traits": [
+      {
+        "name": "Khenra Weapon Training",
+        "desc": "You have proficiency with the khopesh (longsword), spear, and javelin."
+      },
+      {
+        "name": "Khenra Twins",
+        "desc": "If your twin is alive and you can see your twin, whenever you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll. If your twin is dead (or if you were born without a twin), you can't be frightened."
+      }
+    ],
+    "traitNames": [
+      "Khenra Weapon Training",
+      "Khenra Twins"
+    ]
+  },
+  {
+    "name": "Khoravar",
+    "source": "EFA",
+    "size": "Small/Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Darkvision",
+        "desc": "You have Darkvision with a range of 60 feet."
+      },
+      {
+        "name": "Fey Ancestry",
+        "desc": "You have Advantage on saving throws you make to avoid or end the Charmed condition."
+      },
+      {
+        "name": "Fey Gift",
+        "desc": "You know the Friends cantrip. Whenever you finish a Long Rest, you can replace that cantrip with a different cantrip from the Cleric, Druid, or Wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose the ability when you select this species)."
+      },
+      {
+        "name": "Lethargy Resilience",
+        "desc": "When you fail a saving throw to avoid or end the Unconscious condition, you can succeed instead. Once you use this trait, you can't do so again until you finish 1d4 Long Rest."
+      },
+      {
+        "name": "Skill Versatility",
+        "desc": "You gain proficiency in one skill or with one tool of your choice. Whenever you finish a Long Rest, you can replace it with another skill or tool proficiency."
+      }
+    ],
+    "traitNames": [
+      "Darkvision",
+      "Fey Ancestry",
+      "Fey Gift",
+      "Lethargy Resilience",
+      "Skill Versatility"
+    ]
+  },
+  {
+    "name": "Kithkin",
+    "source": "LFL",
+    "size": "Medium",
+    "speed": "30ft walk",
+    "traits": [],
+    "traitNames": []
+  },
+  {
+    "name": "Kobold",
+    "source": "MPMM",
+    "size": "Small",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Darkvision",
+        "desc": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were in dim light. You discern colors in that darkness only as shades of gray."
+      },
+      {
+        "name": "Draconic Cry",
+        "desc": "As a bonus action, you let out a cry at your enemies within 10 feet of you. Until the start of your next turn, you and your allies have advantage on attack rolls against any of those enemies who could hear you. You can use this trait a number of times equal to your proficiency bonus, and you regain "
+      },
+      {
+        "name": "Kobold Legacy",
+        "desc": "Kobold's connections to dragons can manifest in unpredictable ways in an individual kobold. Choose one of the following legacy options for your kobold."
+      }
+    ],
+    "traitNames": [
+      "Darkvision",
+      "Draconic Cry",
+      "Kobold Legacy"
+    ]
+  },
+  {
+    "name": "Kor",
+    "source": "PSZ",
+    "size": "Medium",
+    "speed": "30ft walk, 30ft climb",
+    "traits": [
+      {
+        "name": "Brave",
+        "desc": "You have advantage on saving throws against being frightened."
+      },
+      {
+        "name": "Climbing Speed",
+        "desc": "You also have a climbing speed of 30 feet as long as you are not encumbered or wearing heavy armor."
+      },
+      {
+        "name": "Kor Climbing",
+        "desc": "You have proficiency in the Athletics and Acrobatics skills."
+      },
+      {
+        "name": "Lucky",
+        "desc": "When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
+      }
+    ],
+    "traitNames": [
+      "Brave",
+      "Climbing Speed",
+      "Kor Climbing",
+      "Lucky"
+    ]
+  },
+  {
+    "name": "Kuo-Toa",
+    "source": "DMG",
+    "size": "Medium",
+    "speed": "30ft walk, 30ft swim",
+    "traits": [
+      {
+        "name": "Amphibious",
+        "desc": "You can breathe air and water."
+      },
+      {
+        "name": "Otherworldly Perception",
+        "desc": "You can sense the presence of any creature within 30 feet of you that is invisible or on the Ethereal Plane. You can pinpoint such a creature that is moving."
+      },
+      {
+        "name": "Slippery",
+        "desc": "You have advantage on ability checks and saving throws made to escape a grapple."
+      },
+      {
+        "name": "Sunlight Sensitivity",
+        "desc": "While in sunlight, you have disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+      },
+      {
+        "name": "Superior Darkvision",
+        "desc": "You have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      }
+    ],
+    "traitNames": [
+      "Amphibious",
+      "Otherworldly Perception",
+      "Slippery",
+      "Sunlight Sensitivity",
+      "Superior Darkvision"
+    ]
+  },
+  {
+    "name": "Leonin",
+    "source": "MOT",
+    "size": "Medium",
+    "speed": "35ft",
+    "traits": [
+      {
+        "name": "Darkvision",
+        "desc": "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "name": "Natural Weapon",
+        "desc": "Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you can deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+      },
+      {
+        "name": "Hunter's Instincts",
+        "desc": "You have proficiency in one of the following skills of your choice: Athletics, Intimidation, Perception, or Survival."
+      },
+      {
+        "name": "Daunting Roar",
+        "desc": "As a bonus action, you can let out an especially menacing roar. Creatures of your choice within 10 feet of you that can hear you must succeed on a Wisdom saving throw or become frightened of you until the end of your next turn. The DC of the save equals 8 + your proficiency bonus + your Constitution"
+      }
+    ],
+    "traitNames": [
+      "Darkvision",
+      "Natural Weapon",
+      "Hunter's Instincts",
+      "Daunting Roar"
+    ]
+  },
+  {
+    "name": "Lizardfolk",
+    "source": "MPMM",
+    "size": "Medium",
+    "speed": "30ft walk, Trueft swim",
+    "traits": [
+      {
+        "name": "Natural Weapon",
+        "desc": "You have a fanged maw that you can use to make unarmed strikes. When you hit with it, the strike deals 1d6 + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
+      },
+      {
+        "name": "Hold Breath",
+        "desc": "You can hold your breath for up to 15 minutes at a time."
+      },
+      {
+        "name": "Hungry Jaws",
+        "desc": "You can throw yourself into a feeding frenzy. As a bonus action, you can make a special attack with your Bite. If the attack hits, it deals its normal damage, and you gain temporary hit points equal to your proficiency bonus. You can use this trait a number of times equal to your proficiency bonus, "
+      },
+      {
+        "name": "Natural Armor",
+        "desc": "You have tough, scaly skin. When you aren't wearing armor, your base AC is 13 + Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor."
+      },
+      {
+        "name": "Nature's Intuition",
+        "desc": "Thanks to your mystical connection to nature, you gain proficiency with two of the following skills of your choice: Animal Handling, Medicine, Nature, Perception, Stealth, or Survival."
+      }
+    ],
+    "traitNames": [
+      "Natural Weapon",
+      "Hold Breath",
+      "Hungry Jaws",
+      "Natural Armor",
+      "Nature's Intuition"
+    ]
+  },
+  {
+    "name": "Locathah",
+    "source": "LR",
+    "size": "Medium",
+    "speed": "30ft walk, 30ft swim",
+    "traits": [
+      {
+        "name": "Natural Armor",
+        "desc": "You have tough, scaly skin. When you aren't wearing armor, your AC is 12 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor."
+      },
+      {
+        "name": "Observant & Athletic",
+        "desc": "You have proficiency in the Athletics and Perception skills."
+      },
+      {
+        "name": "Leviathan Will",
+        "desc": "You have advantage on saving throws against being charmed, frightened, paralyzed, poisoned, stunned, or put to sleep."
+      },
+      {
+        "name": "Limited Amphibiousness",
+        "desc": "You can breathe air and water, but you need to be submerged at least once every 4 hours to avoid suffocating."
+      }
+    ],
+    "traitNames": [
+      "Natural Armor",
+      "Observant & Athletic",
+      "Leviathan Will",
+      "Limited Amphibiousness"
+    ]
+  },
+  {
+    "name": "Lorwyn Changeling",
+    "source": "LFL",
+    "size": "Small/Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Transformation",
+        "desc": "As an action, you can reshape your body to a two-legged Humanoid shape or to a four-legged Beast shape. While you have a Humanoid shape, you can wear clothing and armor made for a Humanoid of your size."
+      },
+      {
+        "name": "Superior Darkvision",
+        "desc": "You have Darkvision with a range of 120 feet."
+      },
+      {
+        "name": "Delightful Imitator",
+        "desc": "You have proficiency in the Deception or Performance skill."
+      },
+      {
+        "name": "Unpredictable Movement",
+        "desc": "When you roll Initiative, you can immediately move up to half your Speed, provided you don't have Disadvantage on the Initiative roll."
+      }
+    ],
+    "traitNames": [
+      "Transformation",
+      "Superior Darkvision",
+      "Delightful Imitator",
+      "Unpredictable Movement"
+    ]
+  },
+  {
+    "name": "Loxodon",
+    "source": "GGR",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Powerful Build",
+        "desc": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+      },
+      {
+        "name": "Loxodon Serenity",
+        "desc": "You have advantage on saving throws against being charmed or frightened."
+      },
+      {
+        "name": "Natural Armor",
+        "desc": "You have thick, leathery skin. When you aren't wearing armor, your AC is 12 + your Constitution modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor. When the game giv"
+      },
+      {
+        "name": "Trunk",
+        "desc": "You can grasp things with your trunk, and you can use it as a snorkel. It has a reach of 5 feet, and it can lift a number of pounds equal to five times your Strength score. You can use it to do the following simple tasks: lift, drop, hold, push, or pull an object or a creature; open or close a door "
+      },
+      {
+        "name": "Keen Smell",
+        "desc": "Thanks to your sensitive trunk, you have advantage on Wisdom (Perception), Wisdom (Survival), and Intelligence (Investigation) checks that involve smell."
+      }
+    ],
+    "traitNames": [
+      "Powerful Build",
+      "Loxodon Serenity",
+      "Natural Armor",
+      "Trunk",
+      "Keen Smell"
+    ]
+  },
+  {
+    "name": "Merfolk",
+    "source": "DMG",
+    "size": "Medium",
+    "speed": "10ft walk, 40ft swim",
+    "traits": [
+      {
+        "name": "Amphibious",
+        "desc": "You can breathe air and water."
+      }
+    ],
+    "traitNames": [
+      "Amphibious"
+    ]
+  },
+  {
+    "name": "Minotaur",
+    "source": "MPMM",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Natural Weapon",
+        "desc": "You have horns that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike."
+      },
+      {
+        "name": "Goring Rush",
+        "desc": "Immediately after you take the Dash action on your turn and move at least 20 feet, you can make one melee attack with your Horns as a bonus action."
+      },
+      {
+        "name": "Hammering Horns",
+        "desc": "Immediately after you hit a creature with a melee attack as part of the Attack action on your turn, you can use a bonus action to attempt to push that target with your horns. The target must be within 5 feet of you and no more than one size larger than you. Unless it succeeds on a Strength saving th"
+      },
+      {
+        "name": "Labyrinthine Recall",
+        "desc": "You always know which direction is north, and you have advantage on any Wisdom (Survival) check you make to navigate or track."
+      }
+    ],
+    "traitNames": [
+      "Natural Weapon",
+      "Goring Rush",
+      "Hammering Horns",
+      "Labyrinthine Recall"
+    ]
+  },
+  {
+    "name": "Naga",
+    "source": "PSA",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Speed Burst",
+        "desc": "By lowering your body to the ground and propelling yourself with your arms, you can move more quickly for a time. As a bonus action on your turn, if you have both hands free, you can increase your walking speed by 5 feet until the end of your turn."
+      },
+      {
+        "name": "Natural Weapons",
+        "desc": "Your fanged maw and constricting serpentine body are natural weapons, which you can use to make unarmed strikes. If you hit with your bite, you deal piercing damage equal to 1d4 + your Strength modifier, and your target must make a Constitution saving throw (8 + your proficiency bonus + your Constit"
+      },
+      {
+        "name": "Damage Immunity",
+        "desc": "You are immune to poison damage and can't be poisoned."
+      },
+      {
+        "name": "Poison Affinity",
+        "desc": "You gain proficiency with the poisoner's kit."
+      }
+    ],
+    "traitNames": [
+      "Speed Burst",
+      "Natural Weapons",
+      "Damage Immunity",
+      "Poison Affinity"
+    ]
+  },
+  {
+    "name": "Orc",
+    "source": "XPHB",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Adrenaline Rush",
+        "desc": "You can take the Dash action as a Bonus Action. When you do so, you gain a number of Temporary Hit Points equal to your Proficiency. You can use this trait a number of times equal to your Proficiency, and you regain all expended uses when you finish a Short Rest or Long Rest."
+      },
+      {
+        "name": "Superior Darkvision",
+        "desc": "You have Darkvision with a range of 120 feet."
+      },
+      {
+        "name": "Relentless Endurance",
+        "desc": "When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Points instead. Once you use this trait, you can't do so again until you finish a Long Rest."
+      }
+    ],
+    "traitNames": [
+      "Adrenaline Rush",
+      "Superior Darkvision",
+      "Relentless Endurance"
+    ]
+  },
+  {
+    "name": "Owlin",
+    "source": "SCC",
+    "size": "Small/Medium",
+    "speed": "30ft walk, Trueft fly",
+    "traits": [
+      {
+        "name": "Superior Darkvision",
+        "desc": "You can see in dim light within 120 feet of yourself as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+      },
+      {
+        "name": "Flight",
+        "desc": "Thanks to your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor."
+      },
+      {
+        "name": "Skill Proficiency",
+        "desc": "You have proficiency in the Stealth skill."
+      }
+    ],
+    "traitNames": [
+      "Superior Darkvision",
+      "Flight",
+      "Skill Proficiency"
+    ]
+  },
+  {
+    "name": "Plasmoid",
+    "source": "AAG",
+    "size": "Small/Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Amorphous",
+        "desc": "You can squeeze through a space as narrow as 1 inch wide, provided you are wearing and carrying nothing. You have advantage on ability checks you make to initiate or escape a grapple."
+      },
+      {
+        "name": "Darkvision",
+        "desc": "You can see in dim light within 60 feet of yourself as if it were bright light, and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+      },
+      {
+        "name": "Hold Breath",
+        "desc": "You can hold your breath for 1 hour."
+      },
+      {
+        "name": "Natural Resilience",
+        "desc": "You have resistance to acid and poison damage, and you have advantage on saving throws against being poisoned."
+      },
+      {
+        "name": "Transformation",
+        "desc": "As an action, you can reshape your body to give yourself a head, one or two arms, one or two legs, and makeshift hands and feet, or you can revert to a limbless blob. While you have a humanlike shape, you can wear clothing and armor made for a Humanoid of your size. As a bonus action, you can extrud"
+      }
+    ],
+    "traitNames": [
+      "Amorphous",
+      "Darkvision",
+      "Hold Breath",
+      "Natural Resilience",
+      "Transformation"
+    ]
+  },
+  {
+    "name": "Reborn",
+    "source": "VRGR",
+    "size": "Small/Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Ancestral Legacy",
+        "desc": "If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it. If you don't keep any of those elements or you choose this lineage at character creation, you gain pro"
+      },
+      {
+        "name": "Deathless Nature",
+        "desc": "You have escaped death, a fact represented by the following benefits:"
+      },
+      {
+        "name": "Knowledge from a Past Life",
+        "desc": "You temporarily remember glimpses of the past, perhaps faded memories from ages ago or a previous life. When you make an ability check that uses a skill, you can roll a d6 immediately after seeing the number on the d20 and add the number on the d6 to the check. You can use this feature a number of t"
+      }
+    ],
+    "traitNames": [
+      "Ancestral Legacy",
+      "Deathless Nature",
+      "Knowledge from a Past Life"
+    ]
+  },
+  {
+    "name": "Rimekin",
+    "source": "LFL",
+    "size": "Small/Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Cold Fire Magic",
+        "desc": "You know the Ray of Frost cantrip. When you reach character levels 3 and 5, you learn the Ice Knife spell and the Flame Blade spell, respectively. You always have those spells prepared. You can cast each once without a spell slot, and you regain the ability to cast these spells in this way when you "
+      },
+      {
+        "name": "Cold Resistance",
+        "desc": "You have Resistance to Cold damage."
+      },
+      {
+        "name": "Darkvision",
+        "desc": "You have Darkvision with a range of 60 feet."
+      }
+    ],
+    "traitNames": [
+      "Cold Fire Magic",
+      "Cold Resistance",
+      "Darkvision"
+    ]
+  },
+  {
+    "name": "Satyr",
+    "source": "MPMM",
+    "size": "Medium",
+    "speed": "35ft",
+    "traits": [
+      {
+        "name": "Ram",
+        "desc": "You can use your head and horns to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier bludgeoning damage, instead of the bludgeoning damage normal for an unarmed strike."
+      },
+      {
+        "name": "Magic Resistance",
+        "desc": "You have advantage on saving throws against spells."
+      },
+      {
+        "name": "Mirthful Leaps",
+        "desc": "Whenever you make a long jump or a high jump, you can roll a d8 and add the number rolled to the number of feet you cover, even when making a standing jump. This extra distance costs movement as usual."
+      },
+      {
+        "name": "Reveler",
+        "desc": "As an embodiment of revelry, you have proficiency in the Performance and Persuasion skills, and you have proficiency with one musical instrument of your choice."
+      }
+    ],
+    "traitNames": [
+      "Ram",
+      "Magic Resistance",
+      "Mirthful Leaps",
+      "Reveler"
+    ]
+  },
+  {
+    "name": "Sea Elf",
+    "source": "MPMM",
+    "size": "Medium",
+    "speed": "30ft walk, Trueft swim",
+    "traits": [
+      {
+        "name": "Child of the Sea",
+        "desc": "You can breathe air and water, and you have resistance to cold damage."
+      },
+      {
+        "name": "Darkvision",
+        "desc": "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+      },
+      {
+        "name": "Fey Ancestry",
+        "desc": "You have advantage on saving throws you make to avoid or end the charmed condition on yourself."
+      },
+      {
+        "name": "Friend of the Sea",
+        "desc": "Aquatic animals have an extraordinary affinity with your people. You can communicate simple ideas to any Beast that has a swimming speed. It can understand your words, though you have no special ability to understand it in return."
+      },
+      {
+        "name": "Skill Proficiency",
+        "desc": "You have proficiency in the Perception skill."
+      },
+      {
+        "name": "Trance",
+        "desc": "You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness. Whenever you finish this trance, you can gain two proficiencies that you don't have, each one with a weapon or "
+      }
+    ],
+    "traitNames": [
+      "Child of the Sea",
+      "Darkvision",
+      "Fey Ancestry",
+      "Friend of the Sea",
+      "Skill Proficiency",
+      "Trance"
+    ]
+  },
+  {
+    "name": "Shadar-Kai",
+    "source": "MPMM",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Blessing of the Raven Queen",
+        "desc": "As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. Starting at 3rd level, you also gain resistance to all damage when y"
+      },
+      {
+        "name": "Darkvision",
+        "desc": "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+      },
+      {
+        "name": "Fey Ancestry",
+        "desc": "You have advantage on saving throws you make to avoid or end the charmed condition on yourself."
+      },
+      {
+        "name": "Skill Proficiency",
+        "desc": "You have proficiency in the Perception skill."
+      },
+      {
+        "name": "Damage Resistance",
+        "desc": "You have resistance to necrotic damage."
+      },
+      {
+        "name": "Trance",
+        "desc": "You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness. Whenever you finish this trance, you can gain two proficiencies that you don't have, each one with a weapon or "
+      }
+    ],
+    "traitNames": [
+      "Blessing of the Raven Queen",
+      "Darkvision",
+      "Fey Ancestry",
+      "Skill Proficiency",
+      "Damage Resistance",
+      "Trance"
+    ]
+  },
+  {
+    "name": "Shifter",
+    "source": "MPMM",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Bestial Instincts",
+        "desc": "Channeling the beast within, you have proficiency in one of the following skills of your choice: Acrobatics, Athletics, Intimidation, or Survival."
+      },
+      {
+        "name": "Darkvision",
+        "desc": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were in dim light. You discern colors in that darkness only as shades of gray."
+      },
+      {
+        "name": "Transformation",
+        "desc": "As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to 2 × your proficiency bonus. You can shift a number of times equa"
+      }
+    ],
+    "traitNames": [
+      "Bestial Instincts",
+      "Darkvision",
+      "Transformation"
+    ]
+  },
+  {
+    "name": "Simic Hybrid",
+    "source": "GGR",
+    "size": "Medium",
+    "speed": "30ft walk",
+    "traits": [
+      {
+        "name": "Darkvision",
+        "desc": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "name": "Animal Enhancement",
+        "desc": "Your body has been altered to incorporate certain animal characteristics. You choose one animal enhancement now and a second enhancement at 5th level. At 1st level, choose one of the following options:  At 5th level, your body evolves further, developing new characteristics. Choose one of the option"
+      }
+    ],
+    "traitNames": [
+      "Darkvision",
+      "Animal Enhancement"
+    ]
+  },
+  {
+    "name": "Siren",
+    "source": "PSX",
+    "size": "Medium",
+    "speed": "25ft walk, 30ft fly",
+    "traits": [
+      {
+        "name": "Siren's Song",
+        "desc": "You know the friends cantrip and can cast it without material components."
+      },
+      {
+        "name": "Flight",
+        "desc": "You have a flying speed of 30 feet. You can't use your flying speed while you wear medium or heavy armor. (If your campaign uses the variant rule for encumbrance, you can't use your flying speed if you are encumbered.)"
+      }
+    ],
+    "traitNames": [
+      "Siren's Song",
+      "Flight"
+    ]
+  },
+  {
+    "name": "Skeleton",
+    "source": "DMG",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Brittle Bones",
+        "desc": "You are vulnerable to bludgeoning damage."
+      },
+      {
+        "name": "Damage Immunity",
+        "desc": "You are immune to poison damage and exhaustion, and you can't be poisoned. You don't require air, food, drink, or sleep."
+      },
+      {
+        "name": "Darkvision",
+        "desc": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      }
+    ],
+    "traitNames": [
+      "Brittle Bones",
+      "Damage Immunity",
+      "Darkvision"
+    ]
+  },
+  {
+    "name": "Tabaxi",
+    "source": "MPMM",
+    "size": "Small/Medium",
+    "speed": "30ft walk, Trueft climb",
+    "traits": [
+      {
+        "name": "Cat's Claws",
+        "desc": "You can use your claws to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
+      },
+      {
+        "name": "Skill Proficiency",
+        "desc": "You have proficiency in the Perception and Stealth skills."
+      },
+      {
+        "name": "Darkvision",
+        "desc": "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+      },
+      {
+        "name": "Feline Agility",
+        "desc": "Your reflexes and agility allow you to move with a burst of speed. When you move on your turn in combat, you can double your speed until the end of the turn. Once you use this trait, you can't use it again until you move 0 feet on one of your turns."
+      }
+    ],
+    "traitNames": [
+      "Cat's Claws",
+      "Skill Proficiency",
+      "Darkvision",
+      "Feline Agility"
+    ]
+  },
+  {
+    "name": "Thri-kreen",
+    "source": "AAG",
+    "size": "Small/Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Chameleon Carapace",
+        "desc": "While you aren't wearing armor, your carapace gives you a base Armor Class of 13 + your Dexterity modifier. As an action, you can change the color of your carapace to match the color and texture of your surroundings, giving you advantage on Dexterity (Stealth) checks made to hide in those surroundin"
+      },
+      {
+        "name": "Darkvision",
+        "desc": "You can see in dim light within 60 feet of yourself as if it were bright light, and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+      },
+      {
+        "name": "Secondary Arms",
+        "desc": "You have two slightly smaller secondary arms below your primary pair of arms. The secondary arms can manipulate an object, open or close a door or container, pick up or set down a Tiny object, or wield a weapon that has the L property."
+      },
+      {
+        "name": "Sleepless",
+        "desc": "You do not require sleep and can remain conscious during a long rest, though you must still refrain from strenuous activity to gain the benefit of the rest."
+      },
+      {
+        "name": "Thri-kreen Telepathy",
+        "desc": "Without the assistance of magic, you can't speak the non-thri-kreen languages you know. Instead you use telepathy to convey your thoughts. You have the magical ability to transmit your thoughts mentally to willing creatures within 120 feet of yourself. A contacted creature doesn't need to share a la"
+      }
+    ],
+    "traitNames": [
+      "Chameleon Carapace",
+      "Darkvision",
+      "Secondary Arms",
+      "Sleepless",
+      "Thri-kreen Telepathy"
+    ]
+  },
+  {
+    "name": "Tiefling",
+    "source": "XPHB",
+    "size": "Small/Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Darkvision",
+        "desc": "You have Darkvision with a range of 60 feet."
+      },
+      {
+        "name": "Innate Spellcasting",
+        "desc": "You are the recipient of a legacy that grants you supernatural abilities. Choose a legacy from the Fiendish Legacies table. You gain the level 1 benefit of the chosen legacy. When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell pr"
+      },
+      {
+        "name": "Otherworldly Presence",
+        "desc": "You know the Thaumaturgy cantrip. When you cast it with this trait, the spell uses the same spellcasting ability you use for your Fiendish Legacy Trait."
+      }
+    ],
+    "traitNames": [
+      "Darkvision",
+      "Innate Spellcasting",
+      "Otherworldly Presence"
+    ]
+  },
+  {
+    "name": "Tortle",
+    "source": "MPMM",
+    "size": "Small/Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Natural Weapon",
+        "desc": "You have claws that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
+      },
+      {
+        "name": "Hold Breath",
+        "desc": "You can hold your breath for up to 1 hour."
+      },
+      {
+        "name": "Natural Armor",
+        "desc": "Your shell provides you a base AC of 17 (your Dexterity modifier doesn't affect this number). You can't wear light, medium, or heavy armor, but if you are using a shield, you can apply the shield's bonus as normal."
+      },
+      {
+        "name": "Nature's Intuition",
+        "desc": "Thanks to your mystical connection to nature, you gain proficiency with one of the following skills of your choice: Animal Handling, Medicine, Nature, Perception, Stealth, or Survival."
+      },
+      {
+        "name": "Transformation",
+        "desc": "You can withdraw into your shell as an action. Until you emerge, you gain a +4 bonus to your AC, and you have advantage on Strength and Constitution saving throws. While in your shell, you are prone, your speed is 0 and can't increase, you have disadvantage on Dexterity saving throws, you can't take"
+      }
+    ],
+    "traitNames": [
+      "Natural Weapon",
+      "Hold Breath",
+      "Natural Armor",
+      "Nature's Intuition",
+      "Transformation"
+    ]
+  },
+  {
+    "name": "Triton",
+    "source": "MPMM",
+    "size": "Medium",
+    "speed": "30ft walk, Trueft swim",
+    "traits": [
+      {
+        "name": "Amphibious",
+        "desc": "You can breathe air and water."
+      },
+      {
+        "name": "Control Air and Water",
+        "desc": "You can cast fog cloud with this trait. Starting at 3rd level, you can cast the gust of wind spell with this trait. Starting at 5th level, you can also cast the water walk spell with it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a lon"
+      },
+      {
+        "name": "Darkvision",
+        "desc": "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+      },
+      {
+        "name": "Emissary of the Sea",
+        "desc": "You can communicate simple ideas to any Beast, Elemental, or Monstrosity that has a swimming speed. It can understand your words, though you have no special ability to understand it in return."
+      },
+      {
+        "name": "Damage Resistance",
+        "desc": "Adapted to the frigid ocean depths, you have resistance to cold damage."
+      }
+    ],
+    "traitNames": [
+      "Amphibious",
+      "Control Air and Water",
+      "Darkvision",
+      "Emissary of the Sea",
+      "Damage Resistance"
+    ]
+  },
+  {
+    "name": "Troglodyte",
+    "source": "DMG",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Chameleon Skin",
+        "desc": "You have advantage on Dexterity (Stealth) checks made to hide."
+      },
+      {
+        "name": "Stench",
+        "desc": "Any creature other than a troglodyte that starts its turn within 5 ft. of you must succeed on a 12 Constitution saving throw or be poisoned until the start of the creature's next turn. On a successful saving throw, the creature is immune to the stench of all troglodytes for 1 hour."
+      },
+      {
+        "name": "Sunlight Sensitivity",
+        "desc": "While in sunlight, you have disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+      },
+      {
+        "name": "Natural Armor",
+        "desc": "Your thick hide grants you a +1 bonus to Armor Class."
+      },
+      {
+        "name": "Darkvision",
+        "desc": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      }
+    ],
+    "traitNames": [
+      "Chameleon Skin",
+      "Stench",
+      "Sunlight Sensitivity",
+      "Natural Armor",
+      "Darkvision"
+    ]
+  },
+  {
+    "name": "Vampire",
+    "source": "PSZ",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Blood Thirst",
+        "desc": "You can drain blood and life energy from a willing creature, or one that is grappled by you, incapacitated, or restrained. Make a melee attack against the target. If you hit, you deal 1 piercing damage and 1d6 necrotic damage. The target's hit point maximum is reduced by an amount equal to the necro"
+      },
+      {
+        "name": "Darkvision",
+        "desc": "Thanks to your heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "name": "Damage Resistance",
+        "desc": "You have resistance to necrotic damage."
+      }
+    ],
+    "traitNames": [
+      "Blood Thirst",
+      "Darkvision",
+      "Damage Resistance"
+    ]
+  },
+  {
+    "name": "Vedalken",
+    "source": "GGR",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Vedalken Dispassion",
+        "desc": "You have advantage on all Intelligence, Wisdom, and Charisma saving throws."
+      },
+      {
+        "name": "Tireless Precision",
+        "desc": "You are proficient in one of the following skills of your choice: Arcana, History, Investigation, Medicine, Performance, or Sleight of Hand. You are also proficient with one tool of your choice. Whenever you make an ability check with the chosen skill or tool, roll a d4 and add the number rolled to "
+      },
+      {
+        "name": "Partially Amphibious",
+        "desc": "By absorbing oxygen through your skin, you can breathe underwater for up to 1 hour. Once you've reached that limit, you can't use this trait again until you finish a long rest."
+      }
+    ],
+    "traitNames": [
+      "Vedalken Dispassion",
+      "Tireless Precision",
+      "Partially Amphibious"
+    ]
+  },
+  {
+    "name": "Verdan",
+    "source": "AI",
+    "size": "Varies",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Black Blood Healing",
+        "desc": "The black blood that is a sign of your people's connection to That-Which-Endures boosts your natural healing. When you roll a 1 or 2 on any Hit Die you spend at the end of a short rest, you can reroll the die and must use the new roll."
+      },
+      {
+        "name": "Limited Telepathy",
+        "desc": "You can telepathically speak to any creature you can see within 30 feet of you. You don't need to share a language with the creature for it to understand your telepathy, but it must be able to understand at least one language. This process of communication is slow and limited, allowing you to transm"
+      },
+      {
+        "name": "Skill Proficiency",
+        "desc": "Your people's lack of history makes you trustworthy and humble. You have proficiency in the Persuasion skill."
+      },
+      {
+        "name": "Telepathic Insight",
+        "desc": "Your mind's connection to the world around you strengthens your will. You have advantage on all Wisdom and Charisma saving throws."
+      }
+    ],
+    "traitNames": [
+      "Black Blood Healing",
+      "Limited Telepathy",
+      "Skill Proficiency",
+      "Telepathic Insight"
+    ]
+  },
+  {
+    "name": "Warforged",
+    "source": "ERLW",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Construct Resilience",
+        "desc": "You were created to have remarkable fortitude, represented by the following benefits:"
+      },
+      {
+        "name": "Sentry's Rest",
+        "desc": "When you take a long rest, you must spend at least six hours in an inactive, motionless state, rather than sleeping. In this state, you appear inert, but it doesn't render you unconscious, and you can see and hear as normal."
+      },
+      {
+        "name": "Integrated Protection",
+        "desc": "Your body has built-in defensive layers, which can be enhanced with armor:"
+      },
+      {
+        "name": "Specialized Design",
+        "desc": "You gain one skill proficiency and one tool proficiency of your choice."
+      }
+    ],
+    "traitNames": [
+      "Construct Resilience",
+      "Sentry's Rest",
+      "Integrated Protection",
+      "Specialized Design"
+    ]
+  },
+  {
+    "name": "Yuan-Ti",
+    "source": "MPMM",
+    "size": "Small/Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Darkvision",
+        "desc": "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+      },
+      {
+        "name": "Magic Resistance",
+        "desc": "You have advantage on saving throws against spells."
+      },
+      {
+        "name": "Poison Resilience",
+        "desc": "You have advantage on saving throws you make to avoid or end the poisoned condition on yourself. You also have resistance to poison damage."
+      },
+      {
+        "name": "Innate Spellcasting",
+        "desc": "You know the poison spray cantrip. You can cast animal friendship an unlimited number of times with this trait, but you can target only snakes with it. Starting at 3rd level, you can also cast suggestion with this trait. Once you cast it, you can't do so again until you finish a long rest. You can a"
+      }
+    ],
+    "traitNames": [
+      "Darkvision",
+      "Magic Resistance",
+      "Poison Resilience",
+      "Innate Spellcasting"
+    ]
+  },
+  {
+    "name": "Yuan-ti Pureblood",
+    "source": "VGM",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Darkvision",
+        "desc": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "name": "Innate Spellcasting",
+        "desc": "You know the poison spray cantrip. You can cast animal friendship an unlimited number of times with this trait, but you can target only snakes with it. Starting at 3rd level, you can also cast suggestion with this trait. Once you cast it, you can't do so again until you finish a long rest. Charisma "
+      },
+      {
+        "name": "Magic Resistance",
+        "desc": "You have advantage on saving throws against spells and other magical effects."
+      },
+      {
+        "name": "Damage Immunity",
+        "desc": "You are immune to poison damage and the poisoned condition."
+      }
+    ],
+    "traitNames": [
+      "Darkvision",
+      "Innate Spellcasting",
+      "Magic Resistance",
+      "Damage Immunity"
+    ]
+  },
+  {
+    "name": "Zombie",
+    "source": "DMG",
+    "size": "Medium",
+    "speed": "30ft",
+    "traits": [
+      {
+        "name": "Undead Fortitude",
+        "desc": "If damage reduces you to 0 hit points, you must make a Constitution saving throw with a DC of 5+the damage taken, unless the damage is radiant or from a critical hit. On a success, you drop to 1 hit point instead."
+      },
+      {
+        "name": "Damage Immunity",
+        "desc": "You are immune to poison damage, and you can't be poisoned. You don't require air, food, drink, or sleep."
+      },
+      {
+        "name": "Darkvision",
+        "desc": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      }
+    ],
+    "traitNames": [
+      "Undead Fortitude",
+      "Damage Immunity",
+      "Darkvision"
+    ]
+  }
+]
