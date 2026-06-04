@@ -3,7 +3,7 @@ name: Deploy E5etools to GitHub Pages
 on:
   push:
     branches: [main, claude/quirky-cray-3hmrN]
-    paths: [frontend/**]
+    paths: [frontend/**, .github/workflows/deploy.yml]
   workflow_dispatch:
 
 permissions:
