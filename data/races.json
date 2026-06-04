@@ -298,7 +298,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Celestial Resistance",
+					"name": "Damage Resistance",
 					"entries": [
 						"You have resistance to necrotic and radiant damage."
 					],
@@ -371,7 +371,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Celestial Resistance",
+					"name": "Damage Resistance",
 					"entries": [
 						"You have resistance to necrotic damage and radiant damage."
 					]
@@ -392,7 +392,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Light Bearer",
+					"name": "Cantrip",
 					"entries": [
 						"You know the {@spell light} cantrip. Charisma is your spellcasting ability for it."
 					]
@@ -566,7 +566,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Celestial Resistance",
+					"name": "Damage Resistance",
 					"entries": [
 						"You have resistance to necrotic damage and radiant damage."
 					],
@@ -580,7 +580,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Light Bearer",
+					"name": "Cantrip",
 					"entries": [
 						"You know the {@spell light} cantrip. Charisma is your spellcasting ability for it."
 					],
@@ -639,7 +639,7 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Celestial Resistance",
+					"name": "Damage Resistance",
 					"entries": [
 						"You have {@variantrule Resistance|XPHB} to Necrotic damage and Radiant damage."
 					]
@@ -660,7 +660,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Light Bearer",
+					"name": "Cantrip",
 					"entries": [
 						"You know the {@spell Light|XPHB} cantrip. Charisma is your spellcasting ability for it."
 					]
@@ -777,14 +777,14 @@
 					"type": "entries"
 				},
 				{
-					"name": "Born of Aether",
+					"name": "Damage Resistance",
 					"entries": [
 						"You have resistance to necrotic damage."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Menacing",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You have proficiency in the {@skill Intimidation} skill."
 					],
@@ -1178,7 +1178,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Hawkeyed",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You have proficiency in the {@skill Perception} skill. In addition, attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls."
 					],
@@ -1290,7 +1290,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Sneaky",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You are proficient in the {@skill Stealth} skill."
 					],
@@ -1379,7 +1379,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Sneaky",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You are proficient in the {@skill Stealth} skill. In addition, without squeezing, you can move through and stop in a space large enough for a Small creature."
 					]
@@ -1485,7 +1485,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Sneaky",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You are proficient in the {@skill Stealth} skill."
 					],
@@ -1686,7 +1686,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Survivor",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You have proficiency in one of the following skills of your choice: {@skill Animal Handling}, {@skill Medicine}, {@skill Nature}, or {@skill Survival}."
 					]
@@ -2246,7 +2246,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Gnomish Magic Resistance",
+					"name": "Magic Resistance",
 					"entries": [
 						"You have advantage on Intelligence, Wisdom, and Charisma saving throws against spells."
 					]
@@ -2932,7 +2932,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Draconic Resistance",
+					"name": "Damage Resistance",
 					"entries": [
 						"You have resistance to the damage type associated with your Chromatic Ancestry."
 					]
@@ -3112,7 +3112,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Draconic Resistance",
+					"name": "Damage Resistance",
 					"entries": [
 						"You have resistance to the damage type associated with your Gem Ancestry."
 					]
@@ -3301,7 +3301,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Draconic Resistance",
+					"name": "Damage Resistance",
 					"entries": [
 						"You have resistance to the damage type associated with your Metallic Ancestry."
 					]
@@ -3502,7 +3502,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Dwarven Resilience",
+					"name": "Damage Resistance",
 					"entries": [
 						"You have advantage on saving throws you make to avoid or end the {@condition poisoned} condition on yourself. You also have resistance to poison damage."
 					]
@@ -3603,7 +3603,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Dwarven Resilience",
+					"name": "Damage Resistance",
 					"entries": [
 						"You have advantage on saving throws against poison, and you have resistance against poison damage."
 					],
@@ -3680,7 +3680,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Dwarven Resilience",
+					"name": "Damage Resistance",
 					"entries": [
 						"You have {@variantrule Resistance|XPHB} to Poison damage. You also have {@variantrule Advantage|XPHB} on saving throws you make to avoid or end the {@condition Poisoned|XPHB} condition."
 					]
@@ -3778,7 +3778,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Dwarven Resilience",
+					"name": "Damage Resistance",
 					"entries": [
 						"You have advantage on saving throws against poison, and you have resistance against poison damage."
 					],
@@ -4715,7 +4715,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Elf Weapon Training",
+					"name": "Weapon Proficiency",
 					"entries": [
 						"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
 					],
@@ -5624,7 +5624,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Psychic Resilience",
+					"name": "Damage Resistance",
 					"entries": [
 						"You have resistance to psychic damage."
 					]
@@ -5696,7 +5696,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Psychic Resilience",
+					"name": "Damage Resistance",
 					"entries": [
 						"You have resistance to psychic damage."
 					]
@@ -5815,7 +5815,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Gnome Cunning",
+					"name": "Magic Resistance",
 					"entries": [
 						"You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
 					],
@@ -5868,7 +5868,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Gnomish Cunning",
+					"name": "Magic Resistance",
 					"entries": [
 						"You have {@variantrule Advantage|XPHB} on Intelligence, Wisdom, and Charisma saving throws."
 					]
@@ -6057,7 +6057,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Gnome Cunning",
+					"name": "Magic Resistance",
 					"entries": [
 						"You have advantage on Intelligence, Wisdom, and Charisma saving throws against magic."
 					],
@@ -6563,7 +6563,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Mountain Born",
+					"name": "Damage Resistance",
 					"entries": [
 						"You have resistance to cold damage. You also naturally acclimate to high altitudes, even if you've never been to one. This includes elevations above 20,000 feet."
 					]
@@ -6658,7 +6658,7 @@
 					]
 				},
 				{
-					"name": "Natural Athlete",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You have proficiency in the {@skill Athletics} skill."
 					],
@@ -6679,7 +6679,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Mountain Born",
+					"name": "Damage Resistance",
 					"entries": [
 						"You have resistance to cold damage. You're also acclimated to high altitude, including elevations above 20,000 feet."
 					],
@@ -7106,7 +7106,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Arboreal Alertness",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You have proficiency in the {@skill Perception} skill."
 					]
@@ -7120,7 +7120,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Poison Immunity",
+					"name": "Damage Immunity",
 					"entries": [
 						"You're immune to poison damage and the {@condition poisoned} condition."
 					]
@@ -7375,7 +7375,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Menacing",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You gain proficiency in the {@skill Intimidation} skill."
 					],
@@ -7580,7 +7580,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Leporine Senses",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You have proficiency in the {@skill Perception} skill."
 					]
@@ -7638,7 +7638,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Leporine Senses",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You have proficiency in the {@skill Perception} skill."
 					]
@@ -8023,7 +8023,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Martial Training",
+					"name": "Weapon Proficiency",
 					"entries": [
 						"You are proficient with two {@filter martial weapons|items|source=phb|category=basic|type=martial weapon} of your choice and with light armor."
 					],
@@ -8157,7 +8157,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Skillful",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You gain proficiency in one skill of your choice."
 					]
@@ -9423,7 +9423,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Climbing",
+					"name": "Climbing Speed",
 					"entries": [
 						"You also have a climbing speed of 30 feet as long as you are not encumbered or wearing heavy armor."
 					],
@@ -9842,7 +9842,7 @@
 					]
 				},
 				{
-					"name": "Swim Speed",
+					"name": "Swimming Speed",
 					"entries": [
 						"You have a swimming speed of 30 feet."
 					],
@@ -10283,7 +10283,7 @@
 					]
 				},
 				{
-					"name": "Swimming",
+					"name": "Swimming Speed",
 					"entries": [
 						"You have a swimming speed of 30 feet."
 					],
@@ -10576,7 +10576,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Menacing",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You gain proficiency in the {@skill Intimidation} skill."
 					],
@@ -10685,7 +10685,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Poison Immunity",
+					"name": "Damage Immunity",
 					"entries": [
 						"You are immune to poison damage and can't be {@condition poisoned}."
 					],
@@ -11242,7 +11242,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Menacing",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You gain proficiency in the {@skill Intimidation} skill."
 					]
@@ -11322,7 +11322,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Silent Feathers",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You have proficiency in the {@skill Stealth} skill."
 					]
@@ -11907,7 +11907,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Necrotic Resistance",
+					"name": "Damage Resistance",
 					"entries": [
 						"You have resistance to necrotic damage."
 					]
@@ -12594,7 +12594,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Undead Nature",
+					"name": "Damage Immunity",
 					"entries": [
 						"You are immune to poison damage and {@condition exhaustion}, and you can't be {@condition poisoned}. You don't require air, food, drink, or sleep."
 					]
@@ -12666,7 +12666,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Cat's Talent",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You have proficiency in the {@skill Perception} and {@skill Stealth} skills."
 					]
@@ -12782,7 +12782,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Cat's Talents",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You have proficiency in the {@skill Perception} and {@skill Stealth} skills."
 					],
@@ -12970,7 +12970,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Hellish Resistance",
+					"name": "Damage Resistance",
 					"entries": [
 						"You have resistance to fire damage."
 					],
@@ -13688,7 +13688,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Guardian of the Depths",
+					"name": "Damage Resistance",
 					"entries": [
 						"Adapted to the frigid ocean depths, you have resistance to cold damage."
 					]
@@ -13789,7 +13789,7 @@
 					]
 				},
 				{
-					"name": "Swim Speed",
+					"name": "Swimming Speed",
 					"entries": [
 						"You have a swimming speed of 30 feet."
 					],
@@ -13824,7 +13824,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Guardians of the Depths",
+					"name": "Damage Resistance",
 					"entries": [
 						"Adapted to even the most extreme ocean depths, you have resistance to cold damage."
 					],
@@ -13994,7 +13994,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Vampiric Resistance",
+					"name": "Damage Resistance",
 					"entries": [
 						"You have resistance to necrotic damage."
 					],
@@ -14167,7 +14167,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Vedalken Cunning",
+					"name": "Magic Resistance",
 					"entries": [
 						"You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
 					],
@@ -14251,7 +14251,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Persuasive",
+					"name": "Skill Proficiency",
 					"entries": [
 						"Your people's lack of history makes you trustworthy and humble. You have proficiency in the {@skill Persuasion} skill."
 					],
@@ -14686,7 +14686,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Poison Immunity",
+					"name": "Damage Immunity",
 					"entries": [
 						"You are immune to poison damage and the {@condition poisoned} condition."
 					],
@@ -14755,7 +14755,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Undead Nature",
+					"name": "Damage Immunity",
 					"entries": [
 						"You are immune to poison damage, and you can't be {@condition poisoned}. You don't require air, food, drink, or sleep."
 					]
@@ -14932,7 +14932,7 @@
 			],
 			"entries": [
 				{
-					"name": "Hawkeyed",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You have proficiency in the {@skill Perception} skill. In addition, attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls."
 					],
@@ -16002,7 +16002,7 @@
 			],
 			"entries": [
 				{
-					"name": "Elf Weapon Training",
+					"name": "Weapon Proficiency",
 					"entries": [
 						"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
 					],
@@ -16131,7 +16131,7 @@
 			],
 			"entries": [
 				{
-					"name": "Elf Weapon Training",
+					"name": "Weapon Proficiency",
 					"entries": [
 						"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
 					],
@@ -16445,7 +16445,7 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Necrotic Resistance",
+					"name": "Damage Resistance",
 					"entries": [
 						"You have resistance to necrotic damage."
 					]
@@ -16493,7 +16493,7 @@
 			],
 			"entries": [
 				{
-					"name": "Elf Weapon Training",
+					"name": "Weapon Proficiency",
 					"entries": [
 						"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
 					],
@@ -16617,7 +16617,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Elf Weapon Training",
+					"name": "Weapon Proficiency",
 					"entries": [
 						"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
 					],
@@ -16709,7 +16709,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Elf Weapon Training",
+					"name": "Weapon Proficiency",
 					"entries": [
 						"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
 					],
@@ -16891,7 +16891,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Fire Resistance",
+					"name": "Damage Resistance",
 					"entries": [
 						"You have resistance to fire damage."
 					],
@@ -16953,7 +16953,7 @@
 			],
 			"entries": [
 				{
-					"name": "Acid Resistance",
+					"name": "Damage Resistance",
 					"entries": [
 						"You have resistance to acid damage."
 					],
@@ -16967,7 +16967,7 @@
 					"type": "entries"
 				},
 				{
-					"name": "Swim",
+					"name": "Swimming Speed",
 					"entries": [
 						"You have a swimming speed of 30 feet."
 					],
@@ -17036,7 +17036,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Lightning Resistance",
+					"name": "Damage Resistance",
 					"entries": [
 						"You have resistance to lightning damage."
 					]
@@ -17145,7 +17145,7 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Fire Resistance",
+					"name": "Damage Resistance",
 					"entries": [
 						"You have resistance to fire damage."
 					]
@@ -17220,7 +17220,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Acid Resistance",
+					"name": "Damage Resistance",
 					"entries": [
 						"You have resistance to acid damage."
 					]
@@ -18002,7 +18002,7 @@
 							"type": "entries"
 						},
 						{
-							"name": "Swim",
+							"name": "Swimming Speed",
 							"entries": [
 								"You gain a swimming speed of 30 ft."
 							],
@@ -18374,7 +18374,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Storm's Boon",
+					"name": "Damage Resistance",
 					"entries": [
 						"You have resistance to lightning damage."
 					]
@@ -18478,7 +18478,7 @@
 							"type": "entries"
 						},
 						{
-							"name": "Elf Weapon Training",
+							"name": "Weapon Proficiency",
 							"entries": [
 								"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
 							],
@@ -18592,7 +18592,7 @@
 							"type": "entries"
 						},
 						{
-							"name": "Elf Weapon Training",
+							"name": "Weapon Proficiency",
 							"entries": [
 								"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
 							],
@@ -19321,7 +19321,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Natural Athlete",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You have proficiency in the {@skill Athletics} skill."
 					]
@@ -20095,7 +20095,7 @@
 			],
 			"entries": [
 				{
-					"name": "Forest Folk",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You have proficiency in the {@skill Survival} skill."
 					],
@@ -20186,7 +20186,7 @@
 			],
 			"entries": [
 				{
-					"name": "Daunting",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You have proficiency in the {@skill Intimidation} skill."
 					],
@@ -20518,7 +20518,7 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Natural Athlete",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You have proficiency in the {@skill Athletics} skill."
 					]
@@ -20561,7 +20561,7 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Fierce",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You have proficiency in the {@skill Intimidation} skill."
 					]
@@ -20601,7 +20601,7 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Graceful",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You have proficiency in the {@skill Acrobatics} skill."
 					]
@@ -20641,7 +20641,7 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Natural Tracker",
+					"name": "Skill Proficiency",
 					"entries": [
 						"You have proficiency in the {@skill Survival} skill."
 					]
