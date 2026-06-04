@@ -1,38 +1,40 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 const playerTools = [
-  { name: 'Species', href: '/species.html', icon: '🧝', desc: 'Browse all playable species and races' },
-  { name: 'Classes', href: '/classes.html', icon: '⚔️', desc: 'Explore class features and subclasses' },
-  { name: 'Feats', href: '/feats.html', icon: '✨', desc: 'Find and filter feats by source' },
-  { name: 'Options & Features', href: '/optionalfeatures.html', icon: '🎯', desc: 'Class options and eldritch invocations' },
-  { name: 'Backgrounds', href: '/backgrounds.html', icon: '📜', desc: 'Character backstory and starting gear' },
-  { name: 'Items', href: '/items.html', icon: '🗡️', desc: 'Weapons, armor, and magic items' },
-  { name: 'Spells', href: '/spells.html', icon: '🔮', desc: 'Full spell compendium with filters' },
-  { name: 'Stat Generator', href: '/statgen.html', icon: '🎲', desc: 'Roll or point-buy your ability scores' },
+  { name: 'Species', href: `${base}/species`, icon: '🧝', desc: 'Browse all playable species and races' },
+  { name: 'Classes', href: `${base}/classes.html`, icon: '⚔️', desc: 'Explore class features and subclasses' },
+  { name: 'Feats', href: `${base}/feats.html`, icon: '✨', desc: 'Find and filter feats by source' },
+  { name: 'Options & Features', href: `${base}/optionalfeatures.html`, icon: '🎯', desc: 'Class options and eldritch invocations' },
+  { name: 'Backgrounds', href: `${base}/backgrounds.html`, icon: '📜', desc: 'Character backstory and starting gear' },
+  { name: 'Items', href: `${base}/items.html`, icon: '🗡️', desc: 'Weapons, armor, and magic items' },
+  { name: 'Spells', href: `${base}/spells.html`, icon: '🔮', desc: 'Full spell compendium with filters' },
+  { name: 'Stat Generator', href: `${base}/statgen.html`, icon: '🎲', desc: 'Roll or point-buy your ability scores' },
 ];
 
 const rulesTools = [
-  { name: 'Adventures', href: '/adventures.html', icon: '🗺️', desc: 'Published adventure modules' },
-  { name: 'Books', href: '/books.html', icon: '📚', desc: 'Core rulebooks and supplements' },
-  { name: 'Rules Glossary', href: '/rulesglossary.html', icon: '📖', desc: 'Quick-reference rules definitions' },
-  { name: 'Conditions', href: '/conditionsdiseases.html', icon: '💀', desc: 'Status effects and diseases' },
+  { name: 'Adventures', href: `${base}/adventures.html`, icon: '🗺️', desc: 'Published adventure modules' },
+  { name: 'Books', href: `${base}/books.html`, icon: '📚', desc: 'Core rulebooks and supplements' },
+  { name: 'Rules Glossary', href: `${base}/rulesglossary.html`, icon: '📖', desc: 'Quick-reference rules definitions' },
+  { name: 'Conditions', href: `${base}/conditionsdiseases.html`, icon: '💀', desc: 'Status effects and diseases' },
 ];
 
 const dmTools = [
-  { name: 'Bestiary', href: '/bestiary.html', icon: '🐉', desc: 'Complete monster manual with filters' },
-  { name: 'DM Screen', href: '/dmscreen.html', icon: '🛡️', desc: 'In-session reference panels' },
-  { name: 'Loot Generator', href: '/lootgen.html', icon: '💰', desc: 'Random treasure and loot tables' },
-  { name: 'CR Calculator', href: '/crcalculator.html', icon: '⚖️', desc: 'Balance encounter difficulty' },
+  { name: 'Bestiary', href: `${base}/bestiary.html`, icon: '🐉', desc: 'Complete monster manual with filters' },
+  { name: 'DM Screen', href: `${base}/dmscreen.html`, icon: '🛡️', desc: 'In-session reference panels' },
+  { name: 'Loot Generator', href: `${base}/lootgen.html`, icon: '💰', desc: 'Random treasure and loot tables' },
+  { name: 'CR Calculator', href: `${base}/crcalculator.html`, icon: '⚖️', desc: 'Balance encounter difficulty' },
 ];
 
 const navLinks = [
-  { label: 'Species', href: '/species.html' },
-  { label: 'Classes', href: '/classes.html' },
-  { label: 'Spells', href: '/spells.html' },
-  { label: 'Items', href: '/items.html' },
-  { label: 'Bestiary', href: '/bestiary.html' },
-  { label: 'Rules', href: '/rulesglossary.html' },
+  { label: 'Species', href: `${base}/species` },
+  { label: 'Classes', href: `${base}/classes.html` },
+  { label: 'Spells', href: `${base}/spells.html` },
+  { label: 'Items', href: `${base}/items.html` },
+  { label: 'Bestiary', href: `${base}/bestiary.html` },
+  { label: 'Rules', href: `${base}/rulesglossary.html` },
 ];
 ---
 
@@ -40,7 +42,7 @@ const navLinks = [
   <!-- NAV -->
   <header style="background:#0f0d0b; border-bottom:1px solid #2e2820; position:sticky; top:0; z-index:50;">
     <div style="max-width:1200px; margin:0 auto; padding:0 1.5rem; display:flex; align-items:center; justify-content:space-between; height:3.5rem;">
-      <a href="/" style="font-family:'Cinzel',serif; font-size:1.25rem; font-weight:700; color:#c9a84c; text-decoration:none; letter-spacing:0.05em;">
+      <a href={`${base}/`} style="font-family:'Cinzel',serif; font-size:1.25rem; font-weight:700; color:#c9a84c; text-decoration:none; letter-spacing:0.05em;">
         5e<span style="color:#e8dcc8;">Forge</span>
       </a>
       <nav style="display:flex; gap:1.5rem; align-items:center;">
@@ -70,10 +72,10 @@ const navLinks = [
         powerful, intentional, and true to epic concepts. No meta-chasing required.
       </p>
       <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
-        <a href="/classes.html" style="background:#c9a84c; color:#0f0d0b; font-weight:700; padding:0.75rem 2rem; border-radius:0.375rem; text-decoration:none; font-size:0.9375rem; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+        <a href={`${base}/classes.html`} style="background:#c9a84c; color:#0f0d0b; font-weight:700; padding:0.75rem 2rem; border-radius:0.375rem; text-decoration:none; font-size:0.9375rem; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
           Start Building
         </a>
-        <a href="/bestiary.html" style="background:transparent; color:#c9a84c; font-weight:600; padding:0.75rem 2rem; border-radius:0.375rem; text-decoration:none; font-size:0.9375rem; border:1px solid #c9a84c; transition:background 0.2s;" onmouseover="this.style.background='rgba(201,168,76,0.1)'" onmouseout="this.style.background='transparent'">
+        <a href={`${base}/bestiary.html`} style="background:transparent; color:#c9a84c; font-weight:600; padding:0.75rem 2rem; border-radius:0.375rem; text-decoration:none; font-size:0.9375rem; border:1px solid #c9a84c; transition:background 0.2s;" onmouseover="this.style.background='rgba(201,168,76,0.1)'" onmouseout="this.style.background='transparent'">
           Open Bestiary
         </a>
       </div>

@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import speciesData from '../data/species.json';
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 // Collect all unique trait names for the filter
 const allTraits = [...new Set(speciesData.flatMap(s => s.traitNames))].sort();
 
@@ -21,15 +23,15 @@ const SOURCE_LABEL: Record<string, string> = {
   <!-- NAV -->
   <header style="background:#0f0d0b; border-bottom:1px solid #2e2820; position:sticky; top:0; z-index:50;">
     <div style="max-width:1400px; margin:0 auto; padding:0 1.5rem; display:flex; align-items:center; justify-content:space-between; height:3.5rem;">
-      <a href="/" style="font-family:'Cinzel',serif; font-size:1.25rem; font-weight:700; color:#c9a84c; text-decoration:none; letter-spacing:0.05em;">
+      <a href={`${base}/`} style="font-family:'Cinzel',serif; font-size:1.25rem; font-weight:700; color:#c9a84c; text-decoration:none; letter-spacing:0.05em;">
         5e<span style="color:#e8dcc8;">Forge</span>
       </a>
       <nav style="display:flex; gap:1.5rem; align-items:center;">
-        <a href="/" style="color:#8a7a6a; font-size:0.875rem; text-decoration:none;" onmouseover="this.style.color='#c9a84c'" onmouseout="this.style.color='#8a7a6a'">Home</a>
-        <a href="/species" style="color:#c9a84c; font-size:0.875rem; text-decoration:none; font-weight:600;">Species</a>
-        <a href="/classes.html" style="color:#8a7a6a; font-size:0.875rem; text-decoration:none;" onmouseover="this.style.color='#c9a84c'" onmouseout="this.style.color='#8a7a6a'">Classes</a>
-        <a href="/spells.html" style="color:#8a7a6a; font-size:0.875rem; text-decoration:none;" onmouseover="this.style.color='#c9a84c'" onmouseout="this.style.color='#8a7a6a'">Spells</a>
-        <a href="/bestiary.html" style="color:#8a7a6a; font-size:0.875rem; text-decoration:none;" onmouseover="this.style.color='#c9a84c'" onmouseout="this.style.color='#8a7a6a'">Bestiary</a>
+        <a href={`${base}/`} style="color:#8a7a6a; font-size:0.875rem; text-decoration:none;" onmouseover="this.style.color='#c9a84c'" onmouseout="this.style.color='#8a7a6a'">Home</a>
+        <a href={`${base}/species`} style="color:#c9a84c; font-size:0.875rem; text-decoration:none; font-weight:600;">Species</a>
+        <a href={`${base}/classes.html`} style="color:#8a7a6a; font-size:0.875rem; text-decoration:none;" onmouseover="this.style.color='#c9a84c'" onmouseout="this.style.color='#8a7a6a'">Classes</a>
+        <a href={`${base}/spells.html`} style="color:#8a7a6a; font-size:0.875rem; text-decoration:none;" onmouseover="this.style.color='#c9a84c'" onmouseout="this.style.color='#8a7a6a'">Spells</a>
+        <a href={`${base}/bestiary.html`} style="color:#8a7a6a; font-size:0.875rem; text-decoration:none;" onmouseover="this.style.color='#c9a84c'" onmouseout="this.style.color='#8a7a6a'">Bestiary</a>
       </nav>
     </div>
   </header>
