@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   site: 'https://rsbarroco.github.io',
-  base: '/E5etools',
+  base: '/5EForge',
   vite: {
     plugins: [tailwindcss()]
   }
