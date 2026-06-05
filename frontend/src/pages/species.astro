@@ -4,9 +4,6 @@ import speciesData from '../data/species.json';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-// Collect all unique trait names for the filter
-const allTraits = [...new Set(speciesData.flatMap(s => s.traitNames))].sort();
-
 const SOURCE_LABEL: Record<string, string> = {
   XPHB: "2024 PHB", MPMM: "Mordenkainen's", PHB: "Player's Handbook",
   VGM: "Volo's Guide", MTF: "Mordenkainen's ToF", ERLW: "Eberron",
@@ -14,94 +11,160 @@ const SOURCE_LABEL: Record<string, string> = {
   FTD: "Fizban's Treasury", TCE: "Tasha's", DMG: "Dungeon Master's Guide",
   EEPC: "Elemental Evil", TTP: "Tortle Package", LR: "Locathah Rising",
   OGA: "One Grung Above", AI: "Acquisitions Inc", WBtW: "Wild Beyond the Witchlight",
-  EFA: "Eberron (Legacy)", VRGR: "Van Richten's Guide",
+  EFA: "Eberron (Legacy)", VRGR: "Van Richten's Guide", LFL: "Lorwyn",
+  PSA: "Amonkhet", PSD: "Dominaria", PSK: "Kaladesh", PSZ: "Zendikar", PSX: "Ixalan",
 };
+
+const allTraits = [...new Set(speciesData.flatMap(s => s.traitNames))].sort();
+
+const KW_KEYS = [
+  'superior darkvision','darkvision','blindsight','tremorsense','truesight',
+  'resistance','immunity','vulnerability','advantage','disadvantage',
+  'proficiency','bonus action','reaction','cantrip','spell slot','concentration','ritual'
+];
+
+function linkifyText(text: string): string {
+  let result = '';
+  let remaining = text;
+  while (remaining.length > 0) {
+    let matched = false;
+    const lower = remaining.toLowerCase();
+    for (const kw of KW_KEYS) {
+      if (lower.startsWith(kw)) {
+        const original = remaining.slice(0, kw.length);
+        result += `<span class="kw" data-kw="${kw}">${original}</span>`;
+        remaining = remaining.slice(kw.length);
+        matched = true;
+        break;
+      }
+    }
+    if (!matched) {
+      result += remaining[0];
+      remaining = remaining.slice(1);
+    }
+  }
+  return result;
+}
+
+const DAMAGE_TYPES = [
+  'Acid','Bludgeoning','Cold','Fire','Force','Lightning',
+  'Necrotic','Piercing','Poison','Psychic','Radiant','Slashing','Thunder'
+];
+
+const CONDITIONS = [
+  'Blinded','Charmed','Deafened','Exhaustion','Frightened','Grappled',
+  'Incapacitated','Invisible','Paralyzed','Petrified','Poisoned',
+  'Prone','Restrained','Stunned','Unconscious'
+];
 ---
 
 <Layout title="Species — 5eForge" description="Browse all playable species with unified traits and modular filtering.">
 
+  <!-- TOOLTIPS OVERLAY -->
+  <div id="tooltip" style="display:none;position:fixed;z-index:1000;background:#1a1612;border:1px solid #c9a84c;border-radius:0.375rem;padding:0.5rem 0.75rem;font-size:0.78rem;color:#e8dcc8;max-width:260px;pointer-events:none;line-height:1.5;box-shadow:0 4px 16px rgba(0,0,0,0.5);"></div>
+
   <!-- NAV -->
-  <header style="background:#0f0d0b; border-bottom:1px solid #2e2820; position:sticky; top:0; z-index:50;">
-    <div style="max-width:1400px; margin:0 auto; padding:0 1.5rem; display:flex; align-items:center; justify-content:space-between; height:3.5rem;">
-      <a href={`${base}/`} style="font-family:'Cinzel',serif; font-size:1.25rem; font-weight:700; color:#c9a84c; text-decoration:none; letter-spacing:0.05em;">
+  <header style="background:#0f0d0b;border-bottom:1px solid #2e2820;position:sticky;top:0;z-index:50;">
+    <div style="max-width:1400px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;height:3.5rem;">
+      <a href={`${base}/`} style="font-family:'Cinzel',serif;font-size:1.25rem;font-weight:700;color:#c9a84c;text-decoration:none;letter-spacing:0.05em;">
         5e<span style="color:#e8dcc8;">Forge</span>
       </a>
-      <nav style="display:flex; gap:1.5rem; align-items:center;">
-        <a href={`${base}/`} style="color:#8a7a6a; font-size:0.875rem; text-decoration:none;" onmouseover="this.style.color='#c9a84c'" onmouseout="this.style.color='#8a7a6a'">Home</a>
-        <a href={`${base}/species`} style="color:#c9a84c; font-size:0.875rem; text-decoration:none; font-weight:600;">Species</a>
-        <a href={`${base}/classes.html`} style="color:#8a7a6a; font-size:0.875rem; text-decoration:none;" onmouseover="this.style.color='#c9a84c'" onmouseout="this.style.color='#8a7a6a'">Classes</a>
-        <a href={`${base}/spells.html`} style="color:#8a7a6a; font-size:0.875rem; text-decoration:none;" onmouseover="this.style.color='#c9a84c'" onmouseout="this.style.color='#8a7a6a'">Spells</a>
-        <a href={`${base}/bestiary.html`} style="color:#8a7a6a; font-size:0.875rem; text-decoration:none;" onmouseover="this.style.color='#c9a84c'" onmouseout="this.style.color='#8a7a6a'">Bestiary</a>
+      <nav style="display:flex;gap:1.5rem;align-items:center;">
+        <a href={`${base}/`} class="nav-link">Home</a>
+        <a href={`${base}/species`} class="nav-link nav-link--active">Species</a>
+        <a href={`${base}/classes.html`} class="nav-link">Classes</a>
+        <a href={`${base}/spells.html`} class="nav-link">Spells</a>
+        <a href={`${base}/bestiary.html`} class="nav-link">Bestiary</a>
       </nav>
     </div>
   </header>
 
   <!-- PAGE HEADER -->
-  <div style="background:linear-gradient(180deg,#1a1208 0%,#0f0d0b 100%); border-bottom:1px solid #2e2820; padding:2.5rem 1.5rem 2rem; position:relative; overflow:hidden;">
+  <div style="background:linear-gradient(180deg,#1a1208 0%,#0f0d0b 100%);border-bottom:1px solid #2e2820;padding:2.5rem 1.5rem 2rem;position:relative;overflow:hidden;">
     <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:600px;height:200px;background:radial-gradient(ellipse at center,rgba(74,158,255,0.08) 0%,transparent 70%);pointer-events:none;"></div>
     <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#4a9eff,transparent);"></div>
-    <div style="max-width:1400px; margin:0 auto; position:relative;">
-      <div style="display:flex; align-items:baseline; gap:1rem; flex-wrap:wrap;">
-        <h1 style="font-family:'Cinzel',serif; font-size:2rem; font-weight:900; color:#e8dcc8; margin:0; letter-spacing:0.03em;">
-          Species
-        </h1>
-        <span id="species-count" style="color:#8a7a6a; font-size:0.9rem;"></span>
+    <div style="max-width:1400px;margin:0 auto;position:relative;">
+      <div style="display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap;">
+        <h1 style="font-family:'Cinzel',serif;font-size:2rem;font-weight:900;color:#e8dcc8;margin:0;letter-spacing:0.03em;">Species</h1>
+        <span id="species-count" style="color:#8a7a6a;font-size:0.9rem;"></span>
       </div>
-      <p style="color:#8a7a6a; margin:0.5rem 0 0; font-size:0.9rem;">
-        Official species with unified, modular traits. Use the filters to find your perfect ancestry.
-      </p>
+      <p style="color:#8a7a6a;margin:0.5rem 0 0;font-size:0.9rem;">Official species with unified, modular traits. Combine filters to find your perfect ancestry.</p>
     </div>
   </div>
 
-  <div style="max-width:1400px; margin:0 auto; padding:1.5rem; display:flex; gap:1.5rem; align-items:flex-start;">
+  <div style="max-width:1400px;margin:0 auto;padding:1.5rem;display:flex;gap:1.5rem;align-items:flex-start;">
 
-    <!-- SIDEBAR FILTERS -->
-    <aside id="filter-sidebar" style="width:220px; flex-shrink:0; position:sticky; top:4.5rem; max-height:calc(100vh - 5rem); overflow-y:auto;">
-      <div style="background:#1a1612; border:1px solid #2e2820; border-radius:0.5rem; padding:1.25rem;">
+    <!-- SIDEBAR -->
+    <aside style="width:240px;flex-shrink:0;position:sticky;top:4.5rem;max-height:calc(100vh - 5rem);overflow-y:auto;">
+      <div style="background:#1a1612;border:1px solid #2e2820;border-radius:0.5rem;padding:1.25rem;display:flex;flex-direction:column;gap:1.25rem;">
 
         <!-- Search -->
-        <div style="margin-bottom:1.25rem;">
-          <label style="display:block; font-family:'Cinzel',serif; font-size:0.75rem; color:#8a7a6a; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:0.5rem;">Search</label>
-          <input id="search-input" type="text" placeholder="Search species…"
-            style="width:100%; background:#0f0d0b; border:1px solid #2e2820; border-radius:0.375rem; padding:0.5rem 0.75rem; color:#e8dcc8; font-size:0.875rem; outline:none; box-sizing:border-box;"
-            onfocus="this.style.borderColor='#4a9eff'" onblur="this.style.borderColor='#2e2820'" />
-        </div>
-
-        <!-- Size filter -->
-        <div style="margin-bottom:1.25rem;">
-          <label style="display:block; font-family:'Cinzel',serif; font-size:0.75rem; color:#8a7a6a; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:0.5rem;">Size</label>
-          <div style="display:flex; flex-wrap:wrap; gap:0.375rem;">
-            {['Small','Medium','Large','Varies'].map(s => (
-              <button class="size-filter" data-size={s}
-                style="background:#0f0d0b; border:1px solid #2e2820; border-radius:0.25rem; padding:0.25rem 0.625rem; color:#8a7a6a; font-size:0.75rem; cursor:pointer;">
-                {s}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <!-- Trait filters -->
         <div>
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.5rem;">
-            <label style="font-family:'Cinzel',serif; font-size:0.75rem; color:#8a7a6a; letter-spacing:0.08em; text-transform:uppercase;">Traits</label>
-            <button id="clear-traits" style="background:none; border:none; color:#c9a84c; font-size:0.7rem; cursor:pointer; padding:0; display:none;">Clear</button>
-          </div>
-          <div style="display:flex; flex-direction:column; gap:0.25rem;">
-            {allTraits.map(trait => (
-              <label class="trait-filter-label" style="display:flex; align-items:center; gap:0.5rem; cursor:pointer; padding:0.2rem 0.25rem; border-radius:0.25rem;">
-                <input type="checkbox" class="trait-checkbox" data-trait={trait}
-                  style="accent-color:#4a9eff; cursor:pointer; width:14px; height:14px; flex-shrink:0;" />
-                <span style="font-size:0.775rem; color:#8a7a6a; line-height:1.3;">{trait}</span>
-              </label>
-            ))}
+          <label class="filter-label">Search</label>
+          <input id="search-input" type="text" placeholder="Species name…" class="text-input" />
+        </div>
+
+        <!-- Size -->
+        <div>
+          <label class="filter-label">Size</label>
+          <div style="display:flex;gap:0.5rem;">
+            <button class="size-btn" data-size="Small">Small</button>
+            <button class="size-btn" data-size="Medium">Medium</button>
           </div>
         </div>
 
+        <!-- Traits (multi-dropdown) -->
+        <div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem;">
+            <label class="filter-label" style="margin:0;">Traits</label>
+            <button id="add-trait-btn" style="background:none;border:1px solid #2e2820;border-radius:0.25rem;color:#c9a84c;font-size:0.7rem;cursor:pointer;padding:0.15rem 0.5rem;">+ Add</button>
+          </div>
+          <div id="trait-rows" style="display:flex;flex-direction:column;gap:0.375rem;"></div>
+          <button id="clear-traits" style="display:none;margin-top:0.375rem;background:none;border:none;color:#8a7a6a;font-size:0.7rem;cursor:pointer;padding:0;">✕ Clear all traits</button>
+        </div>
+
+        <!-- Damage Resistance -->
+        <div>
+          <label class="filter-label">Damage Resistance</label>
+          <select id="filter-resistance" class="select-input">
+            <option value="">Any</option>
+            {DAMAGE_TYPES.map(d => <option value={d}>{d}</option>)}
+          </select>
+        </div>
+
+        <!-- Damage Immunity -->
+        <div>
+          <label class="filter-label">Damage Immunity</label>
+          <select id="filter-immunity" class="select-input">
+            <option value="">Any</option>
+            {DAMAGE_TYPES.map(d => <option value={d}>{d}</option>)}
+          </select>
+        </div>
+
+        <!-- Condition Immunity -->
+        <div>
+          <label class="filter-label">Condition Immunity</label>
+          <select id="filter-condition" class="select-input">
+            <option value="">Any</option>
+            {CONDITIONS.map(c => <option value={c}>{c}</option>)}
+          </select>
+        </div>
+
+        <!-- Vulnerability -->
+        <div>
+          <label class="filter-label">Vulnerability</label>
+          <select id="filter-vulnerability" class="select-input">
+            <option value="">Any</option>
+            {DAMAGE_TYPES.map(d => <option value={d}>{d}</option>)}
+          </select>
+        </div>
+
+        <button id="reset-all" style="background:#0f0d0b;border:1px solid #2e2820;border-radius:0.375rem;color:#8a7a6a;font-size:0.8rem;cursor:pointer;padding:0.4rem;">Reset all filters</button>
       </div>
     </aside>
 
-    <!-- MAIN GRID -->
-    <main style="flex:1; min-width:0;">
+    <!-- MAIN -->
+    <main style="flex:1;min-width:0;">
       <div id="species-grid" class="species-grid">
         {speciesData.map(species => (
           <div
@@ -109,36 +172,34 @@ const SOURCE_LABEL: Record<string, string> = {
             data-name={species.name.toLowerCase()}
             data-size={species.size}
             data-traits={JSON.stringify(species.traitNames)}
+            data-desc={JSON.stringify(species.traits.map(t => t.desc.toLowerCase()))}
           >
-            <!-- Card header -->
-            <div class="species-card__header">
-              <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:0.5rem;">
-                <h2 class="species-card__name">{species.name}</h2>
-                <span class="species-card__source">{SOURCE_LABEL[species.source] ?? species.source}</span>
+            <div class="card-header">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:0.5rem;">
+                <h2 class="card-name">{species.name}</h2>
+                <span class="card-source">{SOURCE_LABEL[species.source] ?? species.source}</span>
               </div>
-              <div style="display:flex; gap:1rem; margin-top:0.375rem;">
-                <span class="species-meta"><span class="meta-label">Size</span> {species.size}</span>
-                <span class="species-meta"><span class="meta-label">Speed</span> {species.speed}</span>
+              <div style="display:flex;gap:1rem;margin-top:0.375rem;">
+                <span class="card-meta"><span class="meta-key">Size</span>{species.size}</span>
+                <span class="card-meta"><span class="meta-key">Speed</span>{species.speed}</span>
               </div>
             </div>
 
-            <!-- Trait tags -->
-            <div class="species-card__traits">
+            <div class="trait-tags">
               {species.traitNames.map(t => (
                 <span class="trait-tag">{t}</span>
               ))}
             </div>
 
-            <!-- Trait details (collapsible) -->
-            <details class="species-card__details">
-              <summary style="cursor:pointer; color:#c9a84c; font-size:0.8rem; font-weight:500; padding:0.25rem 0; list-style:none; display:flex; align-items:center; gap:0.375rem;">
-                <span class="details-arrow">▶</span> Trait details
+            <details class="card-details">
+              <summary class="card-summary">
+                <span class="arrow">▶</span> Trait details
               </summary>
               <div class="trait-list">
                 {species.traits.map(t => (
                   <div class="trait-entry">
-                    <span class="trait-entry__name">{t.name}</span>
-                    <span class="trait-entry__desc">{t.desc}</span>
+                    <span class="trait-name">{t.name}</span>
+                    <span class="trait-desc" set:html={linkifyText(t.desc)}></span>
                   </div>
                 ))}
               </div>
@@ -147,204 +208,261 @@ const SOURCE_LABEL: Record<string, string> = {
         ))}
       </div>
 
-      <div id="no-results" style="display:none; text-align:center; padding:4rem 2rem; color:#8a7a6a;">
-        <div style="font-size:2rem; margin-bottom:1rem;">🔍</div>
-        <p style="font-family:'Cinzel',serif; font-size:1.1rem; color:#e8dcc8; margin:0 0 0.5rem;">No species found</p>
-        <p style="font-size:0.875rem; margin:0;">Try adjusting your filters.</p>
+      <div id="no-results" style="display:none;text-align:center;padding:4rem 2rem;color:#8a7a6a;">
+        <div style="font-size:2rem;margin-bottom:1rem;">🔍</div>
+        <p style="font-family:'Cinzel',serif;font-size:1.1rem;color:#e8dcc8;margin:0 0 0.5rem;">No species found</p>
+        <p style="font-size:0.875rem;margin:0;">Try adjusting your filters.</p>
       </div>
     </main>
   </div>
 
-  <!-- FOOTER -->
-  <footer style="border-top:1px solid #2e2820; background:#0a0906; padding:2rem 1.5rem; text-align:center; margin-top:3rem;">
-    <p style="font-family:'Cinzel',serif; font-size:1rem; color:#c9a84c; margin:0 0 0.375rem; font-weight:700;">5e<span style="color:#e8dcc8;">Forge</span></p>
-    <p style="color:#8a7a6a; font-size:0.8125rem; margin:0;">Built by <a href="https://github.com/rsbarroco" style="color:#c9a84c; text-decoration:none;">Rodrigo Barroco</a></p>
+  <footer style="border-top:1px solid #2e2820;background:#0a0906;padding:2rem 1.5rem;text-align:center;margin-top:3rem;">
+    <p style="font-family:'Cinzel',serif;font-size:1rem;color:#c9a84c;margin:0 0 0.375rem;font-weight:700;">5e<span style="color:#e8dcc8;">Forge</span></p>
+    <p style="color:#8a7a6a;font-size:0.8125rem;margin:0;">Built by <a href="https://github.com/rsbarroco" style="color:#c9a84c;text-decoration:none;">Rodrigo Barroco</a></p>
   </footer>
-
 </Layout>
 
 <style>
-  .species-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem;
+  .nav-link { color:#8a7a6a;font-size:0.875rem;text-decoration:none;transition:color 0.2s; }
+  .nav-link:hover { color:#c9a84c; }
+  .nav-link--active { color:#c9a84c;font-weight:600; }
+
+  .filter-label { display:block;font-family:'Cinzel',serif;font-size:0.7rem;color:#5a4e42;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.375rem; }
+
+  .text-input {
+    width:100%;background:#0f0d0b;border:1px solid #2e2820;border-radius:0.375rem;
+    padding:0.45rem 0.65rem;color:#e8dcc8;font-size:0.825rem;outline:none;box-sizing:border-box;
+    transition:border-color 0.2s;
   }
+  .text-input:focus { border-color:#4a9eff; }
+
+  .select-input {
+    width:100%;background:#0f0d0b;border:1px solid #2e2820;border-radius:0.375rem;
+    padding:0.45rem 0.65rem;color:#8a7a6a;font-size:0.825rem;outline:none;cursor:pointer;
+    transition:border-color 0.2s;
+  }
+  .select-input:focus { border-color:#4a9eff; color:#e8dcc8; }
+
+  .size-btn {
+    flex:1;background:#0f0d0b;border:1px solid #2e2820;border-radius:0.25rem;
+    padding:0.3rem 0;color:#5a4e42;font-size:0.75rem;cursor:pointer;
+    transition:all 0.15s;
+  }
+  .size-btn.active { background:rgba(74,158,255,0.12);border-color:#4a9eff;color:#4a9eff;font-weight:600; }
+
+  .trait-row-select {
+    width:100%;background:#0f0d0b;border:1px solid #2e2820;border-radius:0.25rem;
+    padding:0.35rem 0.5rem;color:#8a7a6a;font-size:0.78rem;outline:none;cursor:pointer;
+  }
+  .trait-row-select.selected { border-color:#4a9eff;color:#4a9eff; }
+
+  .species-grid { display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1rem; }
 
   .species-card {
-    background: #1a1612;
-    border: 1px solid #2e2820;
-    border-radius: 0.5rem;
-    padding: 1.125rem 1.25rem;
-    transition: border-color 0.2s, background 0.2s;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
+    background:#1a1612;border:1px solid #2e2820;border-radius:0.5rem;
+    padding:1.125rem 1.25rem;display:flex;flex-direction:column;gap:0.75rem;
+    transition:border-color 0.2s,background 0.2s;
   }
+  .species-card:hover { background:#221e18;border-color:#4a9eff; }
 
-  .species-card:hover {
-    background: #221e18;
-    border-color: #4a9eff;
-  }
+  .card-name { font-family:'Cinzel',serif;font-size:1rem;font-weight:700;color:#e8dcc8;margin:0; }
+  .card-source { font-size:0.7rem;color:#5a4e42;background:#0f0d0b;border:1px solid #2e2820;border-radius:0.25rem;padding:0.15rem 0.4rem;white-space:nowrap;flex-shrink:0; }
+  .card-meta { font-size:0.775rem;color:#8a7a6a; }
+  .meta-key { color:#5a4e42;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.06em;margin-right:0.3rem; }
 
-  .species-card__header {}
-
-  .species-card__name {
-    font-family: 'Cinzel', serif;
-    font-size: 1rem;
-    font-weight: 700;
-    color: #e8dcc8;
-    margin: 0;
-    line-height: 1.3;
-  }
-
-  .species-card__source {
-    font-size: 0.7rem;
-    color: #5a4e42;
-    background: #0f0d0b;
-    border: 1px solid #2e2820;
-    border-radius: 0.25rem;
-    padding: 0.15rem 0.4rem;
-    white-space: nowrap;
-    flex-shrink: 0;
-  }
-
-  .species-meta {
-    font-size: 0.775rem;
-    color: #8a7a6a;
-  }
-
-  .meta-label {
-    color: #5a4e42;
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    margin-right: 0.25rem;
-  }
-
-  .species-card__traits {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.3rem;
-  }
-
+  .trait-tags { display:flex;flex-wrap:wrap;gap:0.3rem; }
   .trait-tag {
-    font-size: 0.7rem;
-    padding: 0.2rem 0.5rem;
-    background: #0f0d0b;
-    border: 1px solid #2e2820;
-    border-radius: 0.25rem;
-    color: #8a7a6a;
-    transition: border-color 0.15s, color 0.15s;
+    font-size:0.7rem;padding:0.2rem 0.5rem;background:#0f0d0b;border:1px solid #2e2820;
+    border-radius:0.25rem;color:#8a7a6a;transition:border-color 0.15s,color 0.15s;
   }
+  .trait-tag.active { border-color:#4a9eff;color:#4a9eff;background:rgba(74,158,255,0.08); }
 
-  .trait-tag.active {
-    border-color: #4a9eff;
-    color: #4a9eff;
-    background: rgba(74,158,255,0.08);
-  }
+  .card-details { border-top:1px solid #2e2820;padding-top:0.625rem; }
+  .card-summary { cursor:pointer;color:#c9a84c;font-size:0.8rem;font-weight:500;padding:0.25rem 0;list-style:none;display:flex;align-items:center;gap:0.375rem; }
+  .card-summary::-webkit-details-marker { display:none; }
+  details[open] .arrow { display:inline-block;transform:rotate(90deg); }
+  .arrow { font-size:0.6rem;display:inline-block;transition:transform 0.15s; }
 
-  .species-card__details {
-    border-top: 1px solid #2e2820;
-    padding-top: 0.625rem;
-  }
+  .trait-list { display:flex;flex-direction:column;gap:0.625rem;margin-top:0.625rem; }
+  .trait-entry { display:flex;flex-direction:column;gap:0.15rem; }
+  .trait-name { font-family:'Cinzel',serif;font-size:0.775rem;font-weight:600;color:#c9a84c; }
+  .trait-desc { font-size:0.775rem;color:#8a7a6a;line-height:1.55; }
 
-  .species-card__details[open] .details-arrow {
-    transform: rotate(90deg);
-    display: inline-block;
-  }
+  /* keyword tooltip underline */
+  .kw { border-bottom:1px dotted #c9a84c;cursor:help;color:inherit; }
 
-  .details-arrow {
-    font-size: 0.6rem;
-    display: inline-block;
-    transition: transform 0.15s;
-  }
-
-  .trait-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.625rem;
-    margin-top: 0.625rem;
-  }
-
-  .trait-entry {
-    display: flex;
-    flex-direction: column;
-    gap: 0.15rem;
-  }
-
-  .trait-entry__name {
-    font-family: 'Cinzel', serif;
-    font-size: 0.775rem;
-    font-weight: 600;
-    color: #c9a84c;
-  }
-
-  .trait-entry__desc {
-    font-size: 0.775rem;
-    color: #8a7a6a;
-    line-height: 1.5;
-  }
-
-  .size-filter.active {
-    background: rgba(74,158,255,0.12);
-    border-color: #4a9eff;
-    color: #4a9eff;
-  }
-
-  .trait-filter-label:hover span {
-    color: #e8dcc8;
-  }
-
-  @media (max-width: 768px) {
-    #filter-sidebar {
-      display: none;
-    }
-    .species-grid {
-      grid-template-columns: 1fr;
-    }
+  @media (max-width:768px) {
+    aside { display:none; }
+    .species-grid { grid-template-columns:1fr; }
   }
 </style>
 
-<script>
-  const cards = Array.from(document.querySelectorAll<HTMLElement>('.species-card'));
-  const searchInput = document.getElementById('search-input') as HTMLInputElement;
+<script define:vars={{ allTraits }}>
+  // ── TOOLTIP ──────────────────────────────────────────────────────────────
+  const TOOLTIPS = {
+    'darkvision':     'You can see in dim light as if bright light, and darkness as if dim light, within the stated range. You discern colors only as shades of gray.',
+    'superior darkvision': 'Extended Darkvision with a range of 120 feet. Otherwise identical to Darkvision.',
+    'blindsight':     'You can perceive your surroundings without relying on sight, within the stated radius.',
+    'tremorsense':    'You can detect and pinpoint creatures in contact with the ground within the stated range.',
+    'truesight':      'You can see in normal and magical darkness, see invisible creatures, detect illusions, and see the original form of shapechangers.',
+    'resistance':     'When you have resistance to a damage type, damage of that type is halved against you.',
+    'immunity':       'When you have immunity to a damage type or condition, you are completely unaffected by it.',
+    'vulnerability':  'When you have vulnerability to a damage type, damage of that type is doubled against you.',
+    'advantage':      'Roll the d20 twice and use the higher result.',
+    'disadvantage':   'Roll the d20 twice and use the lower result.',
+    'proficiency':    'Add your proficiency bonus (+2 to +6, depending on level) to relevant checks, attacks, or saving throws.',
+    'bonus action':   'A secondary action available on your turn, in addition to your main action.',
+    'reaction':       'An instant response triggered by a specific condition, usable once per round.',
+    'cantrip':        'A spell you can cast at will, without expending a spell slot.',
+    'spell slot':     'A resource consumed to cast spells of 1st level and higher.',
+    'concentration':  'Maintaining this spell requires concentration. You can only concentrate on one spell at a time.',
+    'ritual':         'This spell can be cast as a ritual, taking 10 minutes longer but without expending a spell slot.',
+  };
+
+  const tooltip = document.getElementById('tooltip');
+  document.addEventListener('mouseover', e => {
+    const el = e.target.closest('.kw');
+    if (!el || !tooltip) return;
+    const key = el.dataset.kw;
+    const text = TOOLTIPS[key];
+    if (!text) return;
+    tooltip.textContent = text;
+    tooltip.style.display = 'block';
+  });
+  document.addEventListener('mousemove', e => {
+    if (!tooltip || tooltip.style.display === 'none') return;
+    let x = e.clientX + 14, y = e.clientY + 14;
+    if (x + 270 > window.innerWidth) x = e.clientX - 274;
+    if (y + 80 > window.innerHeight) y = e.clientY - 84;
+    tooltip.style.left = x + 'px';
+    tooltip.style.top = y + 'px';
+  });
+  document.addEventListener('mouseout', e => {
+    if (!e.target.closest('.kw') && tooltip) tooltip.style.display = 'none';
+  });
+
+  // ── STATE ─────────────────────────────────────────────────────────────────
+  const cards = Array.from(document.querySelectorAll('.species-card'));
+  const searchInput = document.getElementById('search-input');
   const countEl = document.getElementById('species-count');
   const noResults = document.getElementById('no-results');
-  const clearBtn = document.getElementById('clear-traits') as HTMLButtonElement;
-  const sizeButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('.size-filter'));
-  const traitCheckboxes = Array.from(document.querySelectorAll<HTMLInputElement>('.trait-checkbox'));
+  const traitRowsEl = document.getElementById('trait-rows');
+  const addTraitBtn = document.getElementById('add-trait-btn');
+  const clearTraitsBtn = document.getElementById('clear-traits');
+  const resetAllBtn = document.getElementById('reset-all');
+  const filterResistance = document.getElementById('filter-resistance');
+  const filterImmunity = document.getElementById('filter-immunity');
+  const filterCondition = document.getElementById('filter-condition');
+  const filterVulnerability = document.getElementById('filter-vulnerability');
+  const sizeBtns = Array.from(document.querySelectorAll('.size-btn'));
 
-  let selectedSizes: Set<string> = new Set();
-  let selectedTraits: Set<string> = new Set();
+  let selectedSizes = new Set();
+  let selectedTraits = [];
 
-  function highlight(card: HTMLElement, activeTraits: Set<string>) {
-    card.querySelectorAll<HTMLElement>('.trait-tag').forEach(tag => {
-      if (activeTraits.has(tag.textContent ?? '')) {
-        tag.classList.add('active');
-      } else {
-        tag.classList.remove('active');
-      }
+  // ── TRAIT DROPDOWN ROWS ───────────────────────────────────────────────────
+  function addTraitRow(value = '') {
+    const row = document.createElement('div');
+    row.style.cssText = 'display:flex;gap:0.25rem;align-items:center;';
+
+    const sel = document.createElement('select');
+    sel.className = 'trait-row-select';
+    sel.style.flex = '1';
+    sel.innerHTML = '<option value="">— select trait —</option>' +
+      allTraits.map(t => `<option value="${t}"${t===value?' selected':''}>${t}</option>`).join('');
+    if (value) sel.classList.add('selected');
+
+    const rem = document.createElement('button');
+    rem.textContent = '✕';
+    rem.style.cssText = 'background:none;border:none;color:#5a4e42;cursor:pointer;font-size:0.75rem;padding:0.2rem 0.3rem;flex-shrink:0;';
+    rem.addEventListener('click', () => { row.remove(); syncTraits(); });
+
+    sel.addEventListener('change', () => {
+      sel.classList.toggle('selected', !!sel.value);
+      syncTraits();
     });
+
+    row.appendChild(sel);
+    row.appendChild(rem);
+    traitRowsEl.appendChild(row);
+    if (value) syncTraits();
   }
 
+  function syncTraits() {
+    selectedTraits = Array.from(traitRowsEl.querySelectorAll('select'))
+      .map(s => s.value).filter(Boolean);
+    clearTraitsBtn.style.display = selectedTraits.length ? 'block' : 'none';
+    filter();
+  }
+
+  addTraitBtn.addEventListener('click', () => addTraitRow());
+  clearTraitsBtn.addEventListener('click', () => {
+    traitRowsEl.innerHTML = '';
+    selectedTraits = [];
+    clearTraitsBtn.style.display = 'none';
+    filter();
+  });
+
+  // ── SIZE BUTTONS ──────────────────────────────────────────────────────────
+  sizeBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const s = btn.dataset.size;
+      if (selectedSizes.has(s)) { selectedSizes.delete(s); btn.classList.remove('active'); }
+      else { selectedSizes.add(s); btn.classList.add('active'); }
+      filter();
+    });
+  });
+
+  // ── SELECTS ───────────────────────────────────────────────────────────────
+  [filterResistance, filterImmunity, filterCondition, filterVulnerability].forEach(el => {
+    el.addEventListener('change', filter);
+  });
+
+  // ── SEARCH ────────────────────────────────────────────────────────────────
+  searchInput.addEventListener('input', filter);
+
+  // ── RESET ─────────────────────────────────────────────────────────────────
+  resetAllBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    selectedSizes.clear();
+    sizeBtns.forEach(b => b.classList.remove('active'));
+    traitRowsEl.innerHTML = '';
+    selectedTraits = [];
+    clearTraitsBtn.style.display = 'none';
+    [filterResistance, filterImmunity, filterCondition, filterVulnerability].forEach(el => el.value = '');
+    filter();
+  });
+
+  // ── FILTER ────────────────────────────────────────────────────────────────
   function filter() {
     const query = searchInput.value.toLowerCase().trim();
-    let visible = 0;
+    const resist = filterResistance.value.toLowerCase();
+    const immune = filterImmunity.value.toLowerCase();
+    const cond   = filterCondition.value.toLowerCase();
+    const vuln   = filterVulnerability.value.toLowerCase();
 
+    let visible = 0;
     cards.forEach(card => {
       const name = card.dataset.name ?? '';
       const size = card.dataset.size ?? '';
-      const traits: string[] = JSON.parse(card.dataset.traits ?? '[]');
+      const traits = JSON.parse(card.dataset.traits ?? '[]');
+      const descs = JSON.parse(card.dataset.desc ?? '[]').join(' ');
 
       const matchSearch = !query || name.includes(query);
-      const matchSize = selectedSizes.size === 0 || [...selectedSizes].some(s => size.includes(s));
-      const matchTraits = selectedTraits.size === 0 || [...selectedTraits].every(t => traits.includes(t));
+      const matchSize   = selectedSizes.size === 0 || [...selectedSizes].some(s => size.includes(s));
+      const matchTraits = selectedTraits.every(t => traits.includes(t));
+      const matchResist = !resist || descs.includes('resistance to ' + resist) || descs.includes(resist + ' resistance');
+      const matchImmune = !immune || descs.includes('immune to ' + immune) || descs.includes(immune + ' immunity') || descs.includes('immunity to ' + immune);
+      const matchCond   = !cond   || descs.includes(cond);
+      const matchVuln   = !vuln   || descs.includes('vulnerability to ' + vuln) || descs.includes(vuln + ' vulnerability');
 
-      const show = matchSearch && matchSize && matchTraits;
+      const show = matchSearch && matchSize && matchTraits && matchResist && matchImmune && matchCond && matchVuln;
       card.style.display = show ? '' : 'none';
       if (show) {
         visible++;
-        highlight(card, selectedTraits);
+        // highlight active trait tags
+        card.querySelectorAll('.trait-tag').forEach(tag => {
+          tag.classList.toggle('active', selectedTraits.includes(tag.textContent?.trim() ?? ''));
+        });
       }
     });
 
@@ -352,42 +470,6 @@ const SOURCE_LABEL: Record<string, string> = {
     if (noResults) noResults.style.display = visible === 0 ? 'block' : 'none';
   }
 
-  // Init count
   if (countEl) countEl.textContent = `${cards.length} species`;
-
-  searchInput.addEventListener('input', filter);
-
-  sizeButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const s = btn.dataset.size ?? '';
-      if (selectedSizes.has(s)) {
-        selectedSizes.delete(s);
-        btn.classList.remove('active');
-      } else {
-        selectedSizes.add(s);
-        btn.classList.add('active');
-      }
-      filter();
-    });
-  });
-
-  traitCheckboxes.forEach(cb => {
-    cb.addEventListener('change', () => {
-      const t = cb.dataset.trait ?? '';
-      if (cb.checked) {
-        selectedTraits.add(t);
-      } else {
-        selectedTraits.delete(t);
-      }
-      clearBtn.style.display = selectedTraits.size > 0 ? 'block' : 'none';
-      filter();
-    });
-  });
-
-  clearBtn.addEventListener('click', () => {
-    selectedTraits.clear();
-    traitCheckboxes.forEach(cb => cb.checked = false);
-    clearBtn.style.display = 'none';
-    filter();
-  });
 </script>
+
