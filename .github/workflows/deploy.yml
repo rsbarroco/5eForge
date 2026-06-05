@@ -1,9 +1,8 @@
-name: Deploy E5etools to GitHub Pages
+name: Deploy 5eForge
 
 on:
   push:
-    branches: [main, claude/quirky-cray-3hmrN]
-    paths: [frontend/**, .github/workflows/deploy.yml]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
