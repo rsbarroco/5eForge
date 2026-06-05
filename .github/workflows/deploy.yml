@@ -2,7 +2,7 @@ name: Deploy 5eForge
 
 on:
   push:
-    branches: [main]
+    branches: [main, claude/quirky-cray-3hmrN]
   workflow_dispatch:
 
 permissions:
