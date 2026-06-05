@@ -23,9 +23,11 @@ const KW_KEYS = [
   'proficiency','bonus action','reaction','cantrip','spell slot','concentration','ritual'
 ];
 
-function linkifyText(text: string): string {
-  let result = '';
-  let remaining = text;
+function linkifyText(rawText: string): string {
+  // Convert newlines to paragraph breaks for sub-options
+  const paragraphs = rawText.split('\n').map(para => {
+    let result = '';
+    let remaining = para;
   while (remaining.length > 0) {
     let matched = false;
     const lower = remaining.toLowerCase();
@@ -43,7 +45,18 @@ function linkifyText(text: string): string {
       remaining = remaining.slice(1);
     }
   }
-  return result;
+    return result;
+  });
+  // Sub-option lines start with "Word(s): " — render them with a bold label
+  const formatted = paragraphs.map((p, i) => {
+    const subMatch = p.match(/^(<span[^>]*>[^<]*<\/span>|[\w\s]+):\s/);
+    const isSubOption = i > 0 && /^[A-Z][\w\s]+:\s/.test(rawText.split('\n')[i]);
+    if (isSubOption) {
+      return `<span class="trait-sub">${p}</span>`;
+    }
+    return p;
+  });
+  return formatted.join('<br>');
 }
 
 const DAMAGE_TYPES = [
@@ -251,9 +264,11 @@ const CONDITIONS = [
   .size-btn.active { background:rgba(74,158,255,0.12);border-color:#4a9eff;color:#4a9eff;font-weight:600; }
 
   .trait-row-select {
-    width:100%;background:#0f0d0b;border:1px solid #2e2820;border-radius:0.25rem;
-    padding:0.35rem 0.5rem;color:#8a7a6a;font-size:0.78rem;outline:none;cursor:pointer;
+    width:100%;background:#0f0d0b;border:1px solid #2e2820;border-radius:0.375rem;
+    padding:0.45rem 0.65rem;color:#8a7a6a;font-size:0.825rem;outline:none;cursor:pointer;
+    transition:border-color 0.2s;
   }
+  .trait-row-select:focus { border-color:#4a9eff;color:#e8dcc8; }
   .trait-row-select.selected { border-color:#4a9eff;color:#4a9eff; }
 
   .species-grid { display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1rem; }
@@ -290,6 +305,9 @@ const CONDITIONS = [
 
   /* keyword tooltip underline */
   .kw { border-bottom:1px dotted #c9a84c;cursor:help;color:inherit; }
+
+  /* transformation sub-option lines */
+  .trait-sub { display:block;margin-top:0.35rem;padding-left:0.75rem;border-left:2px solid #2e2820;color:#8a7a6a; }
 
   @media (max-width:768px) {
     aside { display:none; }

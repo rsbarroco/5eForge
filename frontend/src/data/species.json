@@ -15,7 +15,7 @@
       },
       {
         "name": "Wind Caller",
-        "desc": "Starting at 3rd level, you can cast the gust of wind spell with this trait, without requiring a material component. Once you cast the spell with this trait, you can't do so again until you finish a long rest. You can also cast the spell using any spell slots you have of 2nd level or higher. Intelligence, Wisdom, or Charisma is your spellcasting ability for when you cast gust of wind with this trait (choose when you select this race)."
+        "desc": "Starting at 3rd level, you can cast the gust of wind spell with this trait, without requiring a material component. Once you cast the spell with this trait, you can't do so again until you finish a long rest. You can also cast the spell using any spell slots you have of 2nd level or higher.\nIntelligence, Wisdom, or Charisma is your spellcasting ability for when you cast gust of wind with this trait (choose when you select this race)."
       }
     ],
     "traitNames": [
@@ -40,7 +40,7 @@
       },
       {
         "name": "Healing Hands",
-        "desc": "As a Magic action, you touch a creature and roll a number of d4s equal to your Proficiency. The creature regains a number of Hit Points equal to the total rolled. Once you use this trait, you can't use it again until you finish a Long Rest."
+        "desc": "As a Magic action, you touch a creature and roll a number of d4s equal to your Proficiency Bonus. The creature regains a number of Hit Points equal to the total rolled. Once you use this trait, you can't use it again until you finish a Long Rest."
       },
       {
         "name": "Cantrip",
@@ -48,7 +48,7 @@
       },
       {
         "name": "Transformation",
-        "desc": "When you reach character level 3, you can transform as a Bonus Action using one of the options below (choose the option each time you transform). The transformation lasts for 1 minute or until you end it (no action required). Once you transform, you can't do so again until you finish a Long Rest. Once on each of your turns before the transformation ends, you can deal extra damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your Proficiency, and the extra damage's type is either Necrotic for Necrotic Shroud or Radiant for Heavenly Wings and Inner Radiance. Here are the transformation options:"
+        "desc": "When you reach character level 3, you can transform as a Bonus Action using one of the options below (choose the option each time you transform). The transformation lasts for 1 minute or until you end it (no action required). Once you transform, you can't do so again until you finish a Long Rest.\nOnce on each of your turns before the transformation ends, you can deal extra damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your Proficiency Bonus, and the extra damage's type is either Necrotic for Necrotic Shroud or Radiant for Heavenly Wings and Inner Radiance.\nHere are the transformation options:\nHeavenly Wings: Two spectral wings sprout from your back temporarily. Until the transformation ends, you have a Fly Speed equal to your Speed.\nInner Radiance: Searing light temporarily radiates from your eyes and mouth. For the duration, you shed Bright Light in a 10-foot radius and Dim Light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes Radiant damage equal to your Proficiency Bonus.\nNecrotic Shroud: Your eyes briefly become pools of darkness, and flightless wings sprout from your back temporarily. Creatures other than your allies within 10 feet of you must succeed on a Charisma saving throw (DC 8 plus your Charisma modifier and Proficiency Bonus) or have the Frightened condition until the end of your next turn."
       }
     ],
     "traitNames": [
@@ -76,17 +76,12 @@
       {
         "name": "Skill Proficiency",
         "desc": "You have proficiency in the Intimidation skill."
-      },
-      {
-        "name": "Gift of the Aetherborn",
-        "desc": "An unknown aetherborn, desperately seeking a means to extend their short life, discovered a process of transformation that prolonged their existence—by giving them the ability to feed on the life essence of other beings. Since then, other aetherborn have learned and carried out this monstrous transformation, and aetherborn with this \"gift\" have become a small minority among an already small population. A gifted aetherborn has the ability to drain the life essence of other beings. Similar to the way heat is transferred from a warm object to a cold one, a gifted aetherborn need only touch another living being with a clawed hand to draw life essence out, fueling their own continued existence while draining strength and vitality from their victim. For many aetherborn, living as they do for indulgence and instant gratification, the concepts of \"want\" and \"need\" are virtually synonymous. But Aetherborn with this gift understand what it is to truly need, for they develop a hunger for life essence that far exceeds any desires they might have felt before their transformation. A gifted aetherborn who abstains from this feeding deteriorates even more rapidly than other aetherborn, while enduring unspeakable agony caused by the deprivation of life energy. At the DM's option, an aetherborn character can research methods of achieving this dark \"gift.\" The process is similar to inventing and manufacturing a rare magic item (see \"Inventing and Manufacturing Devices\" earlier in this document). But rather than aether, the process requires a variety of rare unguents and unusual ingredients that make up the cost of researching and undergoing the transformation. An aetherborn with this gift gains the Drain Life ability: a natural attack that deals 1d6 necrotic damage and restores the same number of hit points to the aetherborn. However, if the aetherborn goes for 7 days without dealing this damage, their hit point maximum is reduced by 1d6 per week. This reduction can't be removed until the aetherborn has used their Drain Life ability and completed a long rest."
       }
     ],
     "traitNames": [
       "Darkvision",
       "Damage Resistance",
-      "Skill Proficiency",
-      "Gift of the Aetherborn"
+      "Skill Proficiency"
     ]
   },
   {
@@ -117,7 +112,7 @@
       },
       {
         "name": "Astral Trance",
-        "desc": "You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you remain conscious. Whenever you finish this trance, you gain proficiency in one skill of your choice and with one weapon or tool of your choice, selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory and the experiences of entities on the Astral Plane, and you retain them until you finish your next long rest."
+        "desc": "You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you remain conscious.\nWhenever you finish this trance, you gain proficiency in one skill of your choice and with one weapon or tool of your choice, selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory and the experiences of entities on the Astral Plane, and you retain them until you finish your next long rest."
       }
     ],
     "traitNames": [
@@ -145,7 +140,7 @@
       },
       {
         "name": "Healing Machine",
-        "desc": "If the mending spell is cast on you, you can spend a Hit Die, roll it, and regain a number of hit points equal to the roll plus your Constitution modifier (minimum of 1 hit point). In addition, your creator designed you to benefit from several spells that preserve life but that normally don't affect Constructs: cure wounds, healing word, mass cure wounds, mass healing word, and spare the dying."
+        "desc": "If the mending spell is cast on you, you can spend a Hit Die, roll it, and regain a number of hit points equal to the roll plus your Constitution modifier (minimum of 1 hit point).\nIn addition, your creator designed you to benefit from several spells that preserve life but that normally don't affect Constructs: cure wounds, healing word, mass cure wounds, mass healing word, and spare the dying."
       },
       {
         "name": "Mechanical Nature",
@@ -274,7 +269,7 @@
       },
       {
         "name": "Equine Build",
-        "desc": "You count as one size larger when determining your carrying capacity and the weight you can push or drag. In addition, any climb that requires hands and feet is especially difficult for you because of your equine legs. When you make such a climb, each foot of movement costs you 4 extra feet instead of the normal 1 extra foot."
+        "desc": "You count as one size larger when determining your carrying capacity and the weight you can push or drag.\nIn addition, any climb that requires hands and feet is especially difficult for you because of your equine legs. When you make such a climb, each foot of movement costs you 4 extra feet instead of the normal 1 extra foot."
       },
       {
         "name": "Natural Weapon",
@@ -294,17 +289,17 @@
   },
   {
     "name": "Changeling",
-    "source": "MPMM",
+    "source": "EFA",
     "size": "Small/Medium",
     "speed": "30ft walk",
     "traits": [
       {
         "name": "Skill Proficiency",
-        "desc": "Thanks to your connection to the fey realm, you gain proficiency with two of the following skills of your choice: Deception, Insight, Intimidation, Performance, or Persuasion."
+        "desc": "Thanks to your connection to the fey realm, you gain proficiency in two of the following skills of your choice: Deception, Insight, Intimidation, Performance, or Persuasion."
       },
       {
         "name": "Transformation",
-        "desc": "As an action, you change your appearance and your voice. You determine the specifics of the changes, including your coloration, hair length, and sex. You can also adjust your height between Medium and Small. You can make yourself appear as a member of another race, though none of your game statistics change. You can't duplicate the appearance of an individual you've never seen, and you must adopt a form that has the same basic arrangement of limbs that you have. Your clothing and equipment aren't changed by this trait. You stay in the new form until you use an action to revert to your true form or until you die."
+        "desc": "As an action, you can shape-shift to change your appearance and your voice. You determine the specifics of the changes, including your coloration, hair length, and sex. You can also adjust your height and weight and can change your size between Medium and Small. You can make yourself appear as a member of another playable species, though none of your game statistics change. You can't duplicate the appearance of an individual you've never seen, and you must adopt a form that has the same basic arrangement of limbs that you have. This trait doesn't change your clothing and equipment.\nWhile shape-shifted with this trait, you have Advantage on Charisma checks.\nYou stay in the new form until you take an action to revert to your true form."
       }
     ],
     "traitNames": [
@@ -344,7 +339,7 @@
       },
       {
         "name": "Gift of the Svirfneblin",
-        "desc": "Starting at 3rd level, you can cast the disguise self spell with this trait. Starting at 5th level, you can also cast the nondetection spell with it, without requiring a material component. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these using spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+        "desc": "Starting at 3rd level, you can cast the disguise self spell with this trait. Starting at 5th level, you can also cast the nondetection spell with it, without requiring a material component. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these using spell slots you have of the appropriate level.\nIntelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
       },
       {
         "name": "Magic Resistance",
@@ -370,7 +365,7 @@
     "traits": [
       {
         "name": "Ancestral Legacy",
-        "desc": "If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it. If you don't keep any of those elements or you choose this lineage at character creation, you gain proficiency in two skills of your choice."
+        "desc": "If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it.\nIf you don't keep any of those elements or you choose this lineage at character creation, you gain proficiency in two skills of your choice."
       },
       {
         "name": "Darkvision",
@@ -386,7 +381,7 @@
       },
       {
         "name": "Vampiric Bite",
-        "desc": "Your fanged bite is a natural weapon, which counts as a simple melee weapon with which you are proficient. You add your Constitution modifier, instead of your Strength modifier, to the attack and damage rolls when you attack with this bite. It deals 1d4 piercing damage on a hit. While you are missing half or more of your hit points, you have advantage on attack rolls you make with this bite. When you attack with this bite and hit a creature that isn't a Construct or an Undead, you can empower yourself in one of the following ways of your choice: You can empower yourself with this bite a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+        "desc": "Your fanged bite is a natural weapon, which counts as a simple melee weapon with which you are proficient. You add your Constitution modifier, instead of your Strength modifier, to the attack and damage rolls when you attack with this bite. It deals 1d4 piercing damage on a hit. While you are missing half or more of your hit points, you have advantage on attack rolls you make with this bite.\nWhen you attack with this bite and hit a creature that isn't a Construct or an Undead, you can empower yourself in one of the following ways of your choice:\nYou regain hit points equal to the piercing damage dealt by the bite.\nYou gain a bonus to the next ability check or attack roll you make; the bonus equals the piercing damage dealt by the bite\nYou can empower yourself with this bite a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
       }
     ],
     "traitNames": [
@@ -409,7 +404,7 @@
       },
       {
         "name": "Breath Weapon",
-        "desc": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone [Area of Effect] or a 30-foot Line [Area of Effect] that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (8 plus your Constitution modifier and Proficiency). On a failed save, a creature takes 1d10 damage of the type determined by your Draconic Ancestry trait. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17 (4d10). You can use this Breath Weapon a number of times equal to your Proficiency, and you regain all expended uses when you finish a Long Rest."
+        "desc": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 damage of the type determined by your Draconic Ancestry trait. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17 (4d10).\nYou can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
       },
       {
         "name": "Damage Resistance",
@@ -433,6 +428,101 @@
     ]
   },
   {
+    "name": "Dragonborn (Chromatic)",
+    "source": "FTD",
+    "size": "Medium",
+    "speed": "30ft walk",
+    "traits": [
+      {
+        "name": "Chromatic Ancestry",
+        "desc": "You have a chromatic dragon ancestor, granting you a special magical affinity. Choose one kind of dragon from the Chromatic Ancestry table. This determines the damage type for your other traits, as shown in the table."
+      },
+      {
+        "name": "Breath Weapon",
+        "desc": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 30-foot line that is 5 feet wide. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 damage of the type associated with your Chromatic Ancestry. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).\nYou can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+      },
+      {
+        "name": "Damage Resistance",
+        "desc": "You have resistance to the damage type associated with your Chromatic Ancestry."
+      },
+      {
+        "name": "Chromatic Warding",
+        "desc": "Starting at 5th level, as an action, you can channel your draconic energy to protect yourself. For 1 minute, you become immune to the damage type associated with your Chromatic Ancestry. Once you use this trait, you can't do so again until you finish a long rest."
+      }
+    ],
+    "traitNames": [
+      "Chromatic Ancestry",
+      "Breath Weapon",
+      "Damage Resistance",
+      "Chromatic Warding"
+    ]
+  },
+  {
+    "name": "Dragonborn (Gem)",
+    "source": "FTD",
+    "size": "Medium",
+    "speed": "30ft walk",
+    "traits": [
+      {
+        "name": "Gem Ancestry",
+        "desc": "You have a gem dragon ancestor, granting you a special magical affinity. Choose one kind of dragon from the Gem Ancestry table. This determines the damage type for your other traits, as shown in the table."
+      },
+      {
+        "name": "Breath Weapon",
+        "desc": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 15-foot cone. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 damage of the type associated with your Gem Ancestry. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).\nYou can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+      },
+      {
+        "name": "Damage Resistance",
+        "desc": "You have resistance to the damage type associated with your Gem Ancestry."
+      },
+      {
+        "name": "Psionic Mind",
+        "desc": "You can send telepathic messages to any creature you can see within 30 feet of you. You don't need to share a language with the creature for it to understand these messages, but it must be able to understand at least one language to comprehend them."
+      },
+      {
+        "name": "Gem Flight",
+        "desc": "Starting at 5th level, you can use a bonus action to manifest spectral wings on your body. These wings last for 1 minute. For the duration, you gain a flying speed equal to your walking speed and can hover. Once you use this trait, you can't do so again until you finish a long rest."
+      }
+    ],
+    "traitNames": [
+      "Gem Ancestry",
+      "Breath Weapon",
+      "Damage Resistance",
+      "Psionic Mind",
+      "Gem Flight"
+    ]
+  },
+  {
+    "name": "Dragonborn (Metallic)",
+    "source": "FTD",
+    "size": "Medium",
+    "speed": "30ft walk",
+    "traits": [
+      {
+        "name": "Metallic Ancestry",
+        "desc": "You have a metallic dragon ancestor, granting you a special magical affinity. Choose one kind of dragon from the Metallic Ancestry table. This determines the damage type for your other traits, as shown in the table."
+      },
+      {
+        "name": "Breath Weapon",
+        "desc": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 15-foot cone. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 damage of the type associated with your Metallic Ancestry. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).\nYou can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+      },
+      {
+        "name": "Damage Resistance",
+        "desc": "You have resistance to the damage type associated with your Metallic Ancestry."
+      },
+      {
+        "name": "Metallic Breath Weapon",
+        "desc": "At 5th level, you gain a second breath weapon. When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. The save DC for this breath is 8 + your Constitution modifier + your proficiency bonus. Whenever you use this trait, choose one:\nEnervating Breath: Each creature in the cone must succeed on a Constitution saving throw or become incapacitated until the start of your next turn.\nRepulsion Breath: Each creature in the cone must succeed on a Strength saving throw or be pushed 20 feet away from you and be knocked prone.\nOnce you use your Metallic Breath Weapon, you can't do so again until you finish a long rest."
+      }
+    ],
+    "traitNames": [
+      "Metallic Ancestry",
+      "Breath Weapon",
+      "Damage Resistance",
+      "Metallic Breath Weapon"
+    ]
+  },
+  {
     "name": "Duergar",
     "source": "MPMM",
     "size": "Medium",
@@ -444,7 +534,7 @@
       },
       {
         "name": "Innate Spellcasting",
-        "desc": "Starting at 3rd level, you can cast the enlarge/reduce spell on yourself with this trait, without requiring a material component. Starting at 5th level, you can also cast the invisibility spell on yourself with this trait, without requiring a material component. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+        "desc": "Starting at 3rd level, you can cast the enlarge/reduce spell on yourself with this trait, without requiring a material component. Starting at 5th level, you can also cast the invisibility spell on yourself with this trait, without requiring a material component. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level.\nIntelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
       },
       {
         "name": "Damage Resistance",
@@ -478,11 +568,11 @@
       },
       {
         "name": "Dwarven Toughness",
-        "desc": "Your Hit Points maximum increases by 1, and it increases by 1 again whenever you gain a level."
+        "desc": "Your Hit Point maximum increases by 1, and it increases by 1 again whenever you gain a level."
       },
       {
         "name": "Stonecunning",
-        "desc": "As a Bonus Action, you gain Tremorsense with a range of 60 feet for 10 minutes. You must be on a stone surface or touching a stone surface to use this Tremorsense. The stone can be natural or worked. You can use this Bonus Action a number of times equal to your Proficiency, and you regain all expended uses when you finish a Long Rest."
+        "desc": "As a Bonus Action, you gain Tremorsense with a range of 60 feet for 10 minutes. You must be on a stone surface or touching a stone surface to use this Tremorsense. The stone can be natural or worked.\nYou can use this Bonus Action a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
       }
     ],
     "traitNames": [
@@ -490,6 +580,36 @@
       "Damage Resistance",
       "Dwarven Toughness",
       "Stonecunning"
+    ]
+  },
+  {
+    "name": "Dwarf (Kaladesh)",
+    "source": "PSK",
+    "size": "Medium",
+    "speed": "25ft walk",
+    "traits": [
+      {
+        "name": "Darkvision",
+        "desc": "Accustomed to life underground in your race's ancient past, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "name": "Damage Resistance",
+        "desc": "You have advantage on saving throws against poison, and you have resistance against poison damage."
+      },
+      {
+        "name": "Dwarven Toughness",
+        "desc": "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
+      },
+      {
+        "name": "Artisan's Expertise",
+        "desc": "You gain proficiency with two kinds of artisan's tools of your choice. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies. In addition, whenever you make an Intelligence (History) check related to the origin of any architectural construction (including buildings, public works such as canals and aqueducts, and the massive cogwork that underlies much of the construction of Ghirapur), you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+      }
+    ],
+    "traitNames": [
+      "Darkvision",
+      "Damage Resistance",
+      "Dwarven Toughness",
+      "Artisan's Expertise"
     ]
   },
   {
@@ -508,7 +628,7 @@
       },
       {
         "name": "Fey Step",
-        "desc": "As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. When you reach 3rd level, your Fey Step gain an additional effect based on your season; if the effect requires a saving throw, the DC equals 8 + your proficiency bonus + your Intelligence, Wisdom, or Charisma modifier (choose when you select this race):"
+        "desc": "As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.\nWhen you reach 3rd level, your Fey Step gain an additional effect based on your season; if the effect requires a saving throw, the DC equals 8 + your proficiency bonus + your Intelligence, Wisdom, or Charisma modifier (choose when you select this race):\nAutumn: Immediately after you use your Fey Step, up to two creatures of your choice that you can see within 10 feet of you must succeed on a Wisdom saving throw or be charmed by you for 1 minute, or until you or your companions deal any damage to the creatures.\nWinter: When you use your Fey Step, one creature of your choice that you can see within 5 feet of you before you teleport must succeed on a Wisdom saving throw or be frightened of you until the end of your next turn.\nSpring: When you use your Fey Step, you can touch one willing creature within 5 feet of you. That creature then teleports instead of you, appearing in an unoccupied space of your choice that you can see within 30 feet of you.\nSummer: Immediately after you use your Fey Step, each creature of your choice that you can see within 5 feet of you takes fire damage equal to your proficiency bonus."
       },
       {
         "name": "Skill Proficiency",
@@ -516,7 +636,7 @@
       },
       {
         "name": "Trance",
-        "desc": "You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness. Whenever you finish this trance, you can change your season, and you can gain two proficiencies that you don't have, each one with a weapon or a tool of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest."
+        "desc": "You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.\nWhenever you finish this trance, you can change your season, and you can gain two proficiencies that you don't have, each one with a weapon or a tool of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest."
       }
     ],
     "traitNames": [
@@ -539,7 +659,7 @@
       },
       {
         "name": "Elven Lineage",
-        "desc": "You are part of a lineage that grants you supernatural abilities. Choose a lineage from the Elven Lineages table. You gain the level 1 benefit of that lineage. When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage)."
+        "desc": "You are part of a lineage that grants you supernatural abilities. Choose a lineage from the Elven Lineages table. You gain the level 1 benefit of that lineage.\nWhen you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level.\nIntelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage)."
       },
       {
         "name": "Fey Ancestry",
@@ -563,6 +683,71 @@
     ]
   },
   {
+    "name": "Elf (Kaladesh)",
+    "source": "PSK",
+    "size": "Medium",
+    "speed": "30ft walk",
+    "traits": [
+      {
+        "name": "Darkvision",
+        "desc": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "name": "Skill Proficiency",
+        "desc": "You have proficiency in the Perception skill."
+      },
+      {
+        "name": "Weapon Proficiency",
+        "desc": "You have proficiency with the longsword, shortsword, shortbow, and longbow."
+      },
+      {
+        "name": "Fey Ancestry",
+        "desc": "You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+      },
+      {
+        "name": "Trance",
+        "desc": "Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.\nIf you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed."
+      },
+      {
+        "name": "Elf Culture",
+        "desc": "The elves of Kaladesh don't organize themselves into nations or tribes. Still, they recognize three distinct cultural groups among their kind—though in truth these groupings are more like attitudes or alignments with regard to the rest of society and the use of technology. Choose one of these cultures."
+      }
+    ],
+    "traitNames": [
+      "Darkvision",
+      "Skill Proficiency",
+      "Weapon Proficiency",
+      "Fey Ancestry",
+      "Trance",
+      "Elf Culture"
+    ]
+  },
+  {
+    "name": "Elf (Zendikar)",
+    "source": "PSZ",
+    "size": "Medium",
+    "speed": "30ft walk",
+    "traits": [
+      {
+        "name": "Darkvision",
+        "desc": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "name": "Skill Proficiency",
+        "desc": "You have proficiency in the Perception skill."
+      },
+      {
+        "name": "Fey Ancestry",
+        "desc": "You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+      }
+    ],
+    "traitNames": [
+      "Darkvision",
+      "Skill Proficiency",
+      "Fey Ancestry"
+    ]
+  },
+  {
     "name": "Faerie",
     "source": "LFL",
     "size": "Medium",
@@ -578,7 +763,7 @@
     "traits": [
       {
         "name": "Innate Spellcasting",
-        "desc": "You know the druidcraft cantrip. Starting at 3rd level, you can cast the faerie fire spell with this trait. Starting at 5th level, you can also cast the enlarge/reduce spell with this trait. Once you cast faerie fire or enlarge/reduce with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+        "desc": "You know the druidcraft cantrip. Starting at 3rd level, you can cast the faerie fire spell with this trait. Starting at 5th level, you can also cast the enlarge/reduce spell with this trait. Once you cast faerie fire or enlarge/reduce with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.\nIntelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
       },
       {
         "name": "Flight",
@@ -598,7 +783,7 @@
     "traits": [
       {
         "name": "Innate Spellcasting",
-        "desc": "You can cast detect magic and disguise self spells with this trait. When you use this version of disguise self, you can seem up to 3 feet shorter or taller. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+        "desc": "You can cast detect magic and disguise self spells with this trait. When you use this version of disguise self, you can seem up to 3 feet shorter or taller. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have.\nIntelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
       },
       {
         "name": "Hidden Step",
@@ -651,7 +836,7 @@
     "traits": [
       {
         "name": "Astral Spark",
-        "desc": "Your psychic connection to the Astral Plane enables you to mystically access a spark of divine power, which you can channel through your weapons. When you hit a target with a simple or martial weapon, you can cause the target to take extra force damage equal to your proficiency bonus. You can use this trait a number of times equal to your proficiency bonus, but you can use it no more than once per turn. You regain all expended uses when you finish a long rest."
+        "desc": "Your psychic connection to the Astral Plane enables you to mystically access a spark of divine power, which you can channel through your weapons. When you hit a target with a simple or martial weapon, you can cause the target to take extra force damage equal to your proficiency bonus.\nYou can use this trait a number of times equal to your proficiency bonus, but you can use it no more than once per turn. You regain all expended uses when you finish a long rest."
       },
       {
         "name": "Firearms Mastery",
@@ -688,7 +873,7 @@
       },
       {
         "name": "Innate Spellcasting",
-        "desc": "You know the mage hand cantrip, and the hand is invisible when you cast the cantrip with this trait. Starting at 3rd level, you can cast the jump spell with this trait. Starting at 5th level, you can also cast misty step with it. Once you cast jump or misty step with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race). None of these spells require spell components when you cast them with this trait."
+        "desc": "You know the mage hand cantrip, and the hand is invisible when you cast the cantrip with this trait.\nStarting at 3rd level, you can cast the jump spell with this trait. Starting at 5th level, you can also cast misty step with it. Once you cast jump or misty step with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.\nIntelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race). None of these spells require spell components when you cast them with this trait."
       },
       {
         "name": "Damage Resistance",
@@ -709,7 +894,7 @@
     "traits": [
       {
         "name": "Innate Spellcasting",
-        "desc": "You know the mage hand cantrip, and the hand is invisible when you cast the cantrip with this trait. Starting at 3rd level, you can cast the shield spell with this trait. Starting at 5th level, you can also cast the detect thoughts spell with it. Once you cast shield or detect thoughts spell with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race). None of these spells require spell components when you cast them with this trait."
+        "desc": "You know the mage hand cantrip, and the hand is invisible when you cast the cantrip with this trait.\nStarting at 3rd level, you can cast the shield spell with this trait. Starting at 5th level, you can also cast the detect thoughts spell with it. Once you cast shield or detect thoughts spell with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.\nIntelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race). None of these spells require spell components when you cast them with this trait."
       },
       {
         "name": "Mental Discipline",
@@ -767,13 +952,43 @@
       },
       {
         "name": "Gnomish Lineage",
-        "desc": "You are part of a lineage that grants you supernatural abilities. Choose one of the following options; whichever one you choose, Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage):"
+        "desc": "You are part of a lineage that grants you supernatural abilities. Choose one of the following options; whichever one you choose, Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage):\nForest Gnome: You know the Minor Illusion cantrip. You also always have the Speak with Animals spell prepared. You can cast it without a spell slot a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. You can also use any spell slots you have to cast the spell.\nRock Gnome: You know the Mending and Prestidigitation cantrips. In addition, you can spend 10 minutes casting Prestidigitation to create a Tiny clockwork device (AC 5, 1 HP), such as a toy, fire starter, or music box. When you create the device, you determine its function by choosing one effect from Prestidigitation; the device produces that effect whenever you or another creature takes a Bonus Action to activate it with a touch. If the chosen effect has options within it, you choose one of those options for the device when you create it. For example, if you choose the spell's ignite-extinguish effect, you determine whether the device ignites or extinguishes fire; the device doesn't do both. You can have three such devices in existence at a time, and each falls apart 8 hours after its creation or when you dismantle it with a touch as a Utilize action."
       }
     ],
     "traitNames": [
       "Darkvision",
       "Magic Resistance",
       "Gnomish Lineage"
+    ]
+  },
+  {
+    "name": "Gnome (Deep)",
+    "source": "DMG",
+    "size": "Small",
+    "speed": "20ft walk",
+    "traits": [
+      {
+        "name": "Innate Spellcasting",
+        "desc": "You have an innate ability to cast the following spells, requiring no material components:\nIntelligence is your spellcasting ability for these spells."
+      },
+      {
+        "name": "Stone Camouflage",
+        "desc": "You have advantage on Dexterity (Stealth) checks to hide in rocky terrain."
+      },
+      {
+        "name": "Magic Resistance",
+        "desc": "You have advantage on Intelligence, Wisdom, and Charisma saving throws against magic."
+      },
+      {
+        "name": "Superior Darkvision",
+        "desc": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      }
+    ],
+    "traitNames": [
+      "Innate Spellcasting",
+      "Stone Camouflage",
+      "Magic Resistance",
+      "Superior Darkvision"
     ]
   },
   {
@@ -792,7 +1007,7 @@
       },
       {
         "name": "Fury of the Small",
-        "desc": "When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your proficiency bonus. You can use this trait a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest, and you can use it no more than once per turn."
+        "desc": "When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your proficiency bonus.\nYou can use this trait a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest, and you can use it no more than once per turn."
       },
       {
         "name": "Nimble Escape",
@@ -807,6 +1022,14 @@
     ]
   },
   {
+    "name": "Goblin (Dankwood)",
+    "source": "AWM",
+    "size": "Medium",
+    "speed": "30ft walk",
+    "traits": [],
+    "traitNames": []
+  },
+  {
     "name": "Goliath",
     "source": "XPHB",
     "size": "Medium",
@@ -814,7 +1037,7 @@
     "traits": [
       {
         "name": "Giant Ancestry",
-        "desc": "You are descended from Giants. Choose one of the following benefits—a supernatural boon from your ancestry; you can use the chosen benefit a number of times equal to your Proficiency, and you regain all expended uses when you finish a Long Rest:"
+        "desc": "You are descended from Giants. Choose one of the following benefits—a supernatural boon from your ancestry; you can use the chosen benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest:\nCloud's Jaunt (Cloud Giant): As a Bonus Action, you magically teleport up to 30 feet to an unoccupied space you can see.\nFire's Burn (Fire Giant): When you hit a target with an attack roll and deal damage to it, you can also deal 1d10 Fire damage to that target.\nFrost's Chill (Frost Giant): When you hit a target with an attack roll and deal damage to it, you can also deal 1d6 Cold damage to that target and reduce its Speed by 10 feet until the start of your next turn.\nHill's Tumble (Hill Giant): When you hit a Large or smaller creature with an attack roll and deal damage to it, you can give that target the Prone condition.\nStone's Endurance (Stone Giant): When you take damage, you can take a Reaction to roll 1d12. Add your Constitution modifier to the number rolled and reduce the damage by that total.\nStorm's Thunder (Storm Giant): When you take damage from a creature within 60 feet of you, you can take a Reaction to deal 1d8 Thunder damage to that creature."
       },
       {
         "name": "Transformation",
@@ -876,7 +1099,7 @@
       },
       {
         "name": "Poisonous Skin",
-        "desc": "Any creature that grapples you or otherwise comes into direct contact with your skin must succeed on a 12 Constitution saving throw or become poisoned for 1 minute. A poisoned creature no longer in direct contact with you can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. You can also apply this poison to any piercing weapon as part of an attack with that weapon, though when you hit the poison reacts differently. The target must succeed on a 12 Constitution saving throw or take 2d4 poison damage."
+        "desc": "Any creature that grapples you or otherwise comes into direct contact with your skin must succeed on a DC 12 Constitution saving throw or become poisoned for 1 minute. A poisoned creature no longer in direct contact with you can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.\nYou can also apply this poison to any piercing weapon as part of an attack with that weapon, though when you hit the poison reacts differently. The target must succeed on a DC 12 Constitution saving throw or take 2d4 poison damage."
       },
       {
         "name": "Standing Leap",
@@ -912,7 +1135,7 @@
       },
       {
         "name": "Hadozee Dodge",
-        "desc": "The magic that runs in your veins heightens your natural defenses. When you take damage, you can use your reaction to roll a d6. Add your proficiency bonus to the number rolled, and reduce the damage you take by an amount equal to that total (minimum of 0 damage). You can use this trait a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest."
+        "desc": "The magic that runs in your veins heightens your natural defenses. When you take damage, you can use your reaction to roll a d6. Add your proficiency bonus to the number rolled, and reduce the damage you take by an amount equal to that total (minimum of 0 damage).\nYou can use this trait a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest."
       }
     ],
     "traitNames": [
@@ -1044,7 +1267,7 @@
     "traits": [
       {
         "name": "Ancestral Legacy",
-        "desc": "If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it. If you don't keep any of those elements or you choose this lineage at character creation, you gain proficiency in two skills of your choice."
+        "desc": "If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it.\nIf you don't keep any of those elements or you choose this lineage at character creation, you gain proficiency in two skills of your choice."
       },
       {
         "name": "Darkvision",
@@ -1052,11 +1275,11 @@
       },
       {
         "name": "Eerie Token",
-        "desc": "As a bonus action, you can harmlessly remove a lock of your hair, one of your nails, or one of your teeth. This token is imbued with magic until you finish a long rest. While the token is imbued in this way, you can take these actions: Once you create a token using this feature, you can't do so again until you finish a long rest, at which point your missing part regrows."
+        "desc": "As a bonus action, you can harmlessly remove a lock of your hair, one of your nails, or one of your teeth. This token is imbued with magic until you finish a long rest. While the token is imbued in this way, you can take these actions:\nTelepathic Message: As an action, you can send a telepathic message to the creature holding or carrying the token, as long as you are within 10 miles of it. The message can contain up to twenty-five words.\nRemote Viewing: If you are within 10 miles of the token, you can enter a trance as an action. The trance lasts for 1 minute, but it ends early if you dismiss it (no action required) or are incapacitated. During this trance, you can see and hear from the token as if you were located where it is. While you are using your senses at the token's location, you are blinded and deafened in regard to your own surroundings. When the trance ends, the token is harmlessly destroyed.\nOnce you create a token using this feature, you can't do so again until you finish a long rest, at which point your missing part regrows."
       },
       {
         "name": "Hex Magic",
-        "desc": "You can cast the disguise self and hex spells with this trait. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose the ability when you gain this lineage). Hags can undertake a ritual to irreversibly transform a hexblood they created into a new hag, either one of their own kind or that embodies the hexblood's nature. This requires that both the hag and hexblood be in the same place and consent to the lengthy ritual—circumstances most hexbloods shun but might come to accept over the course of centuries. Once a hexblood undergoes this irreversible ritual, they emerge as a hag NPC no longer under the control of the hexblood's player, unless the DM rules otherwise."
+        "desc": "You can cast the disguise self and hex spells with this trait. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have.\nIntelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose the ability when you gain this lineage).\nHags can undertake a ritual to irreversibly transform a hexblood they created into a new hag, either one of their own kind or that embodies the hexblood's nature. This requires that both the hag and hexblood be in the same place and consent to the lengthy ritual—circumstances most hexbloods shun but might come to accept over the course of centuries. Once a hexblood undergoes this irreversible ritual, they emerge as a hag NPC no longer under the control of the hexblood's player, unless the DM rules otherwise."
       }
     ],
     "traitNames": [
@@ -1082,7 +1305,7 @@
       },
       {
         "name": "Fey Gift",
-        "desc": "You can use this trait to take the Help action as a bonus action, and you can do so a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest. Starting at 3rd level, choose one of the options below each time you take the Help action with this trait:"
+        "desc": "You can use this trait to take the Help action as a bonus action, and you can do so a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest.\nStarting at 3rd level, choose one of the options below each time you take the Help action with this trait:\nHospitality: You and the creature you help each gain a number of temporary hit points equal to 1d6 plus your proficiency bonus.\nPassage: You and the creature you help each increase your walking speeds by 10 feet until the start of your next turn.\nSpite: Until the start of your next turn, the first time the creature you help hits a target with an attack roll, that target has disadvantage on the next attack roll it makes within the next minute."
       },
       {
         "name": "Fortune from the Many",
@@ -1122,26 +1345,58 @@
     ]
   },
   {
+    "name": "Human (Innistrad)",
+    "source": "PSI",
+    "size": "Medium",
+    "speed": "30ft walk",
+    "traits": [],
+    "traitNames": []
+  },
+  {
+    "name": "Human (Ixalan)",
+    "source": "PSX",
+    "size": "Medium",
+    "speed": "30ft walk",
+    "traits": [],
+    "traitNames": []
+  },
+  {
+    "name": "Human (Kaladesh)",
+    "source": "PSK",
+    "size": "Medium",
+    "speed": "30ft walk",
+    "traits": [],
+    "traitNames": []
+  },
+  {
+    "name": "Human (Zendikar)",
+    "source": "PSZ",
+    "size": "Medium",
+    "speed": "30ft walk",
+    "traits": [],
+    "traitNames": []
+  },
+  {
     "name": "Kalashtar",
-    "source": "ERLW",
+    "source": "EFA",
     "size": "Medium",
     "speed": "30ft walk",
     "traits": [
       {
         "name": "Dual Mind",
-        "desc": "You have advantage on all Wisdom saving throws."
+        "desc": "You have Advantage on Wisdom and Charisma saving throws."
       },
       {
         "name": "Mental Discipline",
-        "desc": "You have resistance to psychic damage."
+        "desc": "You have Resistance to Psychic damage."
       },
       {
         "name": "Mind Link",
-        "desc": "You can speak telepathically to any creature you can see, provided the creature is within a number of feet of you equal to 10 times your level. You don't need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language. When you're using this trait to speak telepathically to a creature, you can use your action to give that creature the ability to speak telepathically with you for 1 hour or until you end this effect as an action. To use this ability, the creature must be able to see you and must be within this trait's range. You can give this ability to only one creature at a time; giving it to a creature takes it away from another creature who has it."
+        "desc": "You have telepathy with a range in feet equal to 10 times your level. When you're using this trait to speak telepathically to a creature, you can take a Magic action to give that creature the ability to speak telepathically with you for 1 hour or until you take another Magic action to end this effect."
       },
       {
         "name": "Severed from Dreams",
-        "desc": "Kalashtar sleep, but they don't connect to the plane of dreams as other creatures do. Instead, their minds draw from the memories of their otherworldly spirit while they sleep. As such, you are immune to spells and other magical effects that require you to dream, like dream, but not to spells and other magical effects that put you to sleep, like sleep."
+        "desc": "You can't be the target of the Dream spell. In addition, when you finish a Long Rest, you gain proficiency in one skill of your choice. This proficiency lasts until you finish another Long Rest."
       }
     ],
     "traitNames": [
@@ -1167,7 +1422,7 @@
       },
       {
         "name": "Taunt",
-        "desc": "You have an extraordinary ability to fluster creatures. As a bonus action, you can unleash a string of provoking words at a creature within 60 feet of yourself that can hear and understand you. The target must succeed on a Wisdom saving throw, or it has disadvantage on attack rolls against targets other than you until the start of your next turn. The DC equals 8 + your proficiency bonus + your Intelligence, Wisdom, or Charisma modifier (choose when you select this race). You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+        "desc": "You have an extraordinary ability to fluster creatures. As a bonus action, you can unleash a string of provoking words at a creature within 60 feet of yourself that can hear and understand you. The target must succeed on a Wisdom saving throw, or it has disadvantage on attack rolls against targets other than you until the start of your next turn. The DC equals 8 + your proficiency bonus + your Intelligence, Wisdom, or Charisma modifier (choose when you select this race).\nYou can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
       }
     ],
     "traitNames": [
@@ -1188,7 +1443,7 @@
       },
       {
         "name": "Skill Proficiency",
-        "desc": "Thanks to your supernaturally good memory, you have proficiency in two skills of your choice. Moreover, when you make an ability check using any skill in which you have proficiency, you can give yourself advantage on the check before rolling the d20. You can give yourself advantage in this way a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+        "desc": "Thanks to your supernaturally good memory, you have proficiency in two skills of your choice.\nMoreover, when you make an ability check using any skill in which you have proficiency, you can give yourself advantage on the check before rolling the d20. You can give yourself advantage in this way a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
       },
       {
         "name": "Mimicry",
@@ -1241,7 +1496,7 @@
       },
       {
         "name": "Lethargy Resilience",
-        "desc": "When you fail a saving throw to avoid or end the Unconscious condition, you can succeed instead. Once you use this trait, you can't do so again until you finish 1d4 Long Rest."
+        "desc": "When you fail a saving throw to avoid or end the Unconscious condition, you can succeed instead. Once you use this trait, you can't do so again until you finish 1d4 Long Rests."
       },
       {
         "name": "Skill Proficiency",
@@ -1280,7 +1535,7 @@
       },
       {
         "name": "Kobold Legacy",
-        "desc": "Kobold's connections to dragons can manifest in unpredictable ways in an individual kobold. Choose one of the following legacy options for your kobold."
+        "desc": "Kobold's connections to dragons can manifest in unpredictable ways in an individual kobold. Choose one of the following legacy options for your kobold.\nCraftiness: You have proficiency in one of the following skills of your choice: Arcana, Investigation, Medicine, Sleight of Hand, or Survival.\nDefiance: You have advantage on saving throws to avoid or end the frightened condition on yourself.\nDraconic Sorcery: You know one cantrip of your choice from the sorcerer spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for that cantrip (choose when you select this race)."
       }
     ],
     "traitNames": [
@@ -1495,11 +1750,11 @@
       },
       {
         "name": "Natural Armor",
-        "desc": "You have thick, leathery skin. When you aren't wearing armor, your AC is 12 + your Constitution modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor. When the game gives you more than one way to calculate your Armor Class, you can use only one of them. You choose the one to use. For example, if you have the loxodon's Natural Armor trait and the monk's Unarmored Defense feature, you don't mix them together. Instead, you choose which one determines your AC."
+        "desc": "You have thick, leathery skin. When you aren't wearing armor, your AC is 12 + your Constitution modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.\nWhen the game gives you more than one way to calculate your Armor Class, you can use only one of them. You choose the one to use. For example, if you have the loxodon's Natural Armor trait and the monk's Unarmored Defense feature, you don't mix them together. Instead, you choose which one determines your AC."
       },
       {
         "name": "Trunk",
-        "desc": "You can grasp things with your trunk, and you can use it as a snorkel. It has a reach of 5 feet, and it can lift a number of pounds equal to five times your Strength score. You can use it to do the following simple tasks: lift, drop, hold, push, or pull an object or a creature; open or close a door or a container; grapple someone; or make an unarmed strike. Your DM might allow other simple tasks to be added to that list of options. Your trunk can't wield weapons or shields or do anything that requires manual precision, such as using tools or magic items or performing the somatic components of a spell."
+        "desc": "You can grasp things with your trunk, and you can use it as a snorkel. It has a reach of 5 feet, and it can lift a number of pounds equal to five times your Strength score. You can use it to do the following simple tasks: lift, drop, hold, push, or pull an object or a creature; open or close a door or a container; grapple someone; or make an unarmed strike. Your DM might allow other simple tasks to be added to that list of options.\nYour trunk can't wield weapons or shields or do anything that requires manual precision, such as using tools or magic items or performing the somatic components of a spell."
       },
       {
         "name": "Keen Smell",
@@ -1560,6 +1815,36 @@
     ]
   },
   {
+    "name": "Minotaur (Amonkhet)",
+    "source": "PSA",
+    "size": "Medium",
+    "speed": "30ft walk",
+    "traits": [
+      {
+        "name": "Natural Weapon",
+        "desc": "You can use your horns as a natural weapon to make unarmed strikes. If you hit with your horns, you deal bludgeoning damage equal to 1d6 + your Strength modifier."
+      },
+      {
+        "name": "Skill Proficiency",
+        "desc": "You gain proficiency in the Intimidation skill."
+      },
+      {
+        "name": "Relentless Endurance",
+        "desc": "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest."
+      },
+      {
+        "name": "Savage Attacks",
+        "desc": "When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
+      }
+    ],
+    "traitNames": [
+      "Natural Weapon",
+      "Skill Proficiency",
+      "Relentless Endurance",
+      "Savage Attacks"
+    ]
+  },
+  {
     "name": "Naga",
     "source": "PSA",
     "size": "Medium",
@@ -1571,7 +1856,7 @@
       },
       {
         "name": "Natural Weapon",
-        "desc": "Your fanged maw and constricting serpentine body are natural weapons, which you can use to make unarmed strikes. If you hit with your bite, you deal piercing damage equal to 1d4 + your Strength modifier, and your target must make a Constitution saving throw (8 + your proficiency bonus + your Constitution modifier). On a failed save, the target takes 1d4 poison damage. If you hit with your constrict attack, you deal bludgeoning damage equal to 1d6 + your Strength modifier, and the target is grappled (escape 8 + your proficiency bonus + your Strength modifier). Until this grapple ends, the target is restrained, and you can't constrict another target."
+        "desc": "Your fanged maw and constricting serpentine body are natural weapons, which you can use to make unarmed strikes.\nIf you hit with your bite, you deal piercing damage equal to 1d4 + your Strength modifier, and your target must make a Constitution saving throw (DC 8 + your proficiency bonus + your Constitution modifier). On a failed save, the target takes 1d4 poison damage.\nIf you hit with your constrict attack, you deal bludgeoning damage equal to 1d6 + your Strength modifier, and the target is grappled (escape DC 8 + your proficiency bonus + your Strength modifier). Until this grapple ends, the target is restrained, and you can't constrict another target."
       },
       {
         "name": "Damage Immunity",
@@ -1597,7 +1882,7 @@
     "traits": [
       {
         "name": "Adrenaline Rush",
-        "desc": "You can take the Dash action as a Bonus Action. When you do so, you gain a number of Temporary Hit Points equal to your Proficiency. You can use this trait a number of times equal to your Proficiency, and you regain all expended uses when you finish a Short Rest or Long Rest."
+        "desc": "You can take the Dash action as a Bonus Action. When you do so, you gain a number of Temporary Hit Points equal to your Proficiency Bonus.\nYou can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest."
       },
       {
         "name": "Superior Darkvision",
@@ -1605,13 +1890,43 @@
       },
       {
         "name": "Relentless Endurance",
-        "desc": "When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Points instead. Once you use this trait, you can't do so again until you finish a Long Rest."
+        "desc": "When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead. Once you use this trait, you can't do so again until you finish a Long Rest."
       }
     ],
     "traitNames": [
       "Adrenaline Rush",
       "Superior Darkvision",
       "Relentless Endurance"
+    ]
+  },
+  {
+    "name": "Orc (Ixalan)",
+    "source": "PSX",
+    "size": "Medium",
+    "speed": "30ft walk",
+    "traits": [
+      {
+        "name": "Skill Proficiency",
+        "desc": "You gain proficiency in the Intimidation skill."
+      },
+      {
+        "name": "Relentless Endurance",
+        "desc": "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest."
+      },
+      {
+        "name": "Savage Attacks",
+        "desc": "When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
+      },
+      {
+        "name": "Darkvision",
+        "desc": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      }
+    ],
+    "traitNames": [
+      "Skill Proficiency",
+      "Relentless Endurance",
+      "Savage Attacks",
+      "Darkvision"
     ]
   },
   {
@@ -1663,7 +1978,7 @@
       },
       {
         "name": "Transformation",
-        "desc": "As an action, you can reshape your body to give yourself a head, one or two arms, one or two legs, and makeshift hands and feet, or you can revert to a limbless blob. While you have a humanlike shape, you can wear clothing and armor made for a Humanoid of your size. As a bonus action, you can extrude a pseudopod that is up to 6 inches wide and 10 feet long or reabsorb it into your body. As part of the same bonus action, you can use this pseudopod to manipulate an object, open or close a door or container, or pick up or set down a Tiny object. The pseudopod contains no sensory organs and can't attack, activate magic items, or lift more than 10 pounds."
+        "desc": "As an action, you can reshape your body to give yourself a head, one or two arms, one or two legs, and makeshift hands and feet, or you can revert to a limbless blob. While you have a humanlike shape, you can wear clothing and armor made for a Humanoid of your size.\nAs a bonus action, you can extrude a pseudopod that is up to 6 inches wide and 10 feet long or reabsorb it into your body. As part of the same bonus action, you can use this pseudopod to manipulate an object, open or close a door or container, or pick up or set down a Tiny object. The pseudopod contains no sensory organs and can't attack, activate magic items, or lift more than 10 pounds."
       }
     ],
     "traitNames": [
@@ -1682,11 +1997,11 @@
     "traits": [
       {
         "name": "Ancestral Legacy",
-        "desc": "If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it. If you don't keep any of those elements or you choose this lineage at character creation, you gain proficiency in two skills of your choice."
+        "desc": "If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it.\nIf you don't keep any of those elements or you choose this lineage at character creation, you gain proficiency in two skills of your choice."
       },
       {
         "name": "Deathless Nature",
-        "desc": "You have escaped death, a fact represented by the following benefits:"
+        "desc": "You have escaped death, a fact represented by the following benefits:\nYou have advantage on saving throws against disease and being poisoned, and you have resistance to poison damage.\nYou have advantage on death saving throws.\nYou don't need to eat, drink, or breathe.\nYou don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness."
       },
       {
         "name": "Knowledge from a Past Life",
@@ -1707,7 +2022,7 @@
     "traits": [
       {
         "name": "Cold Fire Magic",
-        "desc": "You know the Ray of Frost cantrip. When you reach character levels 3 and 5, you learn the Ice Knife spell and the Flame Blade spell, respectively. You always have those spells prepared. You can cast each once without a spell slot, and you regain the ability to cast these spells in this way when you finish a Long Rest. You can also cast the spells using any spell slots you have of the appropriate level. When you cast Flame Blade using this trait, the spell deals Cold damage instead of Fire damage. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose the ability when you select this species)."
+        "desc": "You know the Ray of Frost cantrip. When you reach character levels 3 and 5, you learn the Ice Knife spell and the Flame Blade spell, respectively. You always have those spells prepared. You can cast each once without a spell slot, and you regain the ability to cast these spells in this way when you finish a Long Rest. You can also cast the spells using any spell slots you have of the appropriate level. When you cast Flame Blade using this trait, the spell deals Cold damage instead of Fire damage.\nIntelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose the ability when you select this species)."
       },
       {
         "name": "Cold Resistance",
@@ -1782,7 +2097,7 @@
       },
       {
         "name": "Trance",
-        "desc": "You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness. Whenever you finish this trance, you can gain two proficiencies that you don't have, each one with a weapon or a tool of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest."
+        "desc": "You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.\nWhenever you finish this trance, you can gain two proficiencies that you don't have, each one with a weapon or a tool of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest."
       }
     ],
     "traitNames": [
@@ -1802,7 +2117,7 @@
     "traits": [
       {
         "name": "Blessing of the Raven Queen",
-        "desc": "As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. Starting at 3rd level, you also gain resistance to all damage when you teleport using this trait. The resistance lasts until the start of your next turn. During that time, you appear ghostly and translucent."
+        "desc": "As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.\nStarting at 3rd level, you also gain resistance to all damage when you teleport using this trait. The resistance lasts until the start of your next turn. During that time, you appear ghostly and translucent."
       },
       {
         "name": "Darkvision",
@@ -1822,7 +2137,7 @@
       },
       {
         "name": "Trance",
-        "desc": "You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness. Whenever you finish this trance, you can gain two proficiencies that you don't have, each one with a weapon or a tool of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest."
+        "desc": "You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.\nWhenever you finish this trance, you can gain two proficiencies that you don't have, each one with a weapon or a tool of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest."
       }
     ],
     "traitNames": [
@@ -1836,21 +2151,21 @@
   },
   {
     "name": "Shifter",
-    "source": "MPMM",
-    "size": "Medium",
+    "source": "EFA",
+    "size": "Small/Medium",
     "speed": "30ft walk",
     "traits": [
       {
         "name": "Skill Proficiency",
-        "desc": "Channeling the beast within, you have proficiency in one of the following skills of your choice: Acrobatics, Athletics, Intimidation, or Survival."
+        "desc": "Channeling the beast within, you gain proficiency in one of the following skills of your choice: Acrobatics, Athletics, Intimidation, or Survival."
       },
       {
         "name": "Darkvision",
-        "desc": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were in dim light. You discern colors in that darkness only as shades of gray."
+        "desc": "You have Darkvision with a range of 60 feet."
       },
       {
         "name": "Transformation",
-        "desc": "As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to 2 × your proficiency bonus. You can shift a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. Whenever you shift, you gain an additional benefit based on one of the following options (choose when you select this race):"
+        "desc": "As a Bonus Action, you can shape-shift to assume a more bestial appearance. This transformation lasts for 1 minute or until you revert to your normal appearance as a Bonus Action. When you shift, you gain Temporary Hit Points equal to 2 times your Proficiency Bonus. You can shift a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.\nWhenever you shift, you gain the benefit of one of the following options (choose when you select this species)\nBeasthide: You gain 1d6 additional Temporary Hit Points. While shifted, you have a +1 bonus to your Armor Class.\nLongtooth: When you shift and as a Bonus Action on your other turns while shifted, you can use your elongated fangs to make an Unarmed Strike. If you hit with this Unarmed Strike and deal damage, you can deal Piercing damage equal to 1d6 plus your Strength modifier, instead of the normal damage of an Unarmed Strike.\nSwiftstride: While you are shifted, your Speed increases by 10 feet. Additionally, you can move up to 10 feet as a Reaction when a creature ends its turn within 5 feet of you. This reactive movement doesn't provoke Opportunity Attacks.\nWildhunt: While shifted, you have Advantage on Wisdom checks. Additionally, no creature within 30 feet of you can have Advantage on an attack roll against you unless you have the Incapacitated condition."
       }
     ],
     "traitNames": [
@@ -1871,7 +2186,7 @@
       },
       {
         "name": "Animal Enhancement",
-        "desc": "Your body has been altered to incorporate certain animal characteristics. You choose one animal enhancement now and a second enhancement at 5th level. At 1st level, choose one of the following options: At 5th level, your body evolves further, developing new characteristics. Choose one of the options you didn't take at 1st level, or one of the following options:"
+        "desc": "Your body has been altered to incorporate certain animal characteristics. You choose one animal enhancement now and a second enhancement at 5th level.\nAt 1st level, choose one of the following options:\nManta Glide: You have ray-like fins that you can use as wings to slow your fall or allow you to glide. When you fall and aren't incapacitated, you can subtract up to 100 feet from the fall when calculating falling damage, and you can move up to 2 feet horizontally for every 1 foot you descend.\nNimble Climber: You have a climbing speed equal to your walking speed.\nUnderwater Adaptation: You can breathe air and water, and you have a swimming speed equal to your walking speed.\nAt 5th level, your body evolves further, developing new characteristics. Choose one of the options you didn't take at 1st level, or one of the following options:\nGrappling Appendage: You have two special appendages growing alongside your arms. Choose whether they're both claws or tentacles. As an action, you can use one of them to try to grapple a creature. Each one is also a natural weapon, which you can use to make an unarmed strike. If you hit with it, the target takes bludgeoning damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. Immediately after hitting, you can try to grapple the target as a bonus action. These appendages can't precisely manipulate anything and can't wield weapons, magic items, or other specialized equipment.\nCarapace: Your skin in places is covered by a thick shell. You gain a +1 bonus to AC when you're not wearing heavy armor.\nAcid Spit: As an action, you can spray acid from glands in your mouth, targeting one creature or object you can see within 30 feet of you. The target takes 2d10 acid damage unless it succeeds on a Dexterity saving throw against a DC equal to 8 + your Constitution modifier + your proficiency bonus. This damage increases by 1d10 when you reach 11th level (3d10) and 17th level (4d10). You can use this trait a number of times equal to your Constitution modifier (minimum of once), and you regain all expended uses of it when you finish a long rest."
       }
     ],
     "traitNames": [
@@ -1962,7 +2277,7 @@
     "traits": [
       {
         "name": "Chameleon Carapace",
-        "desc": "While you aren't wearing armor, your carapace gives you a base Armor Class of 13 + your Dexterity modifier. As an action, you can change the color of your carapace to match the color and texture of your surroundings, giving you advantage on Dexterity (Stealth) checks made to hide in those surroundings."
+        "desc": "While you aren't wearing armor, your carapace gives you a base Armor Class of 13 + your Dexterity modifier.\nAs an action, you can change the color of your carapace to match the color and texture of your surroundings, giving you advantage on Dexterity (Stealth) checks made to hide in those surroundings."
       },
       {
         "name": "Darkvision",
@@ -2001,7 +2316,7 @@
       },
       {
         "name": "Innate Spellcasting",
-        "desc": "You are the recipient of a legacy that grants you supernatural abilities. Choose a legacy from the Fiendish Legacies table. You gain the level 1 benefit of the chosen legacy. When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy)."
+        "desc": "You are the recipient of a legacy that grants you supernatural abilities. Choose a legacy from the Fiendish Legacies table. You gain the level 1 benefit of the chosen legacy.\nWhen you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy)."
       },
       {
         "name": "Otherworldly Presence",
@@ -2061,7 +2376,7 @@
       },
       {
         "name": "Control Air and Water",
-        "desc": "You can cast fog cloud with this trait. Starting at 3rd level, you can cast the gust of wind spell with this trait. Starting at 5th level, you can also cast the water walk spell with it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+        "desc": "You can cast fog cloud with this trait. Starting at 3rd level, you can cast the gust of wind spell with this trait. Starting at 5th level, you can also cast the water walk spell with it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.\nIntelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
       },
       {
         "name": "Darkvision",
@@ -2096,7 +2411,7 @@
       },
       {
         "name": "Stench",
-        "desc": "Any creature other than a troglodyte that starts its turn within 5 ft. of you must succeed on a 12 Constitution saving throw or be poisoned until the start of the creature's next turn. On a successful saving throw, the creature is immune to the stench of all troglodytes for 1 hour."
+        "desc": "Any creature other than a troglodyte that starts its turn within 5 ft. of you must succeed on a DC 12 Constitution saving throw or be poisoned until the start of the creature's next turn. On a successful saving throw, the creature is immune to the stench of all troglodytes for 1 hour."
       },
       {
         "name": "Sunlight Sensitivity",
@@ -2156,7 +2471,7 @@
       },
       {
         "name": "Skill Proficiency",
-        "desc": "You are proficient in one of the following skills of your choice: Arcana, History, Investigation, Medicine, Performance, or Sleight of Hand. You are also proficient with one tool of your choice. Whenever you make an ability check with the chosen skill or tool, roll a d4 and add the number rolled to the check's total."
+        "desc": "You are proficient in one of the following skills of your choice: Arcana, History, Investigation, Medicine, Performance, or Sleight of Hand. You are also proficient with one tool of your choice.\nWhenever you make an ability check with the chosen skill or tool, roll a d4 and add the number rolled to the check's total."
       },
       {
         "name": "Partially Amphibious",
@@ -2170,63 +2485,38 @@
     ]
   },
   {
-    "name": "Verdan",
-    "source": "AI",
-    "size": "Varies",
-    "speed": "30ft walk",
-    "traits": [
-      {
-        "name": "Black Blood Healing",
-        "desc": "The black blood that is a sign of your people's connection to That-Which-Endures boosts your natural healing. When you roll a 1 or 2 on any Hit Die you spend at the end of a short rest, you can reroll the die and must use the new roll."
-      },
-      {
-        "name": "Limited Telepathy",
-        "desc": "You can telepathically speak to any creature you can see within 30 feet of you. You don't need to share a language with the creature for it to understand your telepathy, but it must be able to understand at least one language. This process of communication is slow and limited, allowing you to transmit and receive only simple ideas and straightforward concepts."
-      },
-      {
-        "name": "Skill Proficiency",
-        "desc": "Your people's lack of history makes you trustworthy and humble. You have proficiency in the Persuasion skill."
-      },
-      {
-        "name": "Telepathic Insight",
-        "desc": "Your mind's connection to the world around you strengthens your will. You have advantage on all Wisdom and Charisma saving throws."
-      }
-    ],
-    "traitNames": [
-      "Black Blood Healing",
-      "Limited Telepathy",
-      "Skill Proficiency",
-      "Telepathic Insight"
-    ]
-  },
-  {
     "name": "Warforged",
-    "source": "ERLW",
-    "size": "Medium",
+    "source": "EFA",
+    "size": "Small/Medium",
     "speed": "30ft walk",
     "traits": [
       {
         "name": "Construct Resilience",
-        "desc": "You were created to have remarkable fortitude, represented by the following benefits:"
-      },
-      {
-        "name": "Sentry's Rest",
-        "desc": "When you take a long rest, you must spend at least six hours in an inactive, motionless state, rather than sleeping. In this state, you appear inert, but it doesn't render you unconscious, and you can see and hear as normal."
+        "desc": "You have Resistance to Poison damage. You also have Advantage on saving throws to avoid or end the Poisoned condition."
       },
       {
         "name": "Integrated Protection",
-        "desc": "Your body has built-in defensive layers, which can be enhanced with armor:"
+        "desc": "You gain a +1 bonus to your Armor Class. In addition, armor you have donned can't be removed against your will while you're alive."
+      },
+      {
+        "name": "Sentry's Rest",
+        "desc": "You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 6 hours if you spend those hours in an inactive, motionless state. During this time, you appear inert but remain conscious."
       },
       {
         "name": "Tool Proficiency",
         "desc": "You gain one skill proficiency and one tool proficiency of your choice."
+      },
+      {
+        "name": "Tireless",
+        "desc": "You don't gain Exhaustion levels from dehydration, malnutrition, or suffocation."
       }
     ],
     "traitNames": [
       "Construct Resilience",
-      "Sentry's Rest",
       "Integrated Protection",
-      "Tool Proficiency"
+      "Sentry's Rest",
+      "Tool Proficiency",
+      "Tireless"
     ]
   },
   {
@@ -2249,7 +2539,7 @@
       },
       {
         "name": "Innate Spellcasting",
-        "desc": "You know the poison spray cantrip. You can cast animal friendship an unlimited number of times with this trait, but you can target only snakes with it. Starting at 3rd level, you can also cast suggestion with this trait. Once you cast it, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 2nd level or higher. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+        "desc": "You know the poison spray cantrip. You can cast animal friendship an unlimited number of times with this trait, but you can target only snakes with it. Starting at 3rd level, you can also cast suggestion with this trait. Once you cast it, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 2nd level or higher.\nIntelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
       }
     ],
     "traitNames": [
