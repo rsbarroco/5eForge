@@ -47,10 +47,9 @@ function linkifyText(rawText: string): string {
   }
     return result;
   });
-  // Sub-option lines start with "Word(s): " — render them with a bold label
+  // Sub-option lines: start with capital letter, have "label: text" format (e.g. "Cloud's Jaunt (Cloud Giant): ...")
   const formatted = paragraphs.map((p, i) => {
-    const subMatch = p.match(/^(<span[^>]*>[^<]*<\/span>|[\w\s]+):\s/);
-    const isSubOption = i > 0 && /^[A-Z][\w\s]+:\s/.test(rawText.split('\n')[i]);
+    const isSubOption = i > 0 && /^[A-Z][^:]{1,60}:\s/.test(rawText.split('\n')[i]);
     if (isSubOption) {
       return `<span class="trait-sub">${p}</span>`;
     }
