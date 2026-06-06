@@ -24,36 +24,28 @@ const KW_KEYS = [
 ];
 
 function linkifyText(rawText: string): string {
-  // Convert newlines to paragraph breaks for sub-options
   const paragraphs = rawText.split('\n').map(para => {
     let result = '';
     let remaining = para;
-  while (remaining.length > 0) {
-    let matched = false;
-    const lower = remaining.toLowerCase();
-    for (const kw of KW_KEYS) {
-      if (lower.startsWith(kw)) {
-        const original = remaining.slice(0, kw.length);
-        result += `<span class="kw" data-kw="${kw}">${original}</span>`;
-        remaining = remaining.slice(kw.length);
-        matched = true;
-        break;
+    while (remaining.length > 0) {
+      let matched = false;
+      const lower = remaining.toLowerCase();
+      for (const kw of KW_KEYS) {
+        if (lower.startsWith(kw)) {
+          const original = remaining.slice(0, kw.length);
+          result += `<span class="kw" data-kw="${kw}">${original}</span>`;
+          remaining = remaining.slice(kw.length);
+          matched = true;
+          break;
+        }
       }
+      if (!matched) { result += remaining[0]; remaining = remaining.slice(1); }
     }
-    if (!matched) {
-      result += remaining[0];
-      remaining = remaining.slice(1);
-    }
-  }
     return result;
   });
-  // Sub-option lines: start with capital letter, have "label: text" format (e.g. "Cloud's Jaunt (Cloud Giant): ...")
   const formatted = paragraphs.map((p, i) => {
     const isSubOption = i > 0 && /^[A-Z][^:]{1,60}:\s/.test(rawText.split('\n')[i]);
-    if (isSubOption) {
-      return `<span class="trait-sub">${p}</span>`;
-    }
-    return p;
+    return isSubOption ? `<span class="trait-sub">${p}</span>` : p;
   });
   return formatted.join('<br>');
 }
@@ -68,14 +60,16 @@ const CONDITIONS = [
   'Incapacitated','Invisible','Paralyzed','Petrified','Poisoned',
   'Prone','Restrained','Stunned','Unconscious'
 ];
+
+function csOpts(items: string[]) {
+  return ['', ...items].map(v => `<div class="cs-opt" data-value="${v}">${v || 'Any'}</div>`).join('');
+}
 ---
 
 <Layout title="Species — 5eForge" description="Browse all playable species with unified traits and modular filtering.">
 
-  <!-- TOOLTIPS OVERLAY -->
   <div id="tooltip" style="display:none;position:fixed;z-index:1000;background:#1a1612;border:1px solid #c9a84c;border-radius:0.375rem;padding:0.5rem 0.75rem;font-size:0.78rem;color:#e8dcc8;max-width:260px;pointer-events:none;line-height:1.5;box-shadow:0 4px 16px rgba(0,0,0,0.5);"></div>
 
-  <!-- NAV -->
   <header style="background:#0f0d0b;border-bottom:1px solid #2e2820;position:sticky;top:0;z-index:50;">
     <div style="max-width:1400px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;height:3.5rem;">
       <a href={`${base}/`} style="font-family:'Cinzel',serif;font-size:1.25rem;font-weight:700;color:#c9a84c;text-decoration:none;letter-spacing:0.05em;">
@@ -84,20 +78,15 @@ const CONDITIONS = [
       <nav style="display:flex;gap:1.5rem;align-items:center;">
         <a href={`${base}/`} class="nav-link">Home</a>
         <a href={`${base}/species`} class="nav-link nav-link--active">Species</a>
-        <a href={`${base}/classes.html`} class="nav-link">Classes</a>
-        <a href={`${base}/spells.html`} class="nav-link">Spells</a>
-        <a href={`${base}/bestiary.html`} class="nav-link">Bestiary</a>
       </nav>
     </div>
   </header>
 
-  <!-- PAGE HEADER -->
   <div style="background:linear-gradient(180deg,#1a1208 0%,#0f0d0b 100%);border-bottom:1px solid #2e2820;padding:2.5rem 1.5rem 2rem;position:relative;overflow:hidden;">
-    <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:600px;height:200px;background:radial-gradient(ellipse at center,rgba(74,158,255,0.08) 0%,transparent 70%);pointer-events:none;"></div>
     <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#4a9eff,transparent);"></div>
-    <div style="max-width:1400px;margin:0 auto;position:relative;">
+    <div style="max-width:1400px;margin:0 auto;">
       <div style="display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap;">
-        <h1 style="font-family:'Cinzel',serif;font-size:2rem;font-weight:900;color:#e8dcc8;margin:0;letter-spacing:0.03em;">Species</h1>
+        <h1 style="font-family:'Cinzel',serif;font-size:2rem;font-weight:900;color:#e8dcc8;margin:0;">Species</h1>
         <span id="species-count" style="color:#8a7a6a;font-size:0.9rem;"></span>
       </div>
       <p style="color:#8a7a6a;margin:0.5rem 0 0;font-size:0.9rem;">Official species with unified, modular traits. Combine filters to find your perfect ancestry.</p>
@@ -110,13 +99,11 @@ const CONDITIONS = [
     <aside style="width:240px;flex-shrink:0;position:sticky;top:4.5rem;max-height:calc(100vh - 5rem);overflow-y:auto;">
       <div style="background:#1a1612;border:1px solid #2e2820;border-radius:0.5rem;padding:1.25rem;display:flex;flex-direction:column;gap:1.25rem;">
 
-        <!-- Search -->
         <div>
           <label class="filter-label">Search</label>
           <input id="search-input" type="text" placeholder="Species name…" class="text-input" />
         </div>
 
-        <!-- Size -->
         <div>
           <label class="filter-label">Size</label>
           <div style="display:flex;gap:0.5rem;">
@@ -125,7 +112,7 @@ const CONDITIONS = [
           </div>
         </div>
 
-        <!-- Traits (multi-dropdown) -->
+        <!-- Traits multi-row -->
         <div>
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem;">
             <label class="filter-label" style="margin:0;">Traits</label>
@@ -138,37 +125,37 @@ const CONDITIONS = [
         <!-- Damage Resistance -->
         <div>
           <label class="filter-label">Damage Resistance</label>
-          <select id="filter-resistance" class="select-input">
-            <option value="">Any</option>
-            {DAMAGE_TYPES.map(d => <option value={d}>{d}</option>)}
-          </select>
+          <div class="cs-wrap" id="filter-resistance" data-value="">
+            <button class="cs-btn" type="button"><span class="cs-label">Any</span><span class="cs-arrow">▾</span></button>
+            <div class="cs-menu" set:html={csOpts(DAMAGE_TYPES)}></div>
+          </div>
         </div>
 
         <!-- Damage Immunity -->
         <div>
           <label class="filter-label">Damage Immunity</label>
-          <select id="filter-immunity" class="select-input">
-            <option value="">Any</option>
-            {DAMAGE_TYPES.map(d => <option value={d}>{d}</option>)}
-          </select>
+          <div class="cs-wrap" id="filter-immunity" data-value="">
+            <button class="cs-btn" type="button"><span class="cs-label">Any</span><span class="cs-arrow">▾</span></button>
+            <div class="cs-menu" set:html={csOpts(DAMAGE_TYPES)}></div>
+          </div>
         </div>
 
         <!-- Condition Immunity -->
         <div>
           <label class="filter-label">Condition Immunity</label>
-          <select id="filter-condition" class="select-input">
-            <option value="">Any</option>
-            {CONDITIONS.map(c => <option value={c}>{c}</option>)}
-          </select>
+          <div class="cs-wrap" id="filter-condition" data-value="">
+            <button class="cs-btn" type="button"><span class="cs-label">Any</span><span class="cs-arrow">▾</span></button>
+            <div class="cs-menu" set:html={csOpts(CONDITIONS)}></div>
+          </div>
         </div>
 
         <!-- Vulnerability -->
         <div>
           <label class="filter-label">Vulnerability</label>
-          <select id="filter-vulnerability" class="select-input">
-            <option value="">Any</option>
-            {DAMAGE_TYPES.map(d => <option value={d}>{d}</option>)}
-          </select>
+          <div class="cs-wrap" id="filter-vulnerability" data-value="">
+            <button class="cs-btn" type="button"><span class="cs-label">Any</span><span class="cs-arrow">▾</span></button>
+            <div class="cs-menu" set:html={csOpts(DAMAGE_TYPES)}></div>
+          </div>
         </div>
 
         <button id="reset-all" style="background:#0f0d0b;border:1px solid #2e2820;border-radius:0.375rem;color:#8a7a6a;font-size:0.8rem;cursor:pointer;padding:0.4rem;">Reset all filters</button>
@@ -248,28 +235,67 @@ const CONDITIONS = [
   }
   .text-input:focus { border-color:#4a9eff; }
 
-  .select-input {
-    width:100%;background:#0f0d0b;border:1px solid #2e2820;border-radius:0.375rem;
-    padding:0.45rem 0.65rem;color:#8a7a6a;font-size:0.825rem;outline:none;cursor:pointer;
-    transition:border-color 0.2s;
-  }
-  .select-input:focus { border-color:#4a9eff; color:#e8dcc8; }
-
   .size-btn {
     flex:1;background:#0f0d0b;border:1px solid #2e2820;border-radius:0.25rem;
-    padding:0.3rem 0;color:#5a4e42;font-size:0.75rem;cursor:pointer;
-    transition:all 0.15s;
+    padding:0.3rem 0;color:#5a4e42;font-size:0.75rem;cursor:pointer;transition:all 0.15s;
   }
   .size-btn.active { background:rgba(74,158,255,0.12);border-color:#4a9eff;color:#4a9eff;font-weight:600; }
 
-  .trait-row-select {
-    width:100%;background:#0f0d0b;border:1px solid #2e2820;border-radius:0.375rem;
-    padding:0.45rem 0.65rem;color:#8a7a6a;font-size:0.825rem;outline:none;cursor:pointer;
-    transition:border-color 0.2s;
-  }
-  .trait-row-select:focus { border-color:#4a9eff;color:#e8dcc8; }
-  .trait-row-select.selected { border-color:#4a9eff;color:#4a9eff; }
+  /* ── Custom Select ────────────────────────────────── */
+  .cs-wrap { position:relative; }
 
+  .cs-btn {
+    width:100%;background:#0f0d0b;border:1px solid #2e2820;border-radius:0.375rem;
+    padding:0.45rem 0.65rem;color:#8a7a6a;font-size:0.825rem;cursor:pointer;
+    display:flex;justify-content:space-between;align-items:center;text-align:left;
+    transition:border-color 0.2s;box-sizing:border-box;
+  }
+  .cs-btn:hover { border-color:#3a3228; }
+  .cs-btn.open { border-color:#4a9eff;border-bottom-left-radius:0;border-bottom-right-radius:0; }
+  .cs-btn.selected .cs-label { color:#4a9eff; }
+  .cs-btn.selected { border-color:#4a9eff; }
+
+  .cs-arrow { color:#5a4e42;font-size:0.65rem;transition:transform 0.15s;flex-shrink:0;margin-left:0.25rem; }
+  .cs-btn.open .cs-arrow { transform:rotate(180deg); }
+
+  .cs-menu {
+    display:none;position:absolute;top:100%;left:0;right:0;
+    background:#1a1612;border:1px solid #4a9eff;border-top:none;
+    border-bottom-left-radius:0.375rem;border-bottom-right-radius:0.375rem;
+    z-index:300;max-height:200px;overflow-y:auto;
+    box-shadow:0 8px 24px rgba(0,0,0,0.6);
+  }
+  .cs-menu.open { display:block; }
+
+  :global(.cs-opt) {
+    padding:0.4rem 0.65rem;color:#8a7a6a;font-size:0.8rem;cursor:pointer;transition:background 0.1s,color 0.1s;
+  }
+  :global(.cs-opt:hover) { background:#221e18;color:#e8dcc8; }
+  :global(.cs-opt.active) { color:#4a9eff;background:rgba(74,158,255,0.08); }
+
+  /* ── Trait rows ───────────────────────────────────── */
+  .trait-cs-btn {
+    flex:1;background:#0f0d0b;border:1px solid #2e2820;border-radius:0.375rem;
+    padding:0.4rem 0.6rem;color:#8a7a6a;font-size:0.8rem;cursor:pointer;
+    display:flex;justify-content:space-between;align-items:center;text-align:left;
+    transition:border-color 0.2s;min-width:0;
+  }
+  .trait-cs-btn.open { border-color:#4a9eff;border-bottom-left-radius:0;border-bottom-right-radius:0; }
+  .trait-cs-btn.selected .trait-cs-label { color:#4a9eff; }
+  .trait-cs-btn.selected { border-color:#4a9eff; }
+  .trait-cs-label { overflow:hidden;text-overflow:ellipsis;white-space:nowrap; }
+
+  .trait-cs-menu {
+    display:none;position:absolute;top:100%;left:0;right:0;
+    background:#1a1612;border:1px solid #4a9eff;border-top:none;
+    border-bottom-left-radius:0.375rem;border-bottom-right-radius:0.375rem;
+    z-index:300;max-height:220px;overflow-y:auto;
+    box-shadow:0 8px 24px rgba(0,0,0,0.6);
+  }
+  .trait-cs-menu.open { display:block; }
+  .trait-cs-menu .cs-opt { font-size:0.775rem;padding:0.35rem 0.6rem; }
+
+  /* ── Grid ─────────────────────────────────────────── */
   .species-grid { display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1rem; }
 
   .species-card {
@@ -294,7 +320,7 @@ const CONDITIONS = [
   .card-details { border-top:1px solid #2e2820;padding-top:0.625rem; }
   .card-summary { cursor:pointer;color:#c9a84c;font-size:0.8rem;font-weight:500;padding:0.25rem 0;list-style:none;display:flex;align-items:center;gap:0.375rem; }
   .card-summary::-webkit-details-marker { display:none; }
-  details[open] .arrow { display:inline-block;transform:rotate(90deg); }
+  details[open] .arrow { transform:rotate(90deg); }
   .arrow { font-size:0.6rem;display:inline-block;transition:transform 0.15s; }
 
   .trait-list { display:flex;flex-direction:column;gap:0.625rem;margin-top:0.625rem; }
@@ -302,11 +328,8 @@ const CONDITIONS = [
   .trait-name { font-family:'Cinzel',serif;font-size:0.775rem;font-weight:600;color:#c9a84c; }
   .trait-desc { font-size:0.775rem;color:#8a7a6a;line-height:1.55; }
 
-  /* keyword tooltip underline */
   .kw { border-bottom:1px dotted #c9a84c;cursor:help;color:inherit; }
-
-  /* transformation sub-option lines */
-  .trait-sub { display:block;margin-top:0.35rem;padding-left:0.75rem;border-left:2px solid #2e2820;color:#8a7a6a; }
+  .trait-sub { display:block;margin-top:0.35rem;padding-left:0.75rem;border-left:2px solid #2e2820; }
 
   @media (max-width:768px) {
     aside { display:none; }
@@ -315,33 +338,32 @@ const CONDITIONS = [
 </style>
 
 <script define:vars={{ allTraits }}>
-  // ── TOOLTIP ──────────────────────────────────────────────────────────────
+  // ── TOOLTIPS ──────────────────────────────────────────────────────────────
   const TOOLTIPS = {
-    'darkvision':     'You can see in dim light as if bright light, and darkness as if dim light, within the stated range. You discern colors only as shades of gray.',
-    'superior darkvision': 'Extended Darkvision with a range of 120 feet. Otherwise identical to Darkvision.',
-    'blindsight':     'You can perceive your surroundings without relying on sight, within the stated radius.',
-    'tremorsense':    'You can detect and pinpoint creatures in contact with the ground within the stated range.',
-    'truesight':      'You can see in normal and magical darkness, see invisible creatures, detect illusions, and see the original form of shapechangers.',
-    'resistance':     'When you have resistance to a damage type, damage of that type is halved against you.',
-    'immunity':       'When you have immunity to a damage type or condition, you are completely unaffected by it.',
-    'vulnerability':  'When you have vulnerability to a damage type, damage of that type is doubled against you.',
-    'advantage':      'Roll the d20 twice and use the higher result.',
-    'disadvantage':   'Roll the d20 twice and use the lower result.',
-    'proficiency':    'Add your proficiency bonus (+2 to +6, depending on level) to relevant checks, attacks, or saving throws.',
-    'bonus action':   'A secondary action available on your turn, in addition to your main action.',
-    'reaction':       'An instant response triggered by a specific condition, usable once per round.',
-    'cantrip':        'A spell you can cast at will, without expending a spell slot.',
-    'spell slot':     'A resource consumed to cast spells of 1st level and higher.',
-    'concentration':  'Maintaining this spell requires concentration. You can only concentrate on one spell at a time.',
-    'ritual':         'This spell can be cast as a ritual, taking 10 minutes longer but without expending a spell slot.',
+    'darkvision':    'You can see in dim light as if bright light, and darkness as if dim light, within the stated range. You discern colors only as shades of gray.',
+    'superior darkvision': 'Extended Darkvision with a range of 120 feet.',
+    'blindsight':    'You can perceive your surroundings without relying on sight, within the stated radius.',
+    'tremorsense':   'You detect and pinpoint creatures in contact with the ground within the stated range.',
+    'truesight':     'You can see in magical darkness, see invisible creatures, detect illusions, and see the original form of shapechangers.',
+    'resistance':    'Damage of this type is halved against you.',
+    'immunity':      'You are completely unaffected by this damage type or condition.',
+    'vulnerability': 'Damage of this type is doubled against you.',
+    'advantage':     'Roll the d20 twice and use the higher result.',
+    'disadvantage':  'Roll the d20 twice and use the lower result.',
+    'proficiency':   'Add your proficiency bonus (+2 to +6) to relevant checks, attacks, or saving throws.',
+    'bonus action':  'A secondary action on your turn, in addition to your main action.',
+    'reaction':      'An instant response triggered by a specific condition, once per round.',
+    'cantrip':       'A spell you can cast at will, without expending a spell slot.',
+    'spell slot':    'A resource consumed to cast spells of 1st level and higher.',
+    'concentration': 'Maintaining this spell requires concentration. Only one concentration spell at a time.',
+    'ritual':        'Can be cast as a ritual (10 minutes longer, no spell slot required).',
   };
 
   const tooltip = document.getElementById('tooltip');
   document.addEventListener('mouseover', e => {
     const el = e.target.closest('.kw');
     if (!el || !tooltip) return;
-    const key = el.dataset.kw;
-    const text = TOOLTIPS[key];
+    const text = TOOLTIPS[el.dataset.kw];
     if (!text) return;
     tooltip.textContent = text;
     tooltip.style.display = 'block';
@@ -351,12 +373,58 @@ const CONDITIONS = [
     let x = e.clientX + 14, y = e.clientY + 14;
     if (x + 270 > window.innerWidth) x = e.clientX - 274;
     if (y + 80 > window.innerHeight) y = e.clientY - 84;
-    tooltip.style.left = x + 'px';
-    tooltip.style.top = y + 'px';
+    tooltip.style.left = x + 'px'; tooltip.style.top = y + 'px';
   });
   document.addEventListener('mouseout', e => {
     if (!e.target.closest('.kw') && tooltip) tooltip.style.display = 'none';
   });
+
+  // ── CUSTOM SELECT ─────────────────────────────────────────────────────────
+  function closeAllMenus(except = null) {
+    document.querySelectorAll('.cs-menu.open,.trait-cs-menu.open').forEach(m => {
+      if (m === except) return;
+      m.classList.remove('open');
+      m.previousElementSibling?.classList.remove('open');
+    });
+  }
+  document.addEventListener('click', () => closeAllMenus());
+
+  function initStaticSelect(id, onChange) {
+    const wrap = document.getElementById(id);
+    if (!wrap) return;
+    const btn = wrap.querySelector('.cs-btn');
+    const label = wrap.querySelector('.cs-label');
+    const menu = wrap.querySelector('.cs-menu');
+    const opts = wrap.querySelectorAll('.cs-opt');
+
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      const isOpen = menu.classList.contains('open');
+      closeAllMenus();
+      if (!isOpen) { menu.classList.add('open'); btn.classList.add('open'); }
+    });
+
+    opts.forEach(opt => {
+      opt.addEventListener('click', e => {
+        e.stopPropagation();
+        opts.forEach(o => o.classList.remove('active'));
+        opt.classList.add('active');
+        wrap.dataset.value = opt.dataset.value;
+        label.textContent = opt.textContent;
+        menu.classList.remove('open');
+        btn.classList.remove('open');
+        btn.classList.toggle('selected', !!opt.dataset.value);
+        onChange();
+      });
+    });
+
+    return wrap;
+  }
+
+  const filterResistance  = initStaticSelect('filter-resistance', () => filter());
+  const filterImmunity    = initStaticSelect('filter-immunity',   () => filter());
+  const filterCondition   = initStaticSelect('filter-condition',  () => filter());
+  const filterVulnerability = initStaticSelect('filter-vulnerability', () => filter());
 
   // ── STATE ─────────────────────────────────────────────────────────────────
   const cards = Array.from(document.querySelectorAll('.species-card'));
@@ -367,46 +435,67 @@ const CONDITIONS = [
   const addTraitBtn = document.getElementById('add-trait-btn');
   const clearTraitsBtn = document.getElementById('clear-traits');
   const resetAllBtn = document.getElementById('reset-all');
-  const filterResistance = document.getElementById('filter-resistance');
-  const filterImmunity = document.getElementById('filter-immunity');
-  const filterCondition = document.getElementById('filter-condition');
-  const filterVulnerability = document.getElementById('filter-vulnerability');
   const sizeBtns = Array.from(document.querySelectorAll('.size-btn'));
 
   let selectedSizes = new Set();
   let selectedTraits = [];
 
-  // ── TRAIT DROPDOWN ROWS ───────────────────────────────────────────────────
+  // ── TRAIT CUSTOM DROPDOWN ROWS ────────────────────────────────────────────
   function addTraitRow(value = '') {
     const row = document.createElement('div');
-    row.style.cssText = 'display:flex;gap:0.25rem;align-items:center;';
+    row.style.cssText = 'display:flex;gap:0.25rem;align-items:center;position:relative;';
 
-    const sel = document.createElement('select');
-    sel.className = 'trait-row-select';
-    sel.style.flex = '1';
-    sel.innerHTML = '<option value="">— select trait —</option>' +
-      allTraits.map(t => `<option value="${t}"${t===value?' selected':''}>${t}</option>`).join('');
-    if (value) sel.classList.add('selected');
+    const wrap = document.createElement('div');
+    wrap.style.cssText = 'position:relative;flex:1;min-width:0;';
+
+    const btn = document.createElement('button');
+    btn.className = 'trait-cs-btn' + (value ? ' selected' : '');
+    btn.type = 'button';
+    btn.innerHTML = `<span class="trait-cs-label">${value || '— select trait —'}</span><span class="cs-arrow">▾</span>`;
+    wrap.dataset.value = value;
+
+    const menu = document.createElement('div');
+    menu.className = 'trait-cs-menu';
+    menu.innerHTML = '<div class="cs-opt" data-value="">— select trait —</div>' +
+      allTraits.map(t => `<div class="cs-opt${t===value?' active':''}" data-value="${t}">${t}</div>`).join('');
+
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      const isOpen = menu.classList.contains('open');
+      closeAllMenus();
+      if (!isOpen) { menu.classList.add('open'); btn.classList.add('open'); }
+    });
+
+    menu.querySelectorAll('.cs-opt').forEach(opt => {
+      opt.addEventListener('click', e => {
+        e.stopPropagation();
+        menu.querySelectorAll('.cs-opt').forEach(o => o.classList.remove('active'));
+        opt.classList.add('active');
+        wrap.dataset.value = opt.dataset.value;
+        btn.querySelector('.trait-cs-label').textContent = opt.textContent;
+        menu.classList.remove('open');
+        btn.classList.remove('open');
+        btn.classList.toggle('selected', !!opt.dataset.value);
+        syncTraits();
+      });
+    });
 
     const rem = document.createElement('button');
     rem.textContent = '✕';
     rem.style.cssText = 'background:none;border:none;color:#5a4e42;cursor:pointer;font-size:0.75rem;padding:0.2rem 0.3rem;flex-shrink:0;';
     rem.addEventListener('click', () => { row.remove(); syncTraits(); });
 
-    sel.addEventListener('change', () => {
-      sel.classList.toggle('selected', !!sel.value);
-      syncTraits();
-    });
-
-    row.appendChild(sel);
+    wrap.appendChild(btn);
+    wrap.appendChild(menu);
+    row.appendChild(wrap);
     row.appendChild(rem);
     traitRowsEl.appendChild(row);
     if (value) syncTraits();
   }
 
   function syncTraits() {
-    selectedTraits = Array.from(traitRowsEl.querySelectorAll('select'))
-      .map(s => s.value).filter(Boolean);
+    selectedTraits = Array.from(traitRowsEl.querySelectorAll('[data-value]'))
+      .map(w => w.dataset.value).filter(Boolean);
     clearTraitsBtn.style.display = selectedTraits.length ? 'block' : 'none';
     filter();
   }
@@ -419,7 +508,7 @@ const CONDITIONS = [
     filter();
   });
 
-  // ── SIZE BUTTONS ──────────────────────────────────────────────────────────
+  // ── SIZE ──────────────────────────────────────────────────────────────────
   sizeBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const s = btn.dataset.size;
@@ -429,15 +518,18 @@ const CONDITIONS = [
     });
   });
 
-  // ── SELECTS ───────────────────────────────────────────────────────────────
-  [filterResistance, filterImmunity, filterCondition, filterVulnerability].forEach(el => {
-    el.addEventListener('change', filter);
-  });
-
   // ── SEARCH ────────────────────────────────────────────────────────────────
   searchInput.addEventListener('input', filter);
 
   // ── RESET ─────────────────────────────────────────────────────────────────
+  function resetSelect(wrap) {
+    if (!wrap) return;
+    wrap.dataset.value = '';
+    wrap.querySelector('.cs-label').textContent = 'Any';
+    wrap.querySelector('.cs-btn').classList.remove('selected');
+    wrap.querySelectorAll('.cs-opt').forEach((o, i) => o.classList.toggle('active', i === 0));
+  }
+
   resetAllBtn.addEventListener('click', () => {
     searchInput.value = '';
     selectedSizes.clear();
@@ -445,24 +537,24 @@ const CONDITIONS = [
     traitRowsEl.innerHTML = '';
     selectedTraits = [];
     clearTraitsBtn.style.display = 'none';
-    [filterResistance, filterImmunity, filterCondition, filterVulnerability].forEach(el => el.value = '');
+    [filterResistance, filterImmunity, filterCondition, filterVulnerability].forEach(resetSelect);
     filter();
   });
 
   // ── FILTER ────────────────────────────────────────────────────────────────
   function filter() {
-    const query = searchInput.value.toLowerCase().trim();
-    const resist = filterResistance.value.toLowerCase();
-    const immune = filterImmunity.value.toLowerCase();
-    const cond   = filterCondition.value.toLowerCase();
-    const vuln   = filterVulnerability.value.toLowerCase();
+    const query  = searchInput.value.toLowerCase().trim();
+    const resist = (filterResistance?.dataset.value  || '').toLowerCase();
+    const immune = (filterImmunity?.dataset.value    || '').toLowerCase();
+    const cond   = (filterCondition?.dataset.value   || '').toLowerCase();
+    const vuln   = (filterVulnerability?.dataset.value || '').toLowerCase();
 
     let visible = 0;
     cards.forEach(card => {
-      const name = card.dataset.name ?? '';
-      const size = card.dataset.size ?? '';
+      const name   = card.dataset.name ?? '';
+      const size   = card.dataset.size ?? '';
       const traits = JSON.parse(card.dataset.traits ?? '[]');
-      const descs = JSON.parse(card.dataset.desc ?? '[]').join(' ');
+      const descs  = JSON.parse(card.dataset.desc ?? '[]').join(' ');
 
       const matchSearch = !query || name.includes(query);
       const matchSize   = selectedSizes.size === 0 || [...selectedSizes].some(s => size.includes(s));
@@ -476,7 +568,6 @@ const CONDITIONS = [
       card.style.display = show ? '' : 'none';
       if (show) {
         visible++;
-        // highlight active trait tags
         card.querySelectorAll('.trait-tag').forEach(tag => {
           tag.classList.toggle('active', selectedTraits.includes(tag.textContent?.trim() ?? ''));
         });
@@ -489,4 +580,3 @@ const CONDITIONS = [
 
   if (countEl) countEl.textContent = `${cards.length} species`;
 </script>
-
