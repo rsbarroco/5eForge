@@ -446,6 +446,7 @@ function csOpts(items: string[]) {
     row.style.cssText = 'display:flex;gap:0.25rem;align-items:center;position:relative;';
 
     const wrap = document.createElement('div');
+    wrap.className = 'trait-row-wrap';
     wrap.style.cssText = 'position:relative;flex:1;min-width:0;';
 
     const btn = document.createElement('button');
@@ -494,7 +495,7 @@ function csOpts(items: string[]) {
   }
 
   function syncTraits() {
-    selectedTraits = Array.from(traitRowsEl.querySelectorAll('[data-value]'))
+    selectedTraits = Array.from(traitRowsEl.querySelectorAll('.trait-row-wrap'))
       .map(w => w.dataset.value).filter(Boolean);
     clearTraitsBtn.style.display = selectedTraits.length ? 'block' : 'none';
     filter();
